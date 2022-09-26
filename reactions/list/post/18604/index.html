@@ -1,0 +1,543 @@
+<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="login" data-container-key="" data-content-key="" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-login" data-run-jobs=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	
+
+	<title>Вход | Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="Вход">
+		<meta property="twitter:title" content="Вход">
+	
+
+
+	
+	
+	
+
+	
+		<meta name="theme-color" content="#272F38">
+	
+
+	
+	
+	
+
+	
+
+	<link rel="stylesheet" href="../../../../styles/2.css">
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../../../styles/3.css">
+
+	
+		<script src="../../../../js/xf/preamble-compiled.js"></script>
+	
+
+
+	
+		<link rel="icon" type="image/png" href="../../../../favicon-32x32.png" sizes="32x32">
+	
+	
+	
+</head>
+<body data-template="login">
+
+<div class="p-pageWrapper" id="top">
+
+
+
+<header class="p-header" id="header">
+	<div class="p-header-inner">
+		<div class="p-header-content">
+
+			<div class="p-header-logo p-header-logo--image">
+				<a href="../../../../index.html">
+					<img src="../../../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			
+		</div>
+	</div>
+</header>
+
+
+
+
+
+	
+	<nav class="p-nav">
+		<div class="p-nav-inner">
+			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+				<i aria-hidden="true"></i>
+				<span class="p-nav-menuText">Меню</span>
+			</a>
+
+			<div class="p-nav-smallLogo">
+				<a href="../../../../index.html">
+					<img src="../../../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+				<div class="hScroller-scroll">
+					<ul class="p-nav-list js-offCanvasNavSource">
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-nav-opposite">
+				<div class="p-navgroup p-account p-navgroup--guest">
+					
+						<a href="../../../../login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+							<span class="p-navgroup-linkText">Вход</span>
+						</a>
+						
+							<a href="../../../../register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+								<span class="p-navgroup-linkText">Регистрация</span>
+							</a>
+						
+					
+				</div>
+
+				<div class="p-navgroup p-discovery">
+					<a href="../../../../whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
+						<i aria-hidden="true"></i>
+						<span class="p-navgroup-linkText">Что нового?</span>
+					</a>
+
+					
+						<a href="../../../../search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
+							<i aria-hidden="true"></i>
+							<span class="p-navgroup-linkText">Поиск</span>
+						</a>
+						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+
+								<h3 class="menu-header">Поиск</h3>
+								
+								<div class="menu-row">
+									
+										<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
+									
+								</div>
+
+								
+								<div class="menu-row">
+									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
+
+								</div>
+								
+								<div class="menu-row">
+									<div class="inputGroup">
+										<span class="inputGroup-text">От:</span>
+										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
+									</div>
+								</div>
+								<div class="menu-footer">
+									<span class="menu-footer-controls">
+										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
+										<a href="../../../../search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
+									</span>
+								</div>
+
+								<input type="hidden" name="_xfToken" value="1664154061,7ae6963812bd077c84c740cc8b4cde68">
+							</form>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	
+		<div class="p-sectionLinks p-sectionLinks--empty"></div>
+	
+
+
+
+<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+	<div class="offCanvasMenu-content">
+		<div class="offCanvasMenu-header">
+			Меню
+			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
+		</div>
+		
+			<div class="p-offCanvasRegisterLink">
+				<div class="offCanvasMenu-linkHolder">
+					<a href="../../../../login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+						Вход
+					</a>
+				</div>
+				<hr class="offCanvasMenu-separator">
+				
+					<div class="offCanvasMenu-linkHolder">
+						<a href="../../../../register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+							Регистрация
+						</a>
+					</div>
+					<hr class="offCanvasMenu-separator">
+				
+			</div>
+		
+		<div class="js-offCanvasNavTarget"></div>
+	</div>
+</div>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">Вход</h1>
+						
+						
+					
+					</div>
+				
+
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+	<div class="blockMessage blockMessage--error blockMessage--iconic">
+		Для того, чтобы это сделать, нужно сначала войти на форум.
+	</div>
+
+
+<div class="blocks">
+	
+			<form action="/login/login" method="post" class="block">
+				
+		<div class="block-container">
+			<div class="block-body">
+				
+			<dl class="formRow formRow--input">
+				<dt>
+					<div class="formRow-labelWrapper">
+					<label class="formRow-label" for="_xfUid-1-1664154061">Имя пользователя или email</label></div>
+				</dt>
+				<dd>
+					<input type="text" class="input" name="login" autofocus="autofocus" autocomplete="username" id="_xfUid-1-1664154061">
+				</dd>
+			</dl>
+		
+
+				
+			<dl class="formRow formRow--input">
+				<dt>
+					<div class="formRow-labelWrapper">
+					<label class="formRow-label" for="_xfUid-2-1664154061">Пароль</label></div>
+				</dt>
+				<dd>
+					<input type="password" class="input" name="password" autocomplete="current-password" id="_xfUid-2-1664154061">
+					
+						<a href="../../../../lost-password/index.html" data-xf-click="overlay">Забыли свой пароль?</a>
+					
+				</dd>
+			</dl>
+		
+
+				
+
+				
+			<dl class="formRow">
+				<dt>
+					<div class="formRow-labelWrapper"></div>
+				</dt>
+				<dd>
+					
+			<ul class="inputChoices">
+				<li class="inputChoices-choice"><label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="remember" value="1" checked="checked"><i aria-hidden="true"></i>Запомнить меня</label></li>
+
+			</ul>
+		
+				</dd>
+			</dl>
+		
+			</div>
+			
+			<dl class="formRow formSubmitRow">
+				<dt></dt>
+				<dd>
+					<div class="formSubmitRow-main">
+						<div class="formSubmitRow-bar"></div>
+						<div class="formSubmitRow-controls"><button class="button button--primary button--icon button--icon--login"><span class="button-text">Войти</span></button></div>
+					</div>
+				</dd>
+			</dl>
+		
+		</div>
+		
+			<div class="block-outer block-outer--after">
+				<div class="block-outer-middle">
+					У Вас ещё нет учётной записи? <a href="../../../../register/index.html" class="button"><span class="button-text">Зарегистрируйтесь</span></a>
+				</div>
+			</div>
+		
+	
+				<input type="hidden" name="_xfToken" value="1664154061,7ae6963812bd077c84c740cc8b4cde68">
+				
+			</form>
+		
+
+	
+</div></div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+
+		
+	</div>
+</div>
+
+<footer class="p-footer" id="footer">
+	<div class="p-footer-inner">
+
+		<div class="p-footer-row">
+			
+				<div class="p-footer-row-main">
+					<ul class="p-footer-linkList">
+					
+						
+						
+							<li><a href="../../../../misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
+								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
+						
+					
+					</ul>
+				</div>
+			
+			<div class="p-footer-row-opposite">
+				<ul class="p-footer-linkList">
+					
+
+					
+						<li><a href="../../../../help/terms/index.html">Условия и правила</a></li>
+					
+
+					
+
+					
+						<li><a href="../../../../help/index.html">Помощь</a></li>
+					
+
+					
+						<li><a href="../../../../index.html">Главная</a></li>
+					
+
+					<li><a href="../../../../forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="p-footer-copyright">
+			
+				
+				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="../../../../link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
+			
+			</div>
+		
+
+		
+	</div>
+</footer>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
+		
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
+	<script src="../../../../js/vendor/vendor-compiled.js"></script>
+	<script src="../../../../js/xf/core-compiled.js"></script>
+	<script src="../../../../js/xf/login_signup.min.js"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			userId: 0,
+			url: {
+				fullBase: 'https://enota.club/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_'
+			},
+			csrf: '1664154061,7ae6963812bd077c84c740cc8b4cde68',
+			js: {"\/js\/xf\/login_signup.min.js?_v=1bd6f38b":true},
+			css: {"public:extra.less":true},
+			time: {
+				now: 1664154061,
+				today: 1664139600,
+				todayDow: 1
+			},
+			borderSizeFeature: '3px',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 2097152,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {}
+		});
+
+		jQuery.extend(XF.phrases, {
+			date_x_at_time_y: "{date} в {time}",
+			day_x_at_time_y:  "{day} в {time}",
+			yesterday_at_x:   "Вчера в {time}",
+			x_minutes_ago:    "{minutes} мин. назад",
+			one_minute_ago:   "1 минуту назад",
+			a_moment_ago:     "Только что",
+			today_at_x:       "Сегодня в {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "Менее минуты назад",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Сегодня позже в {time}",
+			tomorrow_at_x:    "Завтра в {time}",
+
+			day0: "Воскресенье",
+			day1: "Понедельник",
+			day2: "Вторник",
+			day3: "Среда",
+			day4: "Четверг",
+			day5: "Пятница",
+			day6: "Суббота",
+
+			dayShort0: "Вос",
+			dayShort1: "Пон",
+			dayShort2: "Вто",
+			dayShort3: "Сре",
+			dayShort4: "Чет",
+			dayShort5: "Пят",
+			dayShort6: "Суб",
+
+			month0: "Январь",
+			month1: "Февраль",
+			month2: "Март",
+			month3: "Апрель",
+			month4: "Май",
+			month5: "Июнь",
+			month6: "Июль",
+			month7: "Август",
+			month8: "Сентябрь",
+			month9: "Октябрь",
+			month10: "Ноябрь",
+			month11: "Декабрь",
+
+			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
+			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
+			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+			file_too_large_to_upload: "Файл слишком большой для загрузки.",
+			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+			close: "Закрыть",
+
+			showing_x_of_y_items: "Показано {count} из {total} элементов",
+			showing_all_items: "Показаны все элементы",
+			no_items_to_display: "Нет элементов для отображения"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,2449 @@
+<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="thread_view" data-container-key="node-23" data-content-key="thread-957" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-thread_view" data-run-jobs=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	
+
+	<title>Откуда появляется ошибка 520 на CloudFlare? | Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+
+	
+		
+		<meta name="description" content="Думал дело в том что днс использую cloudflare а выделенный сервер от ddos-guard прописанный в днс но нет. Убрал, поставил родной IP сервера в днс. Все было...">
+		<meta property="og:description" content="Думал дело в том что днс использую cloudflare а выделенный сервер от ddos-guard прописанный в днс но нет. Убрал, поставил родной IP сервера в днс. Все было отлично но под вечер опять 520-я... Перелопатил сообщество cloudflare, написал им в поддержку они ссылаются на сервер, пишу в поддержку...">
+		<meta property="twitter:description" content="Думал дело в том что днс использую cloudflare а выделенный сервер от ddos-guard прописанный в днс но нет. Убрал, поставил родной IP сервера в днс. Все было отлично но под вечер опять 520-я...">
+	
+	
+		<meta property="og:url" content="https://enota.club/threads/otkuda-pojavljaetsja-oshibka-520-na-cloudflare.957/">
+	
+		<link rel="canonical" href="https://enota.club/threads/otkuda-pojavljaetsja-oshibka-520-na-cloudflare.957/">
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="Откуда появляется ошибка 520 на CloudFlare?">
+		<meta property="twitter:title" content="Откуда появляется ошибка 520 на CloudFlare?">
+	
+
+
+	
+	
+	
+
+	
+		<meta name="theme-color" content="#272F38">
+	
+
+	
+	
+	
+
+	
+
+	<link rel="stylesheet" href="../../styles/2.css">
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../styles/12.css">
+
+	
+		<script src="../../js/xf/preamble-compiled.js"></script>
+	
+
+
+	
+		<link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
+	
+	
+	
+</head>
+<body data-template="thread_view">
+
+<div class="p-pageWrapper" id="top">
+
+
+
+<header class="p-header" id="header">
+	<div class="p-header-inner">
+		<div class="p-header-content">
+
+			<div class="p-header-logo p-header-logo--image">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			
+		</div>
+	</div>
+</header>
+
+
+
+
+
+	
+	<nav class="p-nav">
+		<div class="p-nav-inner">
+			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+				<i aria-hidden="true"></i>
+				<span class="p-nav-menuText">Меню</span>
+			</a>
+
+			<div class="p-nav-smallLogo">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+				<div class="hScroller-scroll">
+					<ul class="p-nav-list js-offCanvasNavSource">
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-nav-opposite">
+				<div class="p-navgroup p-account p-navgroup--guest">
+					
+						<a href="../../login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+							<span class="p-navgroup-linkText">Вход</span>
+						</a>
+						
+							<a href="../../register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+								<span class="p-navgroup-linkText">Регистрация</span>
+							</a>
+						
+					
+				</div>
+
+				<div class="p-navgroup p-discovery">
+					<a href="../../whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
+						<i aria-hidden="true"></i>
+						<span class="p-navgroup-linkText">Что нового?</span>
+					</a>
+
+					
+						<a href="../../search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
+							<i aria-hidden="true"></i>
+							<span class="p-navgroup-linkText">Поиск</span>
+						</a>
+						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+
+								<h3 class="menu-header">Поиск</h3>
+								
+								<div class="menu-row">
+									
+										<div class="inputGroup inputGroup--joined">
+											<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
+											
+			<select name="constraints" class="js-quickSearch-constraint input" aria-label="Search within">
+				<option value="">Везде</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;}">Темы</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;nodes&quot;:[23],&quot;child_nodes&quot;:1}}">Этот форум</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;thread&quot;:957}}">Эта тема</option>
+
+			</select>
+		
+										</div>
+										
+								</div>
+
+								
+								<div class="menu-row">
+									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
+
+								</div>
+								
+								<div class="menu-row">
+									<div class="inputGroup">
+										<span class="inputGroup-text">От:</span>
+										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
+									</div>
+								</div>
+								<div class="menu-footer">
+									<span class="menu-footer-controls">
+										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
+										<a href="../../search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
+									</span>
+								</div>
+
+								<input type="hidden" name="_xfToken" value="1664155711,40fad03b294c1d224552b0117ea551df">
+							</form>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	
+		<div class="p-sectionLinks p-sectionLinks--empty"></div>
+	
+
+
+
+<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+	<div class="offCanvasMenu-content">
+		<div class="offCanvasMenu-header">
+			Меню
+			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
+		</div>
+		
+			<div class="p-offCanvasRegisterLink">
+				<div class="offCanvasMenu-linkHolder">
+					<a href="../../login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+						Вход
+					</a>
+				</div>
+				<hr class="offCanvasMenu-separator">
+				
+					<div class="offCanvasMenu-linkHolder">
+						<a href="../../register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+							Регистрация
+						</a>
+					</div>
+					<hr class="offCanvasMenu-separator">
+				
+			</div>
+		
+		<div class="js-offCanvasNavTarget"></div>
+	</div>
+</div>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+		<ul class="p-breadcrumbs " itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/cinemapress.19/index.html" itemprop="item">
+			<span itemprop="name">CinemaPress</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/help/index.html" itemprop="item">
+			<span itemprop="name">Помощь (Архив)</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">Откуда появляется ошибка 520 на CloudFlare?</h1>
+						
+						
+					
+					</div>
+				
+
+				
+					<div class="p-description">
+	<ul class="listInline listInline--bullet">
+		<li>
+			<i class="fa fa-user" aria-hidden="true" title="Автор темы"></i>
+			<span class="u-srOnly">Автор темы</span>
+
+			<a href="../../members/ilja212354.409/index.html" class="username  u-concealed" dir="auto" data-user-id="409" data-xf-init="member-tooltip">ilja212354</a>
+		</li>
+		<li>
+			<i class="fa fa-clock-o" aria-hidden="true" title="Дата начала"></i>
+			<span class="u-srOnly">Дата начала</span>
+
+			<a href="index.html" class="u-concealed"><time class="u-dt" dir="auto" datetime="2019-06-04T18:04:55+0300" data-time="1559660695" data-date-string="4 Июн 2019" data-time-string="18:04" title="4 Июн 2019 в 18:04">4 Июн 2019</time></a>
+		</li>
+		
+	</ul>
+</div>
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+<div class="block block--messages" data-xf-init="" data-type="post" data-href="/inline-mod/">
+
+	
+	
+
+
+	<div class="block-outer"></div>
+
+	<div class="block-outer js-threadStatusField"></div>
+
+	<div class="block-container lbContainer" data-xf-init="lightbox select-to-quote" data-message-selector=".js-post" data-lb-id="thread-957" data-lb-universal="1">
+
+		<div class="block-body js-replyNewMessageContainer">
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="ilja212354" data-content="post-6012" id="js-post-6012">
+
+		<span class="u-anchorTarget" id="post-6012"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/ilja212354.409/index.html" class="username " dir="auto" data-user-id="409" data-xf-init="member-tooltip" itemprop="name">ilja212354</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/ilja212354.409/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="409" data-xf-init="member-tooltip" style="background-color: #cc9933; color: #3d2e0f">
+			<span class="avatar-u409-l">I</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-04T18:04:55+0300" data-time="1559660695" data-date-string="4 Июн 2019" data-time-string="18:04" title="4 Июн 2019 в 18:04">4 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#1</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Май 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>53</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-04T18:04:55+0300" data-time="1559660695" data-date-string="4 Июн 2019" data-time-string="18:04" title="4 Июн 2019 в 18:04">4 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#1</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6012" data-lb-caption-desc="ilja212354 · 4 Июн 2019 в 18:04">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Думал дело в том что днс использую cloudflare а выделенный сервер от ddos-guard прописанный в днс но нет. Убрал, поставил родной IP сервера в днс. Все было отлично но под вечер опять 520-я... Перелопатил сообщество cloudflare, написал им в поддержку они ссылаются на сервер, пишу в поддержку сервера те говорят что сервер работает в штатном режиме. <br>
+Поддержка  cloudflare, вообще видимо забила на меня, перестала отвечать, ощущение что они грубо говоря, сами не знают в чем причина. <br>
+ДНС прописан верно, все по инструкции но приложу скрин днс, вместе со скрином ошибки. <br>
+Вообщем Алиса помоги!!! Процент отказа высокий в гугл аналитике, и думаю дело как раз таки в том что у пользователей выскакивает 520 ошибка. <br>
+Не уже ли у меня у одного такая проблема...<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="smilie smilie--sprite smilie--sprite3" alt=":(" title="Frown    :("></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+								
+	
+		
+		<section class="message-attachments">
+			<h4 class="block-textHeader">Вложения</h4>
+			<ul class="attachmentList">
+				
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/dns-jpg-1099.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1099-8e606075e3d08d45b65b09b4faf18418.jpg" alt="ДНС.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/dns-jpg-1099.jpg" target="_blank" title="ДНС.jpg">ДНС.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">211.1 KB</span>
+			<span class="attachment-details-views">Просмотры: 11</span>
+		</div>
+	</li>
+
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/error520-jpg-1100.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1100-4aead2edc70d9f27a47f7db544221a62.jpg" alt="Error520.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/error520-jpg-1100.jpg" target="_blank" title="Error520.jpg">Error520.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">197.3 KB</span>
+			<span class="attachment-details-views">Просмотры: 14</span>
+		</div>
+	</li>
+
+					
+				
+			</ul>
+		</section>
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-6013" id="js-post-6013">
+
+		<span class="u-anchorTarget" id="post-6013"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-04T18:14:54+0300" data-time="1559661294" data-date-string="4 Июн 2019" data-time-string="18:14" title="4 Июн 2019 в 18:14">4 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#2</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-04T18:14:54+0300" data-time="1559661294" data-date-string="4 Июн 2019" data-time-string="18:14" title="4 Июн 2019 в 18:14">4 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#2</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6013" data-lb-caption-desc="Alisa · 4 Июн 2019 в 18:14">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Если видите ошибку, заходите по SSH на сервер и выполняете <code class="bbCodeInline">pm2 logs</code><br>
+Сайт работает.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="ilja212354" data-content="post-6024" id="js-post-6024">
+
+		<span class="u-anchorTarget" id="post-6024"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/ilja212354.409/index.html" class="username " dir="auto" data-user-id="409" data-xf-init="member-tooltip" itemprop="name">ilja212354</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/ilja212354.409/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="409" data-xf-init="member-tooltip" style="background-color: #cc9933; color: #3d2e0f">
+			<span class="avatar-u409-l">I</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-05T07:04:33+0300" data-time="1559707473" data-date-string="5 Июн 2019" data-time-string="07:04" title="5 Июн 2019 в 07:04">5 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#3</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Май 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>53</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-05T07:04:33+0300" data-time="1559707473" data-date-string="5 Июн 2019" data-time-string="07:04" title="5 Июн 2019 в 07:04">5 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#3</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6024" data-lb-caption-desc="ilja212354 · 5 Июн 2019 в 07:04">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-6013">Alisa написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Если видите ошибку, заходите по SSH на сервер и выполняете <code class="bbCodeInline">pm2 logs</code><br>
+Сайт работает.
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Выполнил</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+								
+	
+		
+		<section class="message-attachments">
+			<h4 class="block-textHeader">Вложения</h4>
+			<ul class="attachmentList">
+				
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/520kakonadostala-jpg-1105.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1105-ae751413feb09500b548fc03deebaf49.jpg" alt="520каконадостала.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/520kakonadostala-jpg-1105.jpg" target="_blank" title="520каконадостала.jpg">520каконадостала.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">370.4 KB</span>
+			<span class="attachment-details-views">Просмотры: 17</span>
+		</div>
+	</li>
+
+					
+				
+			</ul>
+		</section>
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-6034" id="js-post-6034">
+
+		<span class="u-anchorTarget" id="post-6034"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-05T16:08:23+0300" data-time="1559740103" data-date-string="5 Июн 2019" data-time-string="16:08" title="5 Июн 2019 в 16:08">5 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#4</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-05T16:08:23+0300" data-time="1559740103" data-date-string="5 Июн 2019" data-time-string="16:08" title="5 Июн 2019 в 16:08">5 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#4</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6034" data-lb-caption-desc="Alisa · 5 Июн 2019 в 16:08">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-6024">ilja212354 написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Выполнил
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Ошибок нет.<br>
+<br>
+520 ошибку генерирует CloudFlare, используйте DDoS-Guard.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="ilja212354" data-content="post-6055" id="js-post-6055">
+
+		<span class="u-anchorTarget" id="post-6055"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/ilja212354.409/index.html" class="username " dir="auto" data-user-id="409" data-xf-init="member-tooltip" itemprop="name">ilja212354</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/ilja212354.409/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="409" data-xf-init="member-tooltip" style="background-color: #cc9933; color: #3d2e0f">
+			<span class="avatar-u409-l">I</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T18:53:56+0300" data-time="1559836436" data-date-string="6 Июн 2019" data-time-string="18:53" title="6 Июн 2019 в 18:53">6 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#5</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Май 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>53</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T18:53:56+0300" data-time="1559836436" data-date-string="6 Июн 2019" data-time-string="18:53" title="6 Июн 2019 в 18:53">6 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#5</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6055" data-lb-caption-desc="ilja212354 · 6 Июн 2019 в 18:53">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Я устал искать решение... если эта ошибка и ее решение вам неизвестно то дайте знать чтобы я не тратил время и перешел на другую площадку... ну уже нереальное количество времени потрачено. И так, сайт лично у меня работает, я перехожу нормально, мои друзья тоже. Больше у меня на экране не появляется ошибки 520. Ноооо вот что на самом деле. Предпоследний скрин я отправил в тех.поддержку веб-сервера и получил вот такой ответ. Помогиииии Алисаааааа</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+								
+	
+		
+		<section class="message-attachments">
+			<h4 class="block-textHeader">Вложения</h4>
+			<ul class="attachmentList">
+				
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/52000-jpg-1110.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1110-853d866934702700a1388f552e85fe10.jpg" alt="52000.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/52000-jpg-1110.jpg" target="_blank" title="52000.jpg">52000.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">211.1 KB</span>
+			<span class="attachment-details-views">Просмотры: 14</span>
+		</div>
+	</li>
+
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/520-jpg-1112.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1112-f054a3796f6b57e8ec6944a625211109.jpg" alt="520.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/520-jpg-1112.jpg" target="_blank" title="520.jpg">520.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">74.8 KB</span>
+			<span class="attachment-details-views">Просмотры: 12</span>
+		</div>
+	</li>
+
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/5200-jpg-1113.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1113-b85d5c8ef1aaa315d4065af92621f381.jpg" alt="5200.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/5200-jpg-1113.jpg" target="_blank" title="5200.jpg">5200.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">224.6 KB</span>
+			<span class="attachment-details-views">Просмотры: 12</span>
+		</div>
+	</li>
+
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/522-jpg-1114.jpg" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/1/1114-b2909dd4e47e79adc10e570392dd2085.jpg" alt="522.jpg">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/522-jpg-1114.jpg" target="_blank" title="522.jpg">522.jpg</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">176.9 KB</span>
+			<span class="attachment-details-views">Просмотры: 11</span>
+		</div>
+	</li>
+
+					
+				
+			</ul>
+		</section>
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-6057" id="js-post-6057">
+
+		<span class="u-anchorTarget" id="post-6057"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:10:41+0300" data-time="1559837441" data-date-string="6 Июн 2019" data-time-string="19:10" title="6 Июн 2019 в 19:10">6 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#6</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:10:41+0300" data-time="1559837441" data-date-string="6 Июн 2019" data-time-string="19:10" title="6 Июн 2019 в 19:10">6 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#6</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6057" data-lb-caption-desc="Alisa · 6 Июн 2019 в 19:10">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Отключите проксирование CloudFlare (IP сервера будет видно).<br>
+<code class="bbCodeInline">CloudFlare - Overview - Pause Cloudflare on Site</code><br>
+<br>
+
+	
+		
+	
+	
+		
+		
+	
+
+
+	<div class="lbContainer lbContainer--inline" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment1115" data-lb-id="attachment1115">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment1115" data-src="https://enota.club/attachments/pause-png.1115/" aria-label="Zoom"></div>
+		
+		<img src="../../attachments/pause-png-1115.png" data-url="" class="bbImage" data-zoom-target="1" alt="pause.png">
+	</div>
+
+	
+<br>
+<br>
+Если на сервере нет сертификата, то генерируете его <a href="https://cinema.press/article/opcii-ustanovki-cinemapress-acms.html#option10" target="_blank" class="link link--external" rel="nofollow noopener">https://cinema.press/article/opcii-ustanovki-cinemapress-acms.html#option10</a></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+								
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-6059" id="js-post-6059">
+
+		<span class="u-anchorTarget" id="post-6059"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:23:03+0300" data-time="1559838183" data-date-string="6 Июн 2019" data-time-string="19:23" title="6 Июн 2019 в 19:23">6 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#7</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:23:03+0300" data-time="1559838183" data-date-string="6 Июн 2019" data-time-string="19:23" title="6 Июн 2019 в 19:23">6 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#7</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6059" data-lb-caption-desc="Alisa · 6 Июн 2019 в 19:23">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-6055">ilja212354 написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Я устал искать решение...
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Можете IP и root прислать на почту</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="ilja212354" data-content="post-6061" id="js-post-6061">
+
+		<span class="u-anchorTarget" id="post-6061"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/ilja212354.409/index.html" class="username " dir="auto" data-user-id="409" data-xf-init="member-tooltip" itemprop="name">ilja212354</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/ilja212354.409/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="409" data-xf-init="member-tooltip" style="background-color: #cc9933; color: #3d2e0f">
+			<span class="avatar-u409-l">I</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:25:40+0300" data-time="1559838340" data-date-string="6 Июн 2019" data-time-string="19:25" title="6 Июн 2019 в 19:25">6 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#8</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Май 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>53</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:25:40+0300" data-time="1559838340" data-date-string="6 Июн 2019" data-time-string="19:25" title="6 Июн 2019 в 19:25">6 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#8</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6061" data-lb-caption-desc="ilja212354 · 6 Июн 2019 в 19:25">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-6059">Alisa написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Можете IP и root прислать на почту
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>отправил</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="ilja212354" data-content="post-6064" id="js-post-6064">
+
+		<span class="u-anchorTarget" id="post-6064"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/ilja212354.409/index.html" class="username " dir="auto" data-user-id="409" data-xf-init="member-tooltip" itemprop="name">ilja212354</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/ilja212354.409/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="409" data-xf-init="member-tooltip" style="background-color: #cc9933; color: #3d2e0f">
+			<span class="avatar-u409-l">I</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:40:45+0300" data-time="1559839245" data-date-string="6 Июн 2019" data-time-string="19:40" title="6 Июн 2019 в 19:40">6 Июн 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#9</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Май 2019</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>53</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-06-06T19:40:45+0300" data-time="1559839245" data-date-string="6 Июн 2019" data-time-string="19:40" title="6 Июн 2019 в 19:40">6 Июн 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#9</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-6064" data-lb-caption-desc="ilja212354 · 6 Июн 2019 в 19:40">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-6059">Alisa написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Можете IP и root прислать на почту
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>переустанавливать?</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+		</div>
+	</div>
+
+	
+		<div class="block-outer block-outer--after">
+			
+				
+				
+				
+					<div class="block-outer-opposite">
+						
+							<a href="../../login/index.html" class="button--link button" data-xf-click="overlay"><span class="button-text">
+								Для ответа, нужно войти или зарегистрироваться.
+							</span></a>
+						
+					</div>
+				
+			
+		</div>
+	
+
+	
+	
+
+</div>
+
+
+
+
+
+<div class="blockMessage blockMessage--none">
+	
+	
+
+</div>
+
+
+	
+
+
+
+</div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+		<ul class="p-breadcrumbs p-breadcrumbs--bottom" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/cinemapress.19/index.html" itemprop="item">
+			<span itemprop="name">CinemaPress</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/help/index.html" itemprop="item">
+			<span itemprop="name">Помощь (Архив)</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+	</div>
+</div>
+
+<footer class="p-footer" id="footer">
+	<div class="p-footer-inner">
+
+		<div class="p-footer-row">
+			
+				<div class="p-footer-row-main">
+					<ul class="p-footer-linkList">
+					
+						
+						
+							<li><a href="../../misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
+								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
+						
+					
+					</ul>
+				</div>
+			
+			<div class="p-footer-row-opposite">
+				<ul class="p-footer-linkList">
+					
+
+					
+						<li><a href="../../help/terms/index.html">Условия и правила</a></li>
+					
+
+					
+
+					
+						<li><a href="../../help/index.html">Помощь</a></li>
+					
+
+					
+						<li><a href="../../index.html">Главная</a></li>
+					
+
+					<li><a href="../../forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="p-footer-copyright">
+			
+				
+				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="../../link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
+			
+			</div>
+		
+
+		
+	</div>
+</footer>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
+		
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
+	<script src="../../js/vendor/vendor-compiled.js"></script>
+	<script src="../../js/xf/core-compiled.js"></script>
+	<script src="../../js/xf/lightbox-compiled.js"></script>
+<script src="../../js/themehouse/reactions/react.js"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			userId: 0,
+			url: {
+				fullBase: 'https://enota.club/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_'
+			},
+			csrf: '1664155711,40fad03b294c1d224552b0117ea551df',
+			js: {"\/js\/xf\/lightbox-compiled.js?_v=1bd6f38b":true,"\/js\/themehouse\/reactions\/react.js?_v=1bd6f38b":true},
+			css: {"public:attachments.less":true,"public:bb_code.less":true,"public:lightbox.less":true,"public:message.less":true,"public:th_reactions.less":true,"public:extra.less":true},
+			time: {
+				now: 1664155711,
+				today: 1664139600,
+				todayDow: 1
+			},
+			borderSizeFeature: '3px',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 2097152,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {}
+		});
+
+		jQuery.extend(XF.phrases, {
+			date_x_at_time_y: "{date} в {time}",
+			day_x_at_time_y:  "{day} в {time}",
+			yesterday_at_x:   "Вчера в {time}",
+			x_minutes_ago:    "{minutes} мин. назад",
+			one_minute_ago:   "1 минуту назад",
+			a_moment_ago:     "Только что",
+			today_at_x:       "Сегодня в {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "Менее минуты назад",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Сегодня позже в {time}",
+			tomorrow_at_x:    "Завтра в {time}",
+
+			day0: "Воскресенье",
+			day1: "Понедельник",
+			day2: "Вторник",
+			day3: "Среда",
+			day4: "Четверг",
+			day5: "Пятница",
+			day6: "Суббота",
+
+			dayShort0: "Вос",
+			dayShort1: "Пон",
+			dayShort2: "Вто",
+			dayShort3: "Сре",
+			dayShort4: "Чет",
+			dayShort5: "Пят",
+			dayShort6: "Суб",
+
+			month0: "Январь",
+			month1: "Февраль",
+			month2: "Март",
+			month3: "Апрель",
+			month4: "Май",
+			month5: "Июнь",
+			month6: "Июль",
+			month7: "Август",
+			month8: "Сентябрь",
+			month9: "Октябрь",
+			month10: "Ноябрь",
+			month11: "Декабрь",
+
+			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
+			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
+			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+			file_too_large_to_upload: "Файл слишком большой для загрузки.",
+			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+			close: "Закрыть",
+
+			showing_x_of_y_items: "Показано {count} из {total} элементов",
+			showing_all_items: "Показаны все элементы",
+			no_items_to_display: "Нет элементов для отображения"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "DiscussionForumPosting",
+		"@id": "https:\/\/enota.club\/threads\/otkuda-pojavljaetsja-oshibka-520-na-cloudflare.957\/",
+		"headline": "Откуда появляется ошибка 520 на CloudFlare?",
+		"articleBody": "Думал дело в том что днс использую cloudflare а выделенный сервер от ddos-guard прописанный в днс но нет. Убрал, поставил родной IP сервера в днс. Все было отлично но под вечер опять 520-я... Перелопатил сообщество cloudflare, написал им в поддержку они ссылаются на сервер, пишу в поддержку сервера те говорят что сервер работает в штатном режиме. \nПоддержка  cloudflare, вообще видимо забила на меня, перестала отвечать, ощущение что они грубо говоря, сами не знают в чем причина. \nДНС прописан верно, все по инструкции но приложу скрин днс, вместе со скрином ошибки. \nВообщем Алиса помоги!!! Процент отказа высокий в гугл аналитике, и думаю дело как раз таки в том что у пользователей выскакивает 520 ошибка. \nНе уже ли у меня у одного такая проблема...:(",
+		"articleSection": "Помощь (Архив)",
+		"author": {
+			"@type": "Person",
+			"name": "ilja212354"
+		},
+		"datePublished": "2019-06-04",
+		"dateModified": "2019-06-06",
+		
+		"image": "",
+		
+		"interactionStatistic": {
+			"@type": "InteractionCounter",
+			"interactionType": "https://schema.org/ReplyAction",
+			"userInteractionCount": 8
+		}
+	}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

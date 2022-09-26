@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>
+<html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>
+<html class="no-js">                       <![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">                   <!--<![endif]-->
+<head>
+
+    <%- include('../includes/head.ejs'); -%>
+	
+	<script src="/themes/default/public/admin/js/jscolor.min.js"></script>
+
+</head>
+<body>
+<div id="container" class="clearfix">
+
+    <%- include('../includes/left.ejs'); -%>
+
+    <%- include('../includes/right.ejs'); -%>
+
+    <div id="main" class="clearfix">
+
+        <%- include('../includes/header-main.ejs'); -%>
+
+        <div id="content" class="clearfix">
+
+            <%- include('../includes/header-sec.ejs'); -%>
+
+            <div class="window">
+                <div class="actionbar">
+                    <div class="pull-left">
+                        <a href="javascript:void(0)" class="btn" data-toggle-sidebar="left">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a href="/<%- config.urls.admin %>/message" class="btn hidden-xs">
+                            <%= __('Модуль информационных сообщений') %>
+                        </a>
+<!--                         <a href="https://CinemaPress.io/<%- config.language %>/admin/message.html" class="btn"
+                           title="<%= __('Информация о параметрах модуля серий сериалов') %>" target="_blank">
+                            <i class="fa fa-info-circle text-muted"></i>
+                        </a> -->
+                    </div>
+                    <div class="pull-right">
+                        <% if (modules.message.status) { %>
+                            <a href="javascript:void(0)" data-module="message" data-status="false"
+                               class="btn btn-danger module-status power-off">
+                                <i class="fa fa-power-off"></i>&nbsp;<%= __('Отключить') %>
+                            </a>
+                        <% } else { %>
+                            <a href="javascript:void(0)" data-module="message" data-status="true"
+                               class="btn btn-success module-status power-on">
+                                <i class="fa fa-power-off"></i>&nbsp;<%= __('Активировать') %>
+                            </a>
+                        <% } %>
+                        <a href="javascript:void(0)" class="btn" data-toggle-sidebar="right">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="inner-padding">
+
+                    <% if (modules.message.status) { %>
+
+                        <div class="spacer-10"></div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="cinema-box">
+                                    <div class="cinema-box-header">
+                                        <div class="cinema-label">
+                                            <i class="fa fa-pen-nib"></i>&nbsp;&nbsp;&nbsp;<%= __('Текст сообщения') %>
+                                        </div>
+                                        <div class="cinema-label hidden-xs" style="float: right">
+                                            <a href="https://CinemaPress.io/<%- config.language %>/admin/message.html" class="csstip" data-title="<%= __('Заголовок и текст сообщения. Используется для оповещения о тех. работах на сайте (сбоях в работе).') %>"
+                                               target="_blank">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+									
+
+									<div class="spacer-10"></div>
+
+									<div class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon text-muted">Заголовок</span>
+											<input class="form-control" name="modules.message.data.heading"
+												   value="<%- modules.message.data.heading %>" type="text">
+										</div>
+									</div>
+
+									<div class="spacer-10"></div>
+
+									<div class="col-sm-12">
+										<div class="advanced-textarea">
+
+											<textarea class="form-control titles"
+													  name="modules.message.data.text"
+													  placeholder="Текст сообщения"><%- modules.message.data.text %></textarea>
+											<div class="advanced-textarea-footer">
+												<div class="pull-left">
+													<div class="text text-muted"><span
+																id="modules.message.data.text">0</span> <%= __('символа(ов)') %>
+													</div>
+												</div>
+												<div class="pull-right">	
+													<a href="javascript:void(0)" data-name="modules.message.data.text"
+													   data-code="&#13;&#10;<%= __('<a href="URL" target="_blank" >Текст ссылки</a>') %>"
+													   class="btn btn-sm btn-default codes">
+														<%= __('URL') %>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<div class="spacer-10"></div>
+
+									<div class="col-sm-12 text-center">
+										<p onclick="Messages()" class="btn btn-block btn-default" id="demo">
+											<span class="fa fa-eye"></span>&nbsp;&nbsp;<%= __('Демонстрация') %>
+										</p>
+									</div>
+
+                                    <div class="inner-padding">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-xs-12">
+												<div class="spacer-10"></div>
+                                                <div class="faq">
+													<article class="faq-group">
+                                                        <header class="text-muted text-left">
+                                                            <i class="fa fa-plus"></i>
+                                                            <h3>
+                                                                <span class="fas fa-list-ol"></span> <%= __('Оформление') %>
+                                                            </h3>
+                                                        </header>
+                                                        <div class="faq-content clearfix">
+                                                            <div class="row">
+                                                                <div class="inner-padding">
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Вариант скрытия сообщения') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.showHideTransition" class="form-control">
+																					<option value="fade"
+																							<% if (modules.message.settings.showHideTransition === 'fade') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Рассеивание') %>
+																					</option>
+																					<option value="slide"
+																							<% if (modules.message.settings.showHideTransition === 'slide') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вниз') %>
+																					</option>
+																					<option value="plan"
+																							<% if (modules.message.settings.showHideTransition === 'plan') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Влево') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Кнопка закрыть') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.allowToastClose" class="form-control">
+																					<option value="true"
+																							<% if (modules.message.settings.allowToastClose === 'true') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="false"
+																							<% if (modules.message.settings.allowToastClose === 'false') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+<!-- 																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Авто-скрытие') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name=" " class="form-control">
+																					<option value="true"
+																							<% if (config.publish.thematic.type === 'true') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="false"
+																							<% if (config.publish.thematic.type === 'false') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div> -->
+
+																	<div class="spacer-10"></div>		
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Скрыть через (мс)') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<input class="form-control" name="modules.message.settings.hideAfter"
+																					   value="<%- modules.message.settings.hideAfter %>" 
+																					   placeholder="<%= __('Время до авто-скрытия') %>">
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Позиция сообщения') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.position" class="form-control">
+																					<option value="bottom-left"
+																							<% if (modules.message.settings.position === 'bottom-left') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Левый нижний угол') %>
+																					</option>
+																					<option value="bottom-right"
+																							<% if (modules.message.settings.position === 'bottom-right') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Правый нижний угол') %>
+																					</option>
+																					<option value="top-left"
+																							<% if (modules.message.settings.position === 'top-left') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Левый верхний угол') %>
+																					</option>
+																					<option value="top-right"
+																							<% if (modules.message.settings.position === 'top-right') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Правый верхний угол') %>
+																					</option>
+																					<option value="top-center"
+																							<% if (modules.message.settings.position === 'top-center') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр вверху') %>
+																					</option>
+																					<option value="mid-center"
+																							<% if (modules.message.settings.position === 'mid-center') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр') %>
+																					</option>
+																					<option value="bottom-center"
+																							<% if (modules.message.settings.position === 'bottom-center') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр внизу') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Иконка') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.icon" class="form-control">
+																					<option value="false"
+																							<% if (modules.message.settings.icon === 'false') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('-Нет значка-') %>
+																					</option>
+																					<option value="warning"
+																							<% if (modules.message.settings.icon === 'warning') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Предупреждение') %>
+																					</option>
+																					<option value="success"
+																							<% if (modules.message.settings.icon === 'success') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Успех') %>
+																					</option>
+																					<option value="error"
+																							<% if (modules.message.settings.icon === 'error') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Ошибка') %>
+																					</option>
+																					<option value="info"
+																							<% if (modules.message.settings.icon === 'info') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Информация') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Выравнивание текста') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.textAlign" class="form-control">
+																					<option value="left"
+																							<% if (modules.message.settings.textAlign === 'left') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Слева') %>
+																					</option>
+																					<option value="right"
+																							<% if (modules.message.settings.textAlign === 'right') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Справа') %>
+																					</option>
+																					<option value="center"
+																							<% if (modules.message.settings.textAlign === 'center') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Показать загрузчик') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.settings.loader" class="form-control">
+																					<option value="true"
+																							<% if (modules.message.settings.loader === 'true') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="false"
+																							<% if (modules.message.settings.loader === 'false') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	
+																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Цвет загрузчика') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																					<input name="modules.message.settings.loaderBg"
+																					   value="<%= modules.message.settings.loaderBg %>"
+																					   class="form-control jscolor {hash:true}"
+																					   type="text"
+																					   placeholder="<%= __('Цвет загрузчика') %>">
+																			</div>
+																		</div>
+																	</div>
+																	
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Цвет фона') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																					<input name="modules.message.settings.bgColor"
+																					   value="<%= modules.message.settings.bgColor %>"
+																					   class="form-control jscolor {hash:true}"
+																					   type="text"
+																					   placeholder="<%= __('Цвет фона') %>">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="spacer-50"></div>
+						</div>
+
+                    <% } else { %>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="attention-box attention-danger">
+                                    <h4><%= __('Модуль') %> «<%- title %>» <%= __('отключен') %></h4>
+                                    <div class="spacer-20"></div>
+                                    <p class="text-muted">
+                                        <%= __('Модуль позволяет создать информационное сообщение для уведомления пользователей о проведении технических работ и т.п.') %>
+                                        <br>
+                                        <%= __('Чтобы включить модуль, нажмите на кнопку «Активировать» вверху экрана.') %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <% } %>
+
+                </div>
+            </div>
+
+            <%- include('../includes/footer.ejs'); -%>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/">
+  <channel>
+    <title>Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+    <description>Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook, расширений Chrome/Firefox/Opera</description>
+    <pubDate>Sun, 25 Sep 2022 23:56:57 +0000</pubDate>
+    <lastBuildDate>Sun, 25 Sep 2022 23:56:57 +0000</lastBuildDate>
+    <generator>Как создать автоматические сайты, приложения/игры, ботов, расширения?</generator>
+    <link>https://enota.club/</link>
+    <atom:link rel="self" type="application/rss+xml" href="https://enota.club/forums/-/index.rss"/>
+    <item>
+      <title>Пропадают фильмы и сериалы из сайта</title>
+      <pubDate>Sat, 24 Sep 2022 14:21:07 +0000</pubDate>
+      <link>https://enota.club/threads/propadajut-filmy-i-serialy-iz-sajta.3172/</link>
+      <guid>https://enota.club/threads/propadajut-filmy-i-serialy-iz-sajta.3172/</guid>
+      <author>invalid@example.com (Антонио Деспасилите)</author>
+      <dc:creator>Антонио Деспасилите</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Столкнулся с такой проблемой. Начали пропадать фильмы и сериалы из сайта, хотя они есть в админ панели. При заходе на фильмы или сериал пишет ошибку 404. Если заново полностью парсить их то они возвращаются, но с последующим парсингом опять пропадают. Что делать? В публикации он не запрещены, все проверял.</div>]]></content:encoded>
+      <slash:comments>16</slash:comments>
+    </item>
+    <item>
+      <title>Как сделать расширенный поиск на сайте?</title>
+      <pubDate>Tue, 20 Sep 2022 04:36:17 +0000</pubDate>
+      <link>https://enota.club/threads/kak-sdelat-rasshirennyj-poisk-na-sajte.3170/</link>
+      <guid>https://enota.club/threads/kak-sdelat-rasshirennyj-poisk-na-sajte.3170/</guid>
+      <author>invalid@example.com (Антонио Деспасилите)</author>
+      <dc:creator>Антонио Деспасилите</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Всем привет, как можно сделать нормальный поиск на сайте? Чтобы при вводе сериала высвечивалось окошко с возможным сериалом и поиск по ключевым словам?</div>]]></content:encoded>
+      <slash:comments>13</slash:comments>
+    </item>
+    <item>
+      <title>Возможность изменять шаблон любой страницы на сайте отдельно от других</title>
+      <pubDate>Sat, 17 Sep 2022 21:34:32 +0000</pubDate>
+      <link>https://enota.club/threads/vozmozhnost-izmenjat-shablon-ljuboj-stranicy-na-sajte-otdelno-ot-drugix.1588/</link>
+      <guid>https://enota.club/threads/vozmozhnost-izmenjat-shablon-ljuboj-stranicy-na-sajte-otdelno-ot-drugix.1588/</guid>
+      <author>invalid@example.com (Alisa)</author>
+      <dc:creator>Alisa</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper"><div style="text-align: center"><div class="lbContainer lbContainer--inline"
+		data-xf-init="lightbox"
+		data-lb-single-image="1"
+		data-lb-container-zoom="1"
+		data-lb-trigger=".js-lbImage-attachment2578"
+		data-lb-id="attachment2578">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment2578" data-src="https://enota.club/attachments/tom-kruz-jpg.2578/" aria-label="Zoom"></div>
+		
+		<img src="https://enota.club/attachments/tom-kruz-jpg.2578/" data-url="" class="bbImage" data-zoom-target="1" alt="Tom-Kruz.jpg" />
+	</div>
+
+	
+<br />&#8203;</div>Буквально для каждой страницы на сайте теперь есть возможность создать свой кастомный шаблон. Вы можете изменить и персонализировать страницу под каждого актера, режиссера, жанр, страну, год, фильм, контент и даже результат поиска.<br />
+Пример шаблона <code class="bbCodeInline">/themes/tarly/views/actor/Tom-Kruz.ejs</code>: <a href="https://demo.cinema.press/actor-a-Tom-Kruz" target="_blank" class="link link--external" rel="nofollow noopener">https://demo.cinema.press/actor-a-Tom-Kruz</a><br />
+<br />
+Кастомный шаблон для каждой страницы:<br />
+<ul>
+<li><span style="color: rgb(163, 143, 132)">URL:</span>...</li>
+</ul><br />
+<a href="https://enota.club/threads/vozmozhnost-izmenjat-shablon-ljuboj-stranicy-na-sajte-otdelno-ot-drugix.1588/" class="link link--internal">Возможность изменять шаблон любой страницы на сайте отдельно от других</a></div>]]></content:encoded>
+      <slash:comments>15</slash:comments>
+    </item>
+    <item>
+      <title>Как скачать все постеры себе на сервер?</title>
+      <pubDate>Sat, 17 Sep 2022 15:57:01 +0000</pubDate>
+      <link>https://enota.club/threads/kak-skachat-vse-postery-sebe-na-server.2959/</link>
+      <guid>https://enota.club/threads/kak-skachat-vse-postery-sebe-na-server.2959/</guid>
+      <author>invalid@example.com (Forgotten)</author>
+      <dc:creator>Forgotten</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Могут быть разные причины сохранить все постеры на сервер или просто оценить сколько для этого потребуется места (на самом деле, немного).<br />
+Кому нужно - забирайте. Более 70 тыс. актуальных фильмов, все есть на основных балансерах. Только постеры, без кадров. Внутри архивов оригинальные jpg с кинопоиска.<br />
+<br />
+Размеры на выбор:<br />
+M: Ширина 180px, объем 1,1 Гб<br />
+<a href="https://mfd.sk/lYfLMkIGSGp7bO7rJdln3H_n" target="_blank" class="link link--external" rel="nofollow noopener">https://mfd.sk/lYfLMkIGSGp7bO7rJdln3H_n</a><br />
+L: Ширина 360px, объем 3,3 Гб<br />
+<a href="https://mfd.sk/3gn2JGWTWQjoJjYvwAulm6zC" target="_blank" class="link link--external" rel="nofollow noopener">https://mfd.sk/3gn2JGWTWQjoJjYvwAulm6zC</a><br />
+XL: под...<br />
+<br />
+<a href="https://enota.club/threads/kak-skachat-vse-postery-sebe-na-server.2959/" class="link link--internal">Как скачать все постеры себе на сервер?</a></div>]]></content:encoded>
+      <slash:comments>8</slash:comments>
+    </item>
+    <item>
+      <title>Как публиковать только Коллекции на главной странице?</title>
+      <pubDate>Fri, 16 Sep 2022 11:45:40 +0000</pubDate>
+      <link>https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/</link>
+      <guid>https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/</guid>
+      <author>invalid@example.com (Dudarev.Vlad)</author>
+      <dc:creator>Dudarev.Vlad</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Есть стандартный блок из default шаблона<br />
+<br />
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер</span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		Код:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang=""><code>            &lt;% /* Блок с коллекциями */ %&gt;
+            &lt;% if (typeof news === 'object' &amp;&amp; news.length) { %&gt;
+                &lt;style&gt;
+                    .b-collections__newest_inner img {
+                        height: 245px !important;
+                    }
+                &lt;/style&gt;
+
+                &lt;div class=&quot;b-collections__newest&quot;&gt;
+                    &lt;div class=&quot;b-collections__newest_inner&quot;&gt;
+                        &lt;%...</code></pre>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div><br />
+<a href="https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/" class="link link--internal">Как публиковать только Коллекции на главной странице?</a></div>]]></content:encoded>
+      <slash:comments>4</slash:comments>
+    </item>
+    <item>
+      <title>Как сделать расширенный поиск?</title>
+      <pubDate>Thu, 15 Sep 2022 19:28:40 +0000</pubDate>
+      <link>https://enota.club/threads/kak-sdelat-rasshirennyj-poisk.2524/</link>
+      <guid>https://enota.club/threads/kak-sdelat-rasshirennyj-poisk.2524/</guid>
+      <author>invalid@example.com (Dmitriy)</author>
+      <dc:creator>Dmitriy</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Как сделать расширенный поиск, чтоб писать например : сериал и название сериала, чтоб находило именно сериал, а если фильм и такое же название, то находило фильм с таким же названием. Просто есть фильмы и сериалы с одинаковыми названиями .Еще чтоб если написать в поиск 2020, то там фильмы будут 2020 года . Если написать жанр в поиск, то фильмы будут с этим жанром , который я указал в поиске.<br />
+<br />
+Запросы в поиске : <br />
+&quot;фантастика&quot;<br />
+&quot;2020&quot;<br />
+&quot;сериал &quot;название его&quot; <br />
+&quot;комедия&quot;</div>]]></content:encoded>
+      <slash:comments>17</slash:comments>
+    </item>
+    <item>
+      <title>Видеобалансер для сайта</title>
+      <pubDate>Wed, 14 Sep 2022 21:15:33 +0000</pubDate>
+      <link>https://enota.club/threads/videobalanser-dlja-sajta.3169/</link>
+      <guid>https://enota.club/threads/videobalanser-dlja-sajta.3169/</guid>
+      <author>invalid@example.com (Антонио Деспасилите)</author>
+      <dc:creator>Антонио Деспасилите</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Всем привет<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="smilie smilie--sprite smilie--sprite1" alt=":)" title="Smile    :)" /> Кто может посоветовать хороший балансер направленный именно на корейские дорамы, мне важно чтобы серии быстро выходили. Кто что может посоветовать? Про коллапс в курсе, есть другие варианты? Благодарю<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="smilie smilie--sprite smilie--sprite1" alt=":)" title="Smile    :)" /></div>]]></content:encoded>
+      <slash:comments>2</slash:comments>
+    </item>
+    <item>
+      <title>Как публиковать только Коллекции на главной  странице?</title>
+      <pubDate>Wed, 14 Sep 2022 09:18:43 +0000</pubDate>
+      <link>https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/</link>
+      <guid>https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/</guid>
+      <author>invalid@example.com (Dudarev.Vlad)</author>
+      <dc:creator>Dudarev.Vlad</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Есть стандартный блок из default шаблона<br />
+<br />
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер</span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		Код:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang=""><code>            &lt;% /* Блок с коллекциями */ %&gt;
+            &lt;% if (typeof news === 'object' &amp;&amp; news.length) { %&gt;
+                &lt;style&gt;
+                    .b-collections__newest_inner img {
+                        height: 245px !important;
+                    }
+                &lt;/style&gt;
+
+                &lt;div class=&quot;b-collections__newest&quot;&gt;
+                    &lt;div class=&quot;b-collections__newest_inner&quot;&gt;
+                        &lt;%...</code></pre>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div><br />
+<a href="https://enota.club/threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/" class="link link--internal">Как публиковать только Коллекции на главной  странице?</a></div>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>Как заменить все постеры сериалов?</title>
+      <pubDate>Tue, 13 Sep 2022 06:02:01 +0000</pubDate>
+      <link>https://enota.club/threads/kak-zamenit-vse-postery-serialov.3167/</link>
+      <guid>https://enota.club/threads/kak-zamenit-vse-postery-serialov.3167/</guid>
+      <author>invalid@example.com (Антонио Деспасилите)</author>
+      <dc:creator>Антонио Деспасилите</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Все привет) Такая проблема: хотел бы заменить все постеры, а то стоят от этого домена:<br />
+
+	
+		
+	
+	
+		
+		
+	
+
+
+	<div class="lbContainer lbContainer--inline"
+		data-xf-init="lightbox"
+		data-lb-single-image="1"
+		data-lb-container-zoom="1"
+		data-lb-trigger=".js-lbImage-attachment6599"
+		data-lb-id="attachment6599">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment6599" data-src="https://enota.club/attachments/1663008579562-png.6599/" aria-label="Zoom"></div>
+		
+		<img src="https://enota.club/attachments/1663008579562-png.6599/" data-url="" class="bbImage" data-zoom-target="1" alt="1663008579562.png" />
+	</div>
+
+	
+<br />
+Он плохо и не всегда отображается. Какой командой можно заменить постеры? (в ручную добавлять не вариант). Как можно спарсить?<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="smilie smilie--sprite smilie--sprite16" alt=":love:" title="Love    :love:" /></div>]]></content:encoded>
+      <slash:comments>1</slash:comments>
+    </item>
+    <item>
+      <title>Ошибка 500 (переодически обновляется шаблон)</title>
+      <pubDate>Mon, 12 Sep 2022 12:06:21 +0000</pubDate>
+      <link>https://enota.club/threads/oshibka-500-pereodicheski-obnovljaetsja-shablon.3143/</link>
+      <guid>https://enota.club/threads/oshibka-500-pereodicheski-obnovljaetsja-shablon.3143/</guid>
+      <author>invalid@example.com (Dudarev.Vlad)</author>
+      <dc:creator>Dudarev.Vlad</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Суть проблемы:<br />
+<br />
+Довольно часто при сёрфинге по сайту на cinemapress, появляется ошибка 500, пытаюсь обновить страницу - не помогает.<br />
+Примерно через 5 секунд, снова обновляю страницу сайт доступен. (Очень похоже на то, когда редактируешь шаблон и сохраняешь, он так-же не доступен секунд 5).<br />
+<br />
+Такая проблема только с одним сайтом, (на сервере установлено несколько сайтов на cinemapress).<br />
+<br />
+Может кто знает в чём проблема или куда копать?<br />
+<br />
+В гугл консоли наблюдаю вот такую тенденцию(...<br />
+<br />
+<a href="https://enota.club/threads/oshibka-500-pereodicheski-obnovljaetsja-shablon.3143/" class="link link--internal">Ошибка 500 (переодически обновляется шаблон)</a></div>]]></content:encoded>
+      <slash:comments>10</slash:comments>
+    </item>
+    <item>
+      <title>Инстаграм аккаунт для киносайта</title>
+      <pubDate>Mon, 12 Sep 2022 08:42:00 +0000</pubDate>
+      <link>https://enota.club/threads/instagram-akkaunt-dlja-kinosajta.3159/</link>
+      <guid>https://enota.club/threads/instagram-akkaunt-dlja-kinosajta.3159/</guid>
+      <author>invalid@example.com (ergalievdk)</author>
+      <dc:creator>ergalievdk</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Привет<br />
+Кто-нибудь ведет инстаграм аккаунт для киносайта?<br />
+<br />
+Я сейчас тестирую автонаполнение инстаграм аккаунта фильмами методом репоста постов с аккаунтов доноров. <br />
+<br />
+Интересно кому-нибудь попробовать?</div>]]></content:encoded>
+      <slash:comments>6</slash:comments>
+    </item>
+    <item>
+      <title>Пустой экран</title>
+      <pubDate>Sun, 04 Sep 2022 09:10:31 +0000</pubDate>
+      <link>https://enota.club/threads/pustoj-ehkran.3166/</link>
+      <guid>https://enota.club/threads/pustoj-ehkran.3166/</guid>
+      <author>invalid@example.com (Sergio)</author>
+      <dc:creator>Sergio</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper">Почему на некоторых фильмах пустой экран в плеере? И в разделе &quot;трейлер&quot; ни одного трейлера нет</div>]]></content:encoded>
+      <slash:comments>0</slash:comments>
+    </item>
+    <item>
+      <title>Новый принцип работы с плеерами, сериями, автоколлекциями</title>
+      <pubDate>Thu, 01 Sep 2022 21:28:07 +0000</pubDate>
+      <link>https://enota.club/threads/novyj-princip-raboty-s-pleerami-serijami-avtokollekcijami.1585/</link>
+      <guid>https://enota.club/threads/novyj-princip-raboty-s-pleerami-serijami-avtokollekcijami.1585/</guid>
+      <author>invalid@example.com (Alisa)</author>
+      <dc:creator>Alisa</dc:creator>
+      <content:encoded><![CDATA[<div class="bbWrapper"><div style="text-align: center"><div class="lbContainer lbContainer--inline"
+		data-xf-init="lightbox"
+		data-lb-single-image="1"
+		data-lb-container-zoom="1"
+		data-lb-trigger=".js-lbImage-attachment2551"
+		data-lb-id="attachment2551">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment2551" data-src="https://enota.club/attachments/api-png.2551/" aria-label="Zoom"></div>
+		
+		<img src="https://enota.club/attachments/api-png.2551/" data-url="" class="bbImage" data-zoom-target="1" alt="api.png" />
+	</div>
+
+	
+<br />&#8203;</div><br />
+<ul>
+<li>Проблема пропадания контента</li>
+</ul><div style="margin-left: 40px"><span style="color: rgb(235, 107, 86)">-</span> Была ошибка в кэшировании, поэтому иногда Вы могли наблюдать исчезание некоторой информации на сайте (описания, актеры и т.д.).&#8203;</div><div style="margin-left: 40px">&#8203;</div><div style="margin-left: 40px"><span style="color: rgb(26, 188, 156)">-</span> В этом обновлении изменено формирование hash ссылки для кэша и проблемы быть не должно.&#8203;</div><br />
+<ul>
+<li>Проблема пропадания постеров для пользователей...</li>
+</ul><br />
+<a href="https://enota.club/threads/novyj-princip-raboty-s-pleerami-serijami-avtokollekcijami.1585/" class="link link--internal">Новый принцип работы с плеерами, сериями, автоколлекциями</a></div>]]></content:encoded>
+      <slash:comments>49</slash:comments>
+    </item>
+  </channel>
+</rss>

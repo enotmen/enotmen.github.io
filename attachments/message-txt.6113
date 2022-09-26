@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="ie ie6 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 7]>
+<html class="ie ie7 lte9 lte8 lte7 no-js"> <![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8 lte9 lte8 no-js">      <![endif]-->
+<!--[if IE 9]>
+<html class="ie ie9 lte9 no-js">           <![endif]-->
+<!--[if gt IE 9]>
+<html class="no-js">                       <![endif]-->
+<!--[if !IE]><!-->
+<html class="no-js">                   <!--<![endif]-->
+<head>
+
+    <%- include('../includes/head.ejs'); -%>
+
+</head>
+<body>
+<div id="container" class="clearfix">
+
+    <%- include('../includes/left.ejs'); -%>
+
+    <%- include('../includes/right.ejs'); -%>
+
+    <div id="main" class="clearfix">
+
+        <%- include('../includes/header-main.ejs'); -%>
+
+        <div id="content" class="clearfix">
+
+            <%- include('../includes/header-sec.ejs'); -%>
+
+            <div class="window">
+                <div class="actionbar">
+                    <div class="pull-left">
+                        <a href="javascript:void(0)" class="btn" data-toggle-sidebar="left">
+                            <i class="fa fa-chevron-left"></i>
+                        </a>
+                        <a href="/<%- config.urls.admin %>/message" class="btn hidden-xs">
+                            <%= __('Модуль информационных сообщений') %>
+                        </a>
+<!--                         <a href="https://CinemaPress.io/<%- config.language %>/admin/episode.html" class="btn"
+                           title="<%= __('Информация о параметрах модуля серий сериалов') %>" target="_blank">
+                            <i class="fa fa-info-circle text-muted"></i>
+                        </a> -->
+                    </div>
+                    <div class="pull-right">
+                        <% if (modules.episode.status) { %>
+                            <a href="javascript:void(0)" data-module="episode" data-status="false"
+                               class="btn btn-danger module-status power-off">
+                                <i class="fa fa-power-off"></i>&nbsp;<%= __('Отключить') %>
+                            </a>
+                        <% } else { %>
+                            <a href="javascript:void(0)" data-module="episode" data-status="true"
+                               class="btn btn-success module-status power-on">
+                                <i class="fa fa-power-off"></i>&nbsp;<%= __('Активировать') %>
+                            </a>
+                        <% } %>
+                        <a href="javascript:void(0)" class="btn" data-toggle-sidebar="right">
+                            <i class="fa fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="inner-padding">
+
+                    <% if (modules.episode.status) { %>
+
+                        <div class="spacer-10"></div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="cinema-box">
+                                    <div class="cinema-box-header">
+                                        <div class="cinema-label">
+                                            <i class="fa fa-pen-nib"></i>&nbsp;&nbsp;&nbsp;<%= __('Текст сообщения') %>
+                                        </div>
+                                        <div class="cinema-label hidden-xs" style="float: right">
+                                            <a href="https://CinemaPress.io/<%- config.language %>/admin/episode.html" class="csstip" data-title="<%= __('Параметры по умолчанию') %>"
+                                               target="_blank">
+                                                <i class="fa fa-info-circle"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+									
+									<div class="spacer-10"></div>
+
+									<div class="col-sm-12">
+										<div class="input-group">
+											<span class="input-group-addon text-muted">Заголовок</span>
+											<input class="form-control" name="modules.message.data.heading"
+												   value="<%-  %>" type="text">
+										</div>
+									</div>
+
+									<div class="spacer-10"></div>
+
+									<div class="col-sm-12">
+										<textarea class="form-control custom"
+												  name="modules.message.data.text"
+												  placeholder="Текст сообщения"
+												  style="height:100px;"><%-  %></textarea>
+									</div>
+
+                                    <div class="inner-padding">
+                                        <div class="row">
+                                            <div class="col-lg-12 col-xs-12">
+												<div class="spacer-10"></div>
+                                                <div class="faq">
+                                                    <article class="faq-group">
+                                                        <header class="text-muted text-left">
+                                                            <i class="fa fa-plus"></i>
+                                                            <h3>
+                                                                <span class="fas fa-list-ol"></span> <%= __('Оформление') %>
+                                                            </h3>
+                                                        </header>
+                                                        <div class="faq-content clearfix">
+                                                            <div class="row">
+                                                                <div class="inner-padding">
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Исчезновение') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.transition" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Рассеивание') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вниз') %>
+																					</option>
+																					<option value=""
+																							<% if (config.publish.thematic.type === '') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Влево') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Кнопка закрыть') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.allow_toast_close" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Авто-скрытие') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.auto_hide" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Скрыть через') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted">(мс)</span>
+																				<input class="form-control" name="modules.message.data.hide_transition"
+																					   value="<%=  %>" type="text">
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Стопка') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.stack_toasts" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Длина стопки') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.stack_length"
+																						class="form-control without">
+																					<% for (var i = 1; i <= 20; i++) { %>
+																						<% if (modules.related.data.types.year.count === i) { %>
+																							<option value="<%= i %>" selected="selected">
+																								<%- i %> <%= __('сообщений') %>
+																							</option>
+																						<% } else { %>
+																							<option value="<%= i %>">
+																								<%- i %> <%= __('сообщений') %>
+																							</option>
+																						<% } %>
+																					<% } %>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Позиция сообщения') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.toast_position" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Левый нижний угол') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Правый нижний угол') %>
+																					</option>
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '2') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Левый верхний угол') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '3') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Правый верхний угол') %>
+																					</option>
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '4') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр вверху') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '5') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр') %>
+																					</option>
+																					<option value=""
+																							<% if (config.publish.thematic.type === '') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр внизу') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Икона') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.icon" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('-Нет значка-') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Предупреждение') %>
+																					</option>
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '2') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Успех') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '3') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Ошибка') %>
+																					</option>
+																					<option value=""
+																							<% if (config.publish.thematic.type === '') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Информация') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Выравнивание текста') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.text_alignment" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Слева') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Справа') %>
+																					</option>
+																					<option value=""
+																							<% if (config.publish.thematic.type === '') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Центр') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Тосты') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.toast_events" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+
+																	<div class="spacer-10"></div>
+																	
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Показать загрузчик') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																				<select name="modules.message.data.show_loader" class="form-control">
+																					<option value="0"
+																							<% if (config.publish.thematic.type === '0') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Вкл') %>
+																					</option>
+																					<option value="1"
+																							<% if (config.publish.thematic.type === '1') { %>selected="selected"
+																							<% } %>
+																					>
+																						<%= __('Выкл') %>
+																					</option>
+																				</select>
+																			</div>
+																		</div>
+																	</div>
+																	
+																	<div class="spacer-10"></div>
+
+																	<div class="row">
+																		<div class="col-sm-3">
+																			<label><%= __('Цвет загрузчика') %></label>
+																		</div>
+																		<div class="col-sm-9">
+																			<div class="input-group">
+																				<span class="input-group-addon text-muted"></span>
+																					<input name="modules.message.data.loader_color"
+																						   value="<%=  %>"
+																						   class="form-control jscolor {hash:true}"
+																						   type="text"
+																						   placeholder="<%= __('Цвет описания') %>">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <% } else { %>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="attention-box attention-danger">
+                                    <h4><%= __('Модуль') %> «<%- title %>» <%= __('отключен') %></h4>
+                                    <div class="spacer-20"></div>
+                                    <p class="text-muted">
+                                        <%= __('Модуль позволяет создать для каждой серии сериала отдельную страницу.') %>
+                                        <br>
+                                        <%= __('Чтобы включить модуль, нажмите на кнопку «Активировать» вверху экрана.') %>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <% } %>
+
+                </div>
+            </div>
+
+            <%- include('../includes/footer.ejs'); -%>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

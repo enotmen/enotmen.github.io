@@ -1,0 +1,901 @@
+<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="thread_view" data-container-key="node-37" data-content-key="thread-1547" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-thread_view" data-run-jobs=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	
+
+	<title>Баг в скрипте Касперского main.js который «ломает» сайты (KIS ns.GetCommandSrc) | Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+
+	
+		
+		<meta name="description" content="Если у Вас установлен антивирус Касперского Kaspersky Internet Security (KIS), в нем активируется функция, которая встраивает скрипт main.js во все страницы...">
+		<meta property="og:description" content="Если у Вас установлен антивирус Касперского Kaspersky Internet Security (KIS), в нем активируется функция, которая встраивает скрипт main.js во все страницы посещаемые Вами в браузере, и впоследствии блокирует нормальную работу сайтов (Joomla, Bitrix, Умные дома, QIWI кошелек) из-за ошибки в...">
+		<meta property="twitter:description" content="Если у Вас установлен антивирус Касперского Kaspersky Internet Security (KIS), в нем активируется функция, которая встраивает скрипт main.js во все страницы посещаемые Вами в браузере, и...">
+	
+	
+		<meta property="og:url" content="https://enota.club/threads/bag-v-skripte-kasperskogo-main-js-kotoryj-lomaet-sajty-kis-ns-getcommandsrc.1547/">
+	
+		<link rel="canonical" href="https://enota.club/threads/bag-v-skripte-kasperskogo-main-js-kotoryj-lomaet-sajty-kis-ns-getcommandsrc.1547/">
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="Баг в скрипте Касперского main.js который «ломает» сайты (KIS ns.GetCommandSrc)">
+		<meta property="twitter:title" content="Баг в скрипте Касперского main.js который «ломает» сайты (KIS...">
+	
+
+
+	
+	
+	
+
+	
+		<meta name="theme-color" content="#272F38">
+	
+
+	
+	
+	
+
+	
+
+	<link rel="stylesheet" href="../../styles/2.css">
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../styles/9.css">
+
+	
+		<script src="../../js/xf/preamble-compiled.js"></script>
+	
+
+
+	
+		<link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
+	
+	
+	
+</head>
+<body data-template="thread_view">
+
+<div class="p-pageWrapper" id="top">
+
+
+
+<header class="p-header" id="header">
+	<div class="p-header-inner">
+		<div class="p-header-content">
+
+			<div class="p-header-logo p-header-logo--image">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			
+		</div>
+	</div>
+</header>
+
+
+
+
+
+	
+	<nav class="p-nav">
+		<div class="p-nav-inner">
+			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+				<i aria-hidden="true"></i>
+				<span class="p-nav-menuText">Меню</span>
+			</a>
+
+			<div class="p-nav-smallLogo">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+				<div class="hScroller-scroll">
+					<ul class="p-nav-list js-offCanvasNavSource">
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-nav-opposite">
+				<div class="p-navgroup p-account p-navgroup--guest">
+					
+						<a href="../../login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+							<span class="p-navgroup-linkText">Вход</span>
+						</a>
+						
+							<a href="../../register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+								<span class="p-navgroup-linkText">Регистрация</span>
+							</a>
+						
+					
+				</div>
+
+				<div class="p-navgroup p-discovery">
+					<a href="../../whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
+						<i aria-hidden="true"></i>
+						<span class="p-navgroup-linkText">Что нового?</span>
+					</a>
+
+					
+						<a href="../../search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
+							<i aria-hidden="true"></i>
+							<span class="p-navgroup-linkText">Поиск</span>
+						</a>
+						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+
+								<h3 class="menu-header">Поиск</h3>
+								
+								<div class="menu-row">
+									
+										<div class="inputGroup inputGroup--joined">
+											<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
+											
+			<select name="constraints" class="js-quickSearch-constraint input" aria-label="Search within">
+				<option value="">Везде</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;}">Темы</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;nodes&quot;:[37],&quot;child_nodes&quot;:1}}">Этот форум</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;thread&quot;:1547}}">Эта тема</option>
+
+			</select>
+		
+										</div>
+										
+								</div>
+
+								
+								<div class="menu-row">
+									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
+
+								</div>
+								
+								<div class="menu-row">
+									<div class="inputGroup">
+										<span class="inputGroup-text">От:</span>
+										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
+									</div>
+								</div>
+								<div class="menu-footer">
+									<span class="menu-footer-controls">
+										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
+										<a href="../../search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
+									</span>
+								</div>
+
+								<input type="hidden" name="_xfToken" value="1664150240,c5dfedb365e86007fa01e80bde813250">
+							</form>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	
+		<div class="p-sectionLinks p-sectionLinks--empty"></div>
+	
+
+
+
+<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+	<div class="offCanvasMenu-content">
+		<div class="offCanvasMenu-header">
+			Меню
+			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
+		</div>
+		
+			<div class="p-offCanvasRegisterLink">
+				<div class="offCanvasMenu-linkHolder">
+					<a href="../../login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+						Вход
+					</a>
+				</div>
+				<hr class="offCanvasMenu-separator">
+				
+					<div class="offCanvasMenu-linkHolder">
+						<a href="../../register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+							Регистрация
+						</a>
+					</div>
+					<hr class="offCanvasMenu-separator">
+				
+			</div>
+		
+		<div class="js-offCanvasNavTarget"></div>
+	</div>
+</div>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+		<ul class="p-breadcrumbs " itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#obschie-temy-dlja-obsuzhdenij.35" itemprop="item">
+			<span itemprop="name">Общие темы для обсуждений</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/hunt/index.html" itemprop="item">
+			<span itemprop="name">Разное интересное</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">Баг в скрипте Касперского main.js который «ломает» сайты (KIS ns.GetCommandSrc)</h1>
+						
+						
+					
+					</div>
+				
+
+				
+					<div class="p-description">
+	<ul class="listInline listInline--bullet">
+		<li>
+			<i class="fa fa-user" aria-hidden="true" title="Автор темы"></i>
+			<span class="u-srOnly">Автор темы</span>
+
+			<a href="../../members/alisa.2/index.html" class="username  u-concealed" dir="auto" data-user-id="2" data-xf-init="member-tooltip">Alisa</a>
+		</li>
+		<li>
+			<i class="fa fa-clock-o" aria-hidden="true" title="Дата начала"></i>
+			<span class="u-srOnly">Дата начала</span>
+
+			<a href="index.html" class="u-concealed"><time class="u-dt" dir="auto" datetime="2020-02-09T19:55:39+0300" data-time="1581267339" data-date-string="9 Фев 2020" data-time-string="19:55" title="9 Фев 2020 в 19:55">9 Фев 2020</time></a>
+		</li>
+		
+	</ul>
+</div>
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+<div class="block block--messages" data-xf-init="" data-type="post" data-href="/inline-mod/">
+
+	
+	
+
+
+	<div class="block-outer"></div>
+
+	<div class="block-outer js-threadStatusField"></div>
+
+	<div class="block-container lbContainer" data-xf-init="lightbox select-to-quote" data-message-selector=".js-post" data-lb-id="thread-1547" data-lb-universal="1">
+
+		<div class="block-body js-replyNewMessageContainer">
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-11510" id="js-post-11510">
+
+		<span class="u-anchorTarget" id="post-11510"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2020-02-09T19:55:39+0300" data-time="1581267339" data-date-string="9 Фев 2020" data-time-string="19:55" title="9 Фев 2020 в 19:55">9 Фев 2020</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#1</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2020-02-09T19:55:39+0300" data-time="1581267339" data-date-string="9 Фев 2020" data-time-string="19:55" title="9 Фев 2020 в 19:55">9 Фев 2020</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#1</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-11510" data-lb-caption-desc="Alisa · 9 Фев 2020 в 19:55">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div style="text-align: center"><div class="lbContainer lbContainer--inline" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment2469" data-lb-id="attachment2469">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment2469" data-src="https://enota.club/attachments/inject-png.2469/" aria-label="Zoom"></div>
+		
+		<img src="../../attachments/inject-png-2469.png" data-url="" class="bbImage" data-zoom-target="1" alt="inject.png">
+	</div></div><br>
+Если у Вас установлен антивирус Касперского <b>Kaspersky Internet Security (KIS)</b>, в нем активируется функция, которая встраивает скрипт <code class="bbCodeInline">main.js</code> во все страницы посещаемые Вами в браузере, и впоследствии блокирует нормальную работу сайтов (<a href="https://joomlaforum.ru/index.php/topic,353395.msg1800573.html?PHPSESSID=mmk2mr9rauf840n9pkt9legu96#msg1800573" target="_blank" class="link link--external" rel="nofollow noopener">Joomla</a>, <a href="https://dev.1c-bitrix.ru/support/forum/forum6/topic106361/" target="_blank" class="link link--external" rel="nofollow noopener">Bitrix</a>, <a href="https://community.athom.com/t/homey-flow-on-the-web-not-working/21930" target="_blank" class="link link--external" rel="nofollow noopener">Умные дома</a>, <a href="https://vk.com/topic-13883743_33216152?post=148345" target="_blank" class="link link--external" rel="nofollow noopener">QIWI кошелек</a>) из-за ошибки в коде (<a href="https://www.reddit.com/r/destinychecklistnet/comments/dpk860/sign_in_error/" target="_blank" class="link link--external" rel="nofollow noopener">авторизации</a>, <a href="http://wiki.mudfish.net/%EB%AF%B8%EA%BE%B8%EB%9D%BC%EC%A7%80%20v5%20%EC%98%A4%EB%A5%98%20%EB%94%94%EB%B2%84%EA%B9%85%20-%20Kaspersky%20Internet%20Security" target="_blank" class="link link--external" rel="nofollow noopener">VPN</a>, и др.).<br>
+<br>
+<a href="https://habr.com/ru/post/356820/" target="_blank" class="link link--external" rel="nofollow noopener">2015 год</a>, <a href="https://forum.kaspersky.com/index.php?/topic/355715-%D0%BA%D0%B0%D1%81%D0%BF%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%B8%D0%B2%D0%B0%D0%B5%D1%82-%D1%81%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D1%8B-%D0%B2-%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B-%D1%81%D0%B0%D0%B9%D1%82%D0%BE%D0%B2/" target="_blank" class="link link--external" rel="nofollow noopener">2016 год</a>, <a href="https://forum.kasperskyclub.ru/index.php?showtopic=59206" target="_blank" class="link link--external" rel="nofollow noopener">2018 год</a>, <a href="https://dev.1c-bitrix.ru/support/forum/forum6/topic106361/" target="_blank" class="link link--external" rel="nofollow noopener">2018 год</a>, <a href="https://forum.kasperskyclub.ru/index.php?showtopic=59611" target="_blank" class="link link--external" rel="nofollow noopener">2018 год</a>, <a href="https://dev.1c-bitrix.ru/support/forum/forum6/topic106361/" target="_blank" class="link link--external" rel="nofollow noopener">2018 год</a><br>
+<br>
+С каждым новым обновлением, новые ошибки, в 2019 году они активно начали появляться в сентябре/октябре и вот на февраль 2020 года до сих пор есть репорты (возможно это старые версии KIS).<br>
+<br>
+<b>ns.GetCommandSrc is not a function</b><br>
+<br>
+<a href="https://stackoverflow.com/questions/59411562/kaspersky-internet-security-blocks-ajax-requests/59492395" target="_blank" class="link link--external" rel="nofollow noopener">28 января 2020</a>, <a href="https://stackoverflow.com/questions/59915886/ns-getcommandsrc-is-not-a-function" target="_blank" class="link link--external" rel="nofollow noopener">26 января 2020</a>, <a href="https://cnasolution.com/questions/3296/kaspersky-internet-security-blocks-ajax-requests" target="_blank" class="link link--external" rel="nofollow noopener">20 декабря 2019</a>, <a href="https://discourse.algolia.com/t/algoliasearchunknownerror-ns-getcommandsrc-is-not-a-function/9078" target="_blank" class="link link--external" rel="nofollow noopener">19 ноября 2019</a>, <a href="https://gamersplane.com/forums/thread/14175/?p=643402#p643402" target="_blank" class="link link--external" rel="nofollow noopener">23 октября 2019</a>, <a href="https://support.backendless.com/t/loginasguest-throwing-typeerror-ns-getcommandsrc-is-not-a-function-unless-cache-is-cleared/10473" target="_blank" class="link link--external" rel="nofollow noopener">19 октября 2019</a>, <a href="https://github.com/OriginProtocol/origin/issues/3607" target="_blank" class="link link--external" rel="nofollow noopener">2 октября 2019</a>, <a href="https://github.com/aws-amplify/amplify-js/issues/3985" target="_blank" class="link link--external" rel="nofollow noopener">6 сентября 2019</a><br>
+<br>
+В результате этого бага, иногда (когда <code class="bbCodeInline">main.js</code> загружается быстрее остальных скриптов) происходит «вечная загрузка», так как все JS сценарии на странице останавливаются.<br>
+<br>
+<div style="text-align: center"><a href="../../attachments/mainjs-png-2470.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/2/2470-1e84aea0d69a4545517d5530c69ea849.jpg" class="bbImage" alt="mainjs.png"></a>
+<br>​</div>В поддержке KIS говорят, что проблема была, но уже исправлена в новых версиях, и единственной их рекомендацией является отключение функции инъекции <code class="bbCodeInline">Settings -&gt; Additional -&gt; Network</code>.<br>
+<br>
+Если Вы используете KIS (<b>не используйте</b> никакие антивирусы, кроме стандартного Windows) и замечаете в консоли браузера ошибки во встраиваемом скрипте <code class="bbCodeInline">main.js</code>, при посещении сайтов, сразу <a href="https://my.kaspersky.com/ru/support" target="_blank" class="link link--external" rel="nofollow noopener">создавайте технический запрос на оф. сайте Касперского</a> со скриншотами, возможно, чем больше будет обращений, тем быстрее они будут исправлять ошибки.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+								
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+		</div>
+	</div>
+
+	
+		<div class="block-outer block-outer--after">
+			
+				
+				
+				
+					<div class="block-outer-opposite">
+						
+							<a href="../../login/index.html" class="button--link button" data-xf-click="overlay"><span class="button-text">
+								Для ответа, нужно войти или зарегистрироваться.
+							</span></a>
+						
+					</div>
+				
+			
+		</div>
+	
+
+	
+	
+
+</div>
+
+
+
+
+
+<div class="blockMessage blockMessage--none">
+	
+	
+
+</div>
+
+
+	
+
+
+
+</div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+		<ul class="p-breadcrumbs p-breadcrumbs--bottom" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#obschie-temy-dlja-obsuzhdenij.35" itemprop="item">
+			<span itemprop="name">Общие темы для обсуждений</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/hunt/index.html" itemprop="item">
+			<span itemprop="name">Разное интересное</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+	</div>
+</div>
+
+<footer class="p-footer" id="footer">
+	<div class="p-footer-inner">
+
+		<div class="p-footer-row">
+			
+				<div class="p-footer-row-main">
+					<ul class="p-footer-linkList">
+					
+						
+						
+							<li><a href="../../misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
+								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
+						
+					
+					</ul>
+				</div>
+			
+			<div class="p-footer-row-opposite">
+				<ul class="p-footer-linkList">
+					
+
+					
+						<li><a href="../../help/terms/index.html">Условия и правила</a></li>
+					
+
+					
+
+					
+						<li><a href="../../help/index.html">Помощь</a></li>
+					
+
+					
+						<li><a href="../../index.html">Главная</a></li>
+					
+
+					<li><a href="../../forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="p-footer-copyright">
+			
+				
+				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="../../link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
+			
+			</div>
+		
+
+		
+	</div>
+</footer>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
+		
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
+	<script src="../../js/vendor/vendor-compiled.js"></script>
+	<script src="../../js/xf/core-compiled.js"></script>
+	<script src="../../js/xf/lightbox-compiled.js"></script>
+<script src="../../js/themehouse/reactions/react.js"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			userId: 0,
+			url: {
+				fullBase: 'https://enota.club/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_'
+			},
+			csrf: '1664150240,c5dfedb365e86007fa01e80bde813250',
+			js: {"\/js\/xf\/lightbox-compiled.js?_v=1bd6f38b":true,"\/js\/themehouse\/reactions\/react.js?_v=1bd6f38b":true},
+			css: {"public:bb_code.less":true,"public:lightbox.less":true,"public:message.less":true,"public:th_reactions.less":true,"public:extra.less":true},
+			time: {
+				now: 1664150240,
+				today: 1664139600,
+				todayDow: 1
+			},
+			borderSizeFeature: '3px',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 2097152,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {}
+		});
+
+		jQuery.extend(XF.phrases, {
+			date_x_at_time_y: "{date} в {time}",
+			day_x_at_time_y:  "{day} в {time}",
+			yesterday_at_x:   "Вчера в {time}",
+			x_minutes_ago:    "{minutes} мин. назад",
+			one_minute_ago:   "1 минуту назад",
+			a_moment_ago:     "Только что",
+			today_at_x:       "Сегодня в {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "Менее минуты назад",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Сегодня позже в {time}",
+			tomorrow_at_x:    "Завтра в {time}",
+
+			day0: "Воскресенье",
+			day1: "Понедельник",
+			day2: "Вторник",
+			day3: "Среда",
+			day4: "Четверг",
+			day5: "Пятница",
+			day6: "Суббота",
+
+			dayShort0: "Вос",
+			dayShort1: "Пон",
+			dayShort2: "Вто",
+			dayShort3: "Сре",
+			dayShort4: "Чет",
+			dayShort5: "Пят",
+			dayShort6: "Суб",
+
+			month0: "Январь",
+			month1: "Февраль",
+			month2: "Март",
+			month3: "Апрель",
+			month4: "Май",
+			month5: "Июнь",
+			month6: "Июль",
+			month7: "Август",
+			month8: "Сентябрь",
+			month9: "Октябрь",
+			month10: "Ноябрь",
+			month11: "Декабрь",
+
+			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
+			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
+			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+			file_too_large_to_upload: "Файл слишком большой для загрузки.",
+			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+			close: "Закрыть",
+
+			showing_x_of_y_items: "Показано {count} из {total} элементов",
+			showing_all_items: "Показаны все элементы",
+			no_items_to_display: "Нет элементов для отображения"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "DiscussionForumPosting",
+		"@id": "https:\/\/enota.club\/threads\/bag-v-skripte-kasperskogo-main-js-kotoryj-lomaet-sajty-kis-ns-getcommandsrc.1547\/",
+		"headline": "Баг в скрипте Касперского main.js который «ломает» сайты (KIS ns.GetCommandSrc)",
+		"articleBody": "Если у Вас установлен антивирус Касперского Kaspersky Internet Security (KIS), в нем активируется функция, которая встраивает скрипт main.js во все страницы посещаемые Вами в браузере, и впоследствии блокирует нормальную работу сайтов (Joomla, Bitrix, Умные дома, QIWI кошелек) из-за ошибки в коде (авторизации, VPN, и др.).\n\n2015 год, 2016 год, 2018 год, 2018 год, 2018 год, 2018 год\n\nС каждым новым обновлением, новые ошибки, в 2019 году они активно начали появляться в сентябре\/октябре и вот на февраль 2020 года до сих пор есть репорты (возможно это старые версии KIS).\n\nns.GetCommandSrc is not a function\n\n28 января 2020, 26 января 2020, 20 декабря 2019, 19 ноября 2019, 23 октября 2019, 19 октября 2019, 2 октября 2019, 6 сентября 2019\n\nВ результате этого бага, иногда (когда main.js загружается быстрее остальных скриптов) происходит «вечная загрузка», так как все JS сценарии на странице останавливаются.\n\n\n\nВ поддержке KIS говорят, что проблема была, но уже исправлена в новых версиях, и единственной их рекомендацией является отключение функции инъекции Settings -> Additional -> Network.\n\nЕсли Вы используете KIS (не используйте никакие антивирусы, кроме стандартного Windows) и замечаете в консоли браузера ошибки во встраиваемом скрипте main.js, при посещении сайтов, сразу создавайте технический запрос на оф. сайте Касперского со скриншотами, возможно, чем больше будет обращений, тем быстрее они будут исправлять ошибки.",
+		"articleSection": "Разное интересное",
+		"author": {
+			"@type": "Person",
+			"name": "Alisa"
+		},
+		"datePublished": "2020-02-09",
+		"dateModified": "2020-02-09",
+		
+		"image": "https:\/\/enota.club\/data\/avatars\/h\/0\/2.jpg?1528229091",
+		
+		"interactionStatistic": {
+			"@type": "InteractionCounter",
+			"interactionType": "https://schema.org/ReplyAction",
+			"userInteractionCount": 0
+		}
+	}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

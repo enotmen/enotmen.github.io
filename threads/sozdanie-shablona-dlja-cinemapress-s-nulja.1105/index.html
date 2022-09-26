@@ -1,0 +1,1383 @@
+<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="thread_view" data-container-key="node-42" data-content-key="thread-1105" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-thread_view" data-run-jobs=""><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	
+
+	<title>Создание шаблона для CinemaPress с нуля | Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+
+	
+		
+		<meta name="description" content="Установим инструменты, которые понадобятся для создания шаблона.
+Cmder и Putty нужны только для Windows, для Linux и Mac используем стандартный терминал...">
+		<meta property="og:description" content="Установим инструменты, которые понадобятся для создания шаблона.
+Cmder и Putty нужны только для Windows, для Linux и Mac используем стандартный терминал.
+
+                     
+VS Code ------------ NodeJS ------------ Cmder ------------ Putty
+
+Откроем Cmder (терминал) и произведем установку...">
+		<meta property="twitter:description" content="Установим инструменты, которые понадобятся для создания шаблона.
+Cmder и Putty нужны только для Windows, для Linux и Mac используем стандартный терминал.
+
+                     
+VS Code...">
+	
+	
+		<meta property="og:url" content="https://enota.club/threads/sozdanie-shablona-dlja-cinemapress-s-nulja.1105/">
+	
+		<link rel="canonical" href="https://enota.club/threads/sozdanie-shablona-dlja-cinemapress-s-nulja.1105/">
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="Создание шаблона для CinemaPress с нуля">
+		<meta property="twitter:title" content="Создание шаблона для CinemaPress с нуля">
+	
+
+
+	
+	
+	
+
+	
+		<meta name="theme-color" content="#272F38">
+	
+
+	
+	
+	
+
+	
+
+	<link rel="stylesheet" href="../../styles/2.css">
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../styles/9.css">
+
+	
+		<script src="../../js/xf/preamble-compiled.js"></script>
+	
+
+
+	
+		<link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
+	
+	
+	
+</head>
+<body data-template="thread_view">
+
+<div class="p-pageWrapper" id="top">
+
+
+
+<header class="p-header" id="header">
+	<div class="p-header-inner">
+		<div class="p-header-content">
+
+			<div class="p-header-logo p-header-logo--image">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			
+		</div>
+	</div>
+</header>
+
+
+
+
+
+	
+	<nav class="p-nav">
+		<div class="p-nav-inner">
+			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+				<i aria-hidden="true"></i>
+				<span class="p-nav-menuText">Меню</span>
+			</a>
+
+			<div class="p-nav-smallLogo">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+				<div class="hScroller-scroll">
+					<ul class="p-nav-list js-offCanvasNavSource">
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-nav-opposite">
+				<div class="p-navgroup p-account p-navgroup--guest">
+					
+						<a href="../../login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+							<span class="p-navgroup-linkText">Вход</span>
+						</a>
+						
+							<a href="../../register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+								<span class="p-navgroup-linkText">Регистрация</span>
+							</a>
+						
+					
+				</div>
+
+				<div class="p-navgroup p-discovery">
+					<a href="../../whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
+						<i aria-hidden="true"></i>
+						<span class="p-navgroup-linkText">Что нового?</span>
+					</a>
+
+					
+						<a href="../../search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
+							<i aria-hidden="true"></i>
+							<span class="p-navgroup-linkText">Поиск</span>
+						</a>
+						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+
+								<h3 class="menu-header">Поиск</h3>
+								
+								<div class="menu-row">
+									
+										<div class="inputGroup inputGroup--joined">
+											<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
+											
+			<select name="constraints" class="js-quickSearch-constraint input" aria-label="Search within">
+				<option value="">Везде</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;}">Темы</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;nodes&quot;:[42],&quot;child_nodes&quot;:1}}">Этот форум</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;thread&quot;:1105}}">Эта тема</option>
+
+			</select>
+		
+										</div>
+										
+								</div>
+
+								
+								<div class="menu-row">
+									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
+
+								</div>
+								
+								<div class="menu-row">
+									<div class="inputGroup">
+										<span class="inputGroup-text">От:</span>
+										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
+									</div>
+								</div>
+								<div class="menu-footer">
+									<span class="menu-footer-controls">
+										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
+										<a href="../../search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
+									</span>
+								</div>
+
+								<input type="hidden" name="_xfToken" value="1664150284,f48ad6982fcb62e6891899f12f2bd9df">
+							</form>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	
+		<div class="p-sectionLinks p-sectionLinks--empty"></div>
+	
+
+
+
+<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+	<div class="offCanvasMenu-content">
+		<div class="offCanvasMenu-header">
+			Меню
+			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
+		</div>
+		
+			<div class="p-offCanvasRegisterLink">
+				<div class="offCanvasMenu-linkHolder">
+					<a href="../../login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+						Вход
+					</a>
+				</div>
+				<hr class="offCanvasMenu-separator">
+				
+					<div class="offCanvasMenu-linkHolder">
+						<a href="../../register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+							Регистрация
+						</a>
+					</div>
+					<hr class="offCanvasMenu-separator">
+				
+			</div>
+		
+		<div class="js-offCanvasNavTarget"></div>
+	</div>
+</div>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+		<ul class="p-breadcrumbs " itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/dlja-sajta.38/index.html" itemprop="item">
+			<span itemprop="name">Для сайта</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/content/index.html" itemprop="item">
+			<span itemprop="name">Контент</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">Создание шаблона для CinemaPress с нуля</h1>
+						
+						
+					
+					</div>
+				
+
+				
+					<div class="p-description">
+	<ul class="listInline listInline--bullet">
+		<li>
+			<i class="fa fa-user" aria-hidden="true" title="Автор темы"></i>
+			<span class="u-srOnly">Автор темы</span>
+
+			<a href="../../members/hose.7/index.html" class="username  u-concealed" dir="auto" data-user-id="7" data-xf-init="member-tooltip">Hose</a>
+		</li>
+		<li>
+			<i class="fa fa-clock-o" aria-hidden="true" title="Дата начала"></i>
+			<span class="u-srOnly">Дата начала</span>
+
+			<a href="index.html" class="u-concealed"><time class="u-dt" dir="auto" datetime="2019-08-14T03:27:40+0300" data-time="1565742460" data-date-string="14 Авг 2019" data-time-string="03:27" title="14 Авг 2019 в 03:27">14 Авг 2019</time></a>
+		</li>
+		
+	</ul>
+</div>
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+<div class="block block--messages" data-xf-init="" data-type="post" data-href="/inline-mod/">
+
+	
+	
+		<div class="block-outer">
+			<dl class="blockStatus">
+				<dt>Статус</dt>
+				
+					
+					
+						<dd class="blockStatus-message blockStatus-message--locked">
+							В этой теме нельзя размещать новые ответы.
+						</dd>
+					
+				
+			</dl>
+		</div>
+	
+
+
+	<div class="block-outer"></div>
+
+	<div class="block-outer js-threadStatusField"></div>
+
+	<div class="block-container lbContainer" data-xf-init="lightbox select-to-quote" data-message-selector=".js-post" data-lb-id="thread-1105" data-lb-universal="1">
+
+		<div class="block-body js-replyNewMessageContainer">
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Hose" data-content="post-7000" id="js-post-7000">
+
+		<span class="u-anchorTarget" id="post-7000"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/hose.7/index.html" class="username " dir="auto" data-user-id="7" data-xf-init="member-tooltip" itemprop="name">Hose</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/hose.7/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="7" data-xf-init="member-tooltip" style="background-color: #996633; color: #dfbf9f">
+			<span class="avatar-u7-l">H</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-08-14T03:27:40+0300" data-time="1565742460" data-date-string="14 Авг 2019" data-time-string="03:27" title="14 Авг 2019 в 03:27">14 Авг 2019</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#1</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>26 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>20</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 30" style="background-color: #4CAF50; width: 96.774193548387%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 1" style="background-color: #B0BEC5; width: 3.2258064516129%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 0" style="background-color: #F44336; width: 0%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2019-08-14T03:27:40+0300" data-time="1565742460" data-date-string="14 Авг 2019" data-time-string="03:27" title="14 Авг 2019 в 03:27">14 Авг 2019</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#1</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-7000" data-lb-caption-desc="Hose · 14 Авг 2019 в 03:27">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div style="text-align: center"><div class="lbContainer lbContainer--inline" data-xf-init="lightbox" data-lb-single-image="1" data-lb-container-zoom="1" data-lb-trigger=".js-lbImage-attachment1348" data-lb-id="attachment1348">
+		
+			<div class="lbContainer-zoomer js-lbImage-attachment1348" data-src="https://enota.club/attachments/theme-png.1348/" aria-label="Zoom"></div>
+		
+		<img src="../../attachments/theme-png-1348.png" data-url="" class="bbImage" data-zoom-target="1" alt="theme.png">
+	</div></div><br>
+<div style="text-align: center">Установим инструменты, которые понадобятся для создания шаблона.<br>
+Cmder и Putty нужны только для Windows, для Linux и Mac используем стандартный терминал.<br>
+<br>
+<a href="https://code.visualstudio.com/download" target="_blank" class="link link--external" rel="nofollow noopener">
+	
+	
+		
+		
+	
+
+
+	</a><a href="../../attachments/vscode-png-1352.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1352-24f94cd8ca72840f391d007dd12a2939.jpg" class="bbImage" alt="vscode.png"></a>
+       <a href="https://nodejs.org/en/" target="_blank" class="link link--external" rel="nofollow noopener">
+	
+	
+		
+		
+	
+
+
+	</a><a href="../../attachments/node-png-1351.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1351-1bc260884de2518b3e4b47f6a9725d0b.jpg" class="bbImage" alt="node.png"></a>
+       <a href="https://cmder.net" target="_blank" class="link link--external" rel="nofollow noopener">
+	
+	
+		
+		
+	
+
+
+	</a><a href="../../attachments/cmder-png-1349.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1349-9fa727633d1b4804c62a6015f1ad1360.jpg" class="bbImage" alt="cmder.png"></a>
+       <a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" target="_blank" class="link link--external" rel="nofollow noopener">
+	
+	
+		
+		
+	
+
+
+	</a><a href="../../attachments/putty-png-1350.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1350-8d51035eba9ab3c1ac4e69ee4c67ec92.jpg" class="bbImage" alt="putty.png"></a>
+<br>
+<a href="https://code.visualstudio.com/download" target="_blank" class="link link--external" rel="nofollow noopener">VS Code</a> <span style="color: rgb(71, 85, 119)">------------</span> <a href="https://nodejs.org/en/" target="_blank" class="link link--external" rel="nofollow noopener">NodeJS</a> <span style="color: rgb(71, 85, 119)">------------</span> <a href="https://cmder.net" target="_blank" class="link link--external" rel="nofollow noopener">Cmder</a> <span style="color: rgb(71, 85, 119)">------------</span> <a href="https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe" target="_blank" class="link link--external" rel="nofollow noopener">Putty</a>​</div><br>
+Откроем Cmder (терминал) и произведем установку пакета <a href="https://www.npmjs.com/package/cinemapress" target="_blank" class="link link--external" rel="nofollow noopener">cinemapress</a>.<br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		Bash:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="bash"><code>npm i cinemapress -g</code></pre>
+	</div>
+</div>Создадим папку <code class="bbCodeInline">themes</code> и зайдем в нее:<br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		Bash:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="bash"><code>mkdir themes &amp;&amp; cd themes</code></pre>
+	</div>
+</div>Теперь в этой папке давайте создадим шаблон:<br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		Bash:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="bash"><code>cinemapress theme --name "rocky" --index "https://example.com"</code></pre>
+	</div>
+</div>
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Параметры команды</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Параметр <code class="bbCodeInline">--name</code> отвечает за название, котрое Вы придумали для будущего шаблона;<br>
+Параметр <code class="bbCodeInline">--index</code> - это URL главной страницы сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--movie</code> - это URL страницы фильма с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--category</code> - это URL страницы категории с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--categories</code> - это URL страницы катигорий с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--episode</code> - это URL страницы серии с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--picture</code> - это URL страницы с кадрами с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--trailer</code> - это URL страницы с трейлером с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--online</code> - это URL страницы онлайн просмотра с сайта, на основе которого будет шаблон;<br>
+Параметр <code class="bbCodeInline">--download</code> - это URL страницы скачивания с сайта, на основе которого будет шаблон.</div>
+		</div>
+	</div>
+</div>После этого в папке шаблона появятся 3 папки:<br>
+<code class="bbCodeInline">views</code> - это основная папка с шаблонами;<br>
+<code class="bbCodeInline">public</code> - это папка с картинками, стилями, скриптами и т.п.;<br>
+<code class="bbCodeInline">default</code> - это папка с шаблонами-помощниками в которых все функции CinemaPress.<br>
+<br>
+Чтобы редактировать шаблон и сразу видеть результат, нужно работать непосредственно на сервере.<br>
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Подключение к серверу на Windows</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Открывем Putty, вводим IP сервера и нажимаем Open.<br>
+Логин: <code class="bbCodeInline">root</code><br>
+Пароль: <code class="bbCodeInline">хостинг отправляет на почту</code><br>
+<br>
+
+	
+	
+		
+		
+	
+
+
+	<a href="../../attachments/putty1-png-1376.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1376-e32f78f67d0ee46b58a368d79c88bff9.jpg" class="bbImage" alt="putty1.png"></a>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Подключение к серверу на Linux/Mac</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Открываете стандартный терминал и вводите команду:<br>
+<code class="bbCodeInline">ssh root@192.168.0.1 -p22</code><br>
+Где <code class="bbCodeInline">root</code>, это имя пользователя администратора сервера, а <code class="bbCodeInline">192.168.0.1</code> - IP сервера.</div>
+		</div>
+	</div>
+</div>
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Установка нового сайта на поддомене</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Теперь подключившись к серверу, нужно запустить установочное меню и создать новый сайт. Например он будет создан на поддомене <code class="bbCodeInline">test</code>, или если Вы хотите работать с Вашим основным сайтом, то создавать ничего не потребуется.<br>
+Запуск установочного меню:<br>
+<code class="bbCodeInline">wget git.io/JGKNq -qO i &amp;&amp; chmod +x i &amp;&amp; ./i</code><br>
+<br>
+
+	
+	
+		
+		
+	
+
+
+	<a href="../../attachments/install-png-1375.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1375-66ca82d32e7b5da4eae8c9a8ac56d2c7.jpg" class="bbImage" alt="install.png"></a>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Настройка VSCode для работы с сервером</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">Настроем работу VSCode с сайтом на сервере. Для этого зайдите в папку нового шаблона <code class="bbCodeInline">rocky</code> и создайте там новую папку с названием <code class="bbCodeInline">.vscode</code><br>
+Поместите в нее файл подключения к серверу, он должен называться <code class="bbCodeInline">sftp.json</code> и состоять из строк:<br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		JSON:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="json"><code>{
+    "host": "192.168.0.1",
+    "username": "root",
+    "remotePath": "/home/test.example.com/themes/rocky/",
+    "uploadOnSave": true
+}</code></pre>
+	</div>
+</div><code class="bbCodeInline">192.168.0.1</code> - Ваш IP сервера;<br>
+<code class="bbCodeInline">test.example.com</code> - Ваш сайт на сервере;<br>
+<code class="bbCodeInline">rocky</code> - Ваше название шаблона.<br>
+<br>
+Данный путь <code class="bbCodeInline">/home/test.example.com/themes/rocky/</code> должен быть так же на сервере, когда завершится окончание установки сайта, нужно создать эту папку путём ввода команды в терминале (Putty): <code class="bbCodeInline">mkdir -p /home/test.example.com/themes/rocky/</code></div>
+		</div>
+	</div>
+</div><ul>
+<li>Запускаем VSCode и открываем папку шаблона <code class="bbCodeInline">rocky</code></li>
+</ul><div style="text-align: center"><a href="../../attachments/vscode1-png-1374.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1374-7ffb8c94d706ea3643efa2709de354dc.jpg" class="bbImage" alt="vscode1.png"></a>​</div><br>
+<ul>
+<li>Устанавливаем расширения, необходимые для работы:<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=DigitalBrainstem.javascript-ejs-support" target="_blank" class="link link--external" rel="nofollow noopener">EJS</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=liximomo.sftp" target="_blank" class="link link--external" rel="nofollow noopener">SFTP</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify" target="_blank" class="link link--external" rel="nofollow noopener">Beautify</a></li>
+</ul></li>
+</ul><div style="text-align: center"><a href="../../attachments/vscode2-png-1372.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1372-b24543fe2cd1bc34fa817e32e8e957b6.jpg" class="bbImage" alt="vscode2.png"></a>​</div><br>
+<ul>
+<li>Заходим в папку шаблона на сервере (она будет пустая).</li>
+</ul><div style="text-align: center"><a href="../../attachments/vscode3-png-1371.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1371-c522a2970365ca536ff0a00d03c1d865.jpg" class="bbImage" alt="vscode3.png"></a>​</div><br>
+<ul>
+<li>Переносим папки <code class="bbCodeInline">views</code> и <code class="bbCodeInline">public</code> на сервер.</li>
+</ul><div style="text-align: center"><a href="../../attachments/vscode4-png-1373.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1373-96641d96999578a0cde482d41503a05c.jpg" class="bbImage" alt="vscode4.png"></a>​</div><br>
+<ul>
+<li>Изменяем шаблон сайта в админ-панели CinemaPress.</li>
+</ul><div style="text-align: center"><a href="../../attachments/theme1-png-1369.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1369-75f6f6da5a81c2dad559c5531623255b.jpg" class="bbImage" alt="theme1.png"></a>​</div><br>
+<ul>
+<li>Открываем шаблон с сервера и начинаем редактировать.</li>
+</ul><div style="text-align: center"><a href="../../attachments/vscode5-png-1370.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/1/1370-f5bbfebffb140698c1eb36dd5bfdeddb.jpg" class="bbImage" alt="vscode5.png"></a>​</div><br>
+to be continued...</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+								
+	
+
+							
+						</div>
+
+						
+							<div class="message-lastEdit">
+								
+									Последнее редактирование: <time class="u-dt" dir="auto" datetime="2019-08-14T19:30:21+0300" data-time="1565800221" data-date-string="14 Авг 2019" data-time-string="19:30" title="14 Авг 2019 в 19:30">14 Авг 2019</time>
+								
+							</div>
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+		<div class="reactions-bar reactions-bar--up content" id="reactions-bar-7000">
+			
+				
+	
+		<div class="reactions-left">
+			
+				<ul>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Мне нравится" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/like.svg" class="reaction--normal reaction--normal2" alt="Мне нравится" title="Мне нравится" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">5</span>
+		</li>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Спасибо" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/happy.svg" class="reaction--normal reaction--normal1" alt="Спасибо" title="Спасибо" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">4</span>
+		</li>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Что?" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/dumb.svg" class="reaction--normal reaction--normal24" alt="Что?" title="Что?" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">1</span>
+		</li>
+	
+
+	
+		<li>
+			<a class="list-reacts" href="../../reactions/list/post/7000/index.html" title="Показать все" data-xf-click="overlay" data-nocache="true">Показать все</a>
+		</li>
+	
+</ul>
+
+			
+		</div>
+	
+
+
+
+
+
+			
+		</div>
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-18129" id="js-post-18129">
+
+		<span class="u-anchorTarget" id="post-18129"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2020-09-15T15:05:08+0300" data-time="1600171508" data-date-string="15 Сен 2020" data-time-string="15:05" title="15 Сен 2020 в 15:05">15 Сен 2020</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#2</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2020-09-15T15:05:08+0300" data-time="1600171508" data-date-string="15 Сен 2020" data-time-string="15:05" title="15 Сен 2020 в 15:05">15 Сен 2020</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#2</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-18129" data-lb-caption-desc="Alisa · 15 Сен 2020 в 15:05">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Видео-инструкция: <a href="../video-urok-po-sozdaniju-shablona-dlja-cinemapress-chast-1.2337/index.html" class="link link--internal">https://enota.club/threads/video-urok-po-sozdaniju-shablona-dlja-cinemapress-chast-1.2337/</a></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+		</div>
+	</div>
+
+	
+
+	
+	
+		<div class="block-outer block-outer--after">
+			<dl class="blockStatus">
+				<dt>Статус</dt>
+				
+					
+					
+						<dd class="blockStatus-message blockStatus-message--locked">
+							В этой теме нельзя размещать новые ответы.
+						</dd>
+					
+				
+			</dl>
+		</div>
+	
+
+</div>
+
+
+
+
+
+<div class="blockMessage blockMessage--none">
+	
+	
+
+</div>
+
+
+	
+
+
+
+</div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+		<ul class="p-breadcrumbs p-breadcrumbs--bottom" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/dlja-sajta.38/index.html" itemprop="item">
+			<span itemprop="name">Для сайта</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/content/index.html" itemprop="item">
+			<span itemprop="name">Контент</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+	</div>
+</div>
+
+<footer class="p-footer" id="footer">
+	<div class="p-footer-inner">
+
+		<div class="p-footer-row">
+			
+				<div class="p-footer-row-main">
+					<ul class="p-footer-linkList">
+					
+						
+						
+							<li><a href="../../misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
+								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
+						
+					
+					</ul>
+				</div>
+			
+			<div class="p-footer-row-opposite">
+				<ul class="p-footer-linkList">
+					
+
+					
+						<li><a href="../../help/terms/index.html">Условия и правила</a></li>
+					
+
+					
+
+					
+						<li><a href="../../help/index.html">Помощь</a></li>
+					
+
+					
+						<li><a href="../../index.html">Главная</a></li>
+					
+
+					<li><a href="../../forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="p-footer-copyright">
+			
+				
+				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="../../link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
+			
+			</div>
+		
+
+		
+	</div>
+</footer>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
+		
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
+	<script src="../../js/vendor/vendor-compiled.js"></script>
+	<script src="../../js/xf/core-compiled.js"></script>
+	<script src="../../js/xf/lightbox-compiled.js"></script>
+<script src="../../js/xf/code_block-compiled.js"></script>
+<script src="../../js/themehouse/reactions/react.js"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			userId: 0,
+			url: {
+				fullBase: 'https://enota.club/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_'
+			},
+			csrf: '1664150284,f48ad6982fcb62e6891899f12f2bd9df',
+			js: {"\/js\/xf\/lightbox-compiled.js?_v=1bd6f38b":true,"\/js\/xf\/code_block-compiled.js?_v=1bd6f38b":true,"\/js\/themehouse\/reactions\/react.js?_v=1bd6f38b":true},
+			css: {"public:bb_code.less":true,"public:lightbox.less":true,"public:message.less":true,"public:th_reactions.less":true,"public:extra.less":true},
+			time: {
+				now: 1664150284,
+				today: 1664139600,
+				todayDow: 1
+			},
+			borderSizeFeature: '3px',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 2097152,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {}
+		});
+
+		jQuery.extend(XF.phrases, {
+			date_x_at_time_y: "{date} в {time}",
+			day_x_at_time_y:  "{day} в {time}",
+			yesterday_at_x:   "Вчера в {time}",
+			x_minutes_ago:    "{minutes} мин. назад",
+			one_minute_ago:   "1 минуту назад",
+			a_moment_ago:     "Только что",
+			today_at_x:       "Сегодня в {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "Менее минуты назад",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Сегодня позже в {time}",
+			tomorrow_at_x:    "Завтра в {time}",
+
+			day0: "Воскресенье",
+			day1: "Понедельник",
+			day2: "Вторник",
+			day3: "Среда",
+			day4: "Четверг",
+			day5: "Пятница",
+			day6: "Суббота",
+
+			dayShort0: "Вос",
+			dayShort1: "Пон",
+			dayShort2: "Вто",
+			dayShort3: "Сре",
+			dayShort4: "Чет",
+			dayShort5: "Пят",
+			dayShort6: "Суб",
+
+			month0: "Январь",
+			month1: "Февраль",
+			month2: "Март",
+			month3: "Апрель",
+			month4: "Май",
+			month5: "Июнь",
+			month6: "Июль",
+			month7: "Август",
+			month8: "Сентябрь",
+			month9: "Октябрь",
+			month10: "Ноябрь",
+			month11: "Декабрь",
+
+			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
+			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
+			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+			file_too_large_to_upload: "Файл слишком большой для загрузки.",
+			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+			close: "Закрыть",
+
+			showing_x_of_y_items: "Показано {count} из {total} элементов",
+			showing_all_items: "Показаны все элементы",
+			no_items_to_display: "Нет элементов для отображения"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "DiscussionForumPosting",
+		"@id": "https:\/\/enota.club\/threads\/sozdanie-shablona-dlja-cinemapress-s-nulja.1105\/",
+		"headline": "Создание шаблона для CinemaPress с нуля",
+		"articleBody": "Установим инструменты, которые понадобятся для создания шаблона.\nCmder и Putty нужны только для Windows, для Linux и Mac используем стандартный терминал.\n\n                     \nVS Code ------------ NodeJS ------------ Cmder ------------ Putty\n\nОткроем Cmder (терминал) и произведем установку пакета cinemapress.\nnpm i cinemapress -g\nСоздадим папку themes и зайдем в нее:\nmkdir themes && cd themes\nТеперь в этой папке давайте создадим шаблон:\ncinemapress theme --name \"rocky\" --index \"https:\/\/example.com\"\n\nПосле этого в папке шаблона появятся 3 папки:\nviews - это основная папка с шаблонами;\npublic - это папка с картинками, стилями, скриптами и т.п.;\ndefault - это папка с шаблонами-помощниками в которых все функции CinemaPress.\n\nЧтобы редактировать шаблон и сразу видеть результат, нужно работать непосредственно на сервере.\n\n\n\n\n\nЗапускаем VSCode и открываем папку шаблона rocky\n\n\n\n\nУстанавливаем расширения, необходимые для работы:\n\nEJS\nSFTP\nBeautify\n\n\n\n\n\nЗаходим в папку шаблона на сервере (она будет пустая).\n\n\n\n\nПереносим папки views и public на сервер.\n\n\n\n\nИзменяем шаблон сайта в админ-панели CinemaPress.\n\n\n\n\nОткрываем шаблон с сервера и начинаем редактировать.\n\n\n\nto be continued...",
+		"articleSection": "Контент",
+		"author": {
+			"@type": "Person",
+			"name": "Hose"
+		},
+		"datePublished": "2019-08-14",
+		"dateModified": "2020-09-15",
+		
+		"image": "",
+		
+		"interactionStatistic": {
+			"@type": "InteractionCounter",
+			"interactionType": "https://schema.org/ReplyAction",
+			"userInteractionCount": 1
+		}
+	}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

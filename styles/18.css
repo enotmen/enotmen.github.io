@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/********* public:th_nodeStyling_nodes.css ********/
+.node--id19 > .node-body {
+  background-image: url(default/img/cinemapress.png) !important;
+  background-size: cover;
+}
+
+.node--id25 > .node-body {
+  background-image: url(default/img/cms.png) !important;
+  background-size: cover;
+}
+
+.node--id38 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id39 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id40 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id41 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id42 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id43 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id44 > .node-body {
+  background-image: url(default/img/website.png) !important;
+  background-size: cover;
+}
+
+.node--id15 > .node-body {
+  background-image: url(default/img/android.png) !important;
+  background-size: cover;
+}
+
+.node--id16 > .node-body {
+  background-image: url(default/img/ios.png) !important;
+  background-size: cover;
+}
+
+.node--id26 > .node-body {
+  background-image: url(default/img/telegram.png) !important;
+  background-size: cover;
+}
+
+.node--id27 > .node-body {
+  background-image: url(default/img/fcbok.png) !important;
+  background-size: cover;
+}
+
+.node--id28 > .node-body {
+  background-image: url(default/img/veka.png) !important;
+  background-size: cover;
+}
+
+.node--id29 > .node-body {
+  background-image: url(default/img/messanger.png) !important;
+  background-size: cover;
+}
+
+.node--id31 > .node-body {
+  background-image: url(default/img/chrome.png) !important;
+  background-size: cover;
+}
+
+.node--id32 > .node-body {
+  background-image: url(default/img/firefox.png) !important;
+  background-size: cover;
+}
+
+.node--id33 > .node-body {
+  background-image: url(default/img/opera.png) !important;
+  background-size: cover;
+}
+
+.node--id34 > .node-body {
+  background-image: url(default/img/ie.png) !important;
+  background-size: cover;
+}
+
+.node--id36 > .node-body {
+  background-image: url(default/img/forum.png) !important;
+  background-size: cover;
+}
+
+.node--id45 > .node-body {
+  background-image: url(default/img/forum.png) !important;
+  background-size: cover;
+}
+
+.node--id37 > .node-body {
+  background-image: url(default/img/hunt.png) !important;
+  background-size: cover;
+}
+
+/********* public:extra.less ********/

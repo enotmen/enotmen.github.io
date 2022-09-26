@@ -1,0 +1,5111 @@
+<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="thread_view" data-container-key="node-23" data-content-key="thread-2967" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-thread_view"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	
+	
+	
+
+	<title>Как сделать фильтр фильмов на киносайте? (скрипт фильтра по нескольким категориям) | Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
+
+	
+		
+		<meta name="description" content="Некоторые из вас уже сделали себе фильтр фильмов на JS, но если еще нет, то в пару строк кода, который Вам нужно будет только копировать и вставлять, Вы...">
+		<meta property="og:description" content="Некоторые из вас уже сделали себе фильтр фильмов на JS, но если еще нет, то в пару строк кода, который Вам нужно будет только копировать и вставлять, Вы сможете реализовать такую функцию.
+
+Пример готового фильтра Вы можете увидеть в шаблоне «snow» -...">
+		<meta property="twitter:description" content="Некоторые из вас уже сделали себе фильтр фильмов на JS, но если еще нет, то в пару строк кода, который Вам нужно будет только копировать и вставлять, Вы сможете реализовать такую функцию.
+
+Пример...">
+	
+	
+		<meta property="og:url" content="https://enota.club/threads/kak-sdelat-filtr-filmov-na-kinosajte-skript-filtra-po-neskolkim-kategorijam.2967/">
+	
+		<link rel="canonical" href="https://enota.club/threads/kak-sdelat-filtr-filmov-na-kinosajte-skript-filtra-po-neskolkim-kategorijam.2967/">
+	
+
+	
+		
+	
+	
+	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
+
+
+	
+	
+		
+	
+	
+	
+		<meta property="og:title" content="Как сделать фильтр фильмов на киносайте? (скрипт фильтра по нескольким категориям)">
+		<meta property="twitter:title" content="Как сделать фильтр фильмов на киносайте? (скрипт фильтра по...">
+	
+
+
+	
+	
+	
+
+	
+		<meta name="theme-color" content="#272F38">
+	
+
+	
+	
+	
+
+	
+
+	<link rel="stylesheet" href="../../styles/2.css">
+
+	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="../../styles/7.css">
+
+	
+		<script src="../../js/xf/preamble-compiled.js"></script>
+	
+
+
+	
+		<link rel="icon" type="image/png" href="../../favicon-32x32.png" sizes="32x32">
+	
+	
+	
+</head>
+<body data-template="thread_view">
+
+<div class="p-pageWrapper" id="top">
+
+
+
+<header class="p-header" id="header">
+	<div class="p-header-inner">
+		<div class="p-header-content">
+
+			<div class="p-header-logo p-header-logo--image">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			
+		</div>
+	</div>
+</header>
+
+
+
+
+
+	
+	<nav class="p-nav">
+		<div class="p-nav-inner">
+			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
+				<i aria-hidden="true"></i>
+				<span class="p-nav-menuText">Меню</span>
+			</a>
+
+			<div class="p-nav-smallLogo">
+				<a href="../../index.html">
+					<img src="../../styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="../../styles/default/img/logo.png 2x">
+				</a>
+			</div>
+
+			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+				<div class="hScroller-scroll">
+					<ul class="p-nav-list js-offCanvasNavSource">
+					
+					</ul>
+				</div>
+			</div>
+
+			<div class="p-nav-opposite">
+				<div class="p-navgroup p-account p-navgroup--guest">
+					
+						<a href="../../login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
+							<span class="p-navgroup-linkText">Вход</span>
+						</a>
+						
+							<a href="../../register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
+								<span class="p-navgroup-linkText">Регистрация</span>
+							</a>
+						
+					
+				</div>
+
+				<div class="p-navgroup p-discovery">
+					<a href="../../whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
+						<i aria-hidden="true"></i>
+						<span class="p-navgroup-linkText">Что нового?</span>
+					</a>
+
+					
+						<a href="../../search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
+							<i aria-hidden="true"></i>
+							<span class="p-navgroup-linkText">Поиск</span>
+						</a>
+						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
+							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
+
+								<h3 class="menu-header">Поиск</h3>
+								
+								<div class="menu-row">
+									
+										<div class="inputGroup inputGroup--joined">
+											<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
+											
+			<select name="constraints" class="js-quickSearch-constraint input" aria-label="Search within">
+				<option value="">Везде</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;}">Темы</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;nodes&quot;:[23],&quot;child_nodes&quot;:1}}">Этот форум</option>
+<option value="{&quot;search_type&quot;:&quot;post&quot;,&quot;c&quot;:{&quot;thread&quot;:2967}}">Эта тема</option>
+
+			</select>
+		
+										</div>
+										
+								</div>
+
+								
+								<div class="menu-row">
+									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
+
+								</div>
+								
+								<div class="menu-row">
+									<div class="inputGroup">
+										<span class="inputGroup-text">От:</span>
+										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
+									</div>
+								</div>
+								<div class="menu-footer">
+									<span class="menu-footer-controls">
+										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
+										<a href="../../search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
+									</span>
+								</div>
+
+								<input type="hidden" name="_xfToken" value="1664150958,cde74204af3ffb934b19b5ec5fe8f0f4">
+							</form>
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	
+	
+		<div class="p-sectionLinks p-sectionLinks--empty"></div>
+	
+
+
+
+<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
+	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+	<div class="offCanvasMenu-content">
+		<div class="offCanvasMenu-header">
+			Меню
+			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
+		</div>
+		
+			<div class="p-offCanvasRegisterLink">
+				<div class="offCanvasMenu-linkHolder">
+					<a href="../../login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+						Вход
+					</a>
+				</div>
+				<hr class="offCanvasMenu-separator">
+				
+					<div class="offCanvasMenu-linkHolder">
+						<a href="../../register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
+							Регистрация
+						</a>
+					</div>
+					<hr class="offCanvasMenu-separator">
+				
+			</div>
+		
+		<div class="js-offCanvasNavTarget"></div>
+	</div>
+</div>
+
+<div class="p-body">
+	<div class="p-body-inner">
+		<!--XF:EXTRA_OUTPUT-->
+
+		
+
+		
+
+		
+		
+	
+		<ul class="p-breadcrumbs " itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/cinemapress.19/index.html" itemprop="item">
+			<span itemprop="name">CinemaPress</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/help/index.html" itemprop="item">
+			<span itemprop="name">Помощь (Архив)</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+
+		
+	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
+
+		
+	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
+
+
+		
+			<div class="p-body-header">
+			
+				
+					<div class="p-title ">
+					
+						
+							<h1 class="p-title-value">Как сделать фильтр фильмов на киносайте? (скрипт фильтра по нескольким категориям)</h1>
+						
+						
+					
+					</div>
+				
+
+				
+					<div class="p-description">
+	<ul class="listInline listInline--bullet">
+		<li>
+			<i class="fa fa-user" aria-hidden="true" title="Автор темы"></i>
+			<span class="u-srOnly">Автор темы</span>
+
+			<a href="../../members/alisa.2/index.html" class="username  u-concealed" dir="auto" data-user-id="2" data-xf-init="member-tooltip">Alisa</a>
+		</li>
+		<li>
+			<i class="fa fa-clock-o" aria-hidden="true" title="Дата начала"></i>
+			<span class="u-srOnly">Дата начала</span>
+
+			<a href="index.html" class="u-concealed"><time class="u-dt" dir="auto" datetime="2021-03-08T19:03:55+0300" data-time="1615219435" data-date-string="8 Мар 2021" data-time-string="19:03" title="8 Мар 2021 в 19:03">8 Мар 2021</time></a>
+		</li>
+		
+	</ul>
+</div>
+				
+			
+			</div>
+		
+
+		<div class="p-body-main  ">
+			
+
+			<div class="p-body-content">
+				
+				<div class="p-body-pageContent">
+
+
+
+
+
+
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+		
+	
+	
+	
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+	
+
+	
+		
+	
+
+
+
+
+
+
+
+	
+		
+		
+	
+
+
+
+
+
+
+<div class="block block--messages" data-xf-init="" data-type="post" data-href="/inline-mod/">
+
+	
+	
+
+
+	<div class="block-outer"></div>
+
+	<div class="block-outer js-threadStatusField"></div>
+
+	<div class="block-container lbContainer" data-xf-init="lightbox select-to-quote" data-message-selector=".js-post" data-lb-id="thread-2967" data-lb-universal="1">
+
+		<div class="block-body js-replyNewMessageContainer">
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-22770" id="js-post-22770">
+
+		<span class="u-anchorTarget" id="post-22770"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:03:55+0300" data-time="1615219435" data-date-string="8 Мар 2021" data-time-string="19:03" title="8 Мар 2021 в 19:03">8 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#1</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:03:55+0300" data-time="1615219435" data-date-string="8 Мар 2021" data-time-string="19:03" title="8 Мар 2021 в 19:03">8 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#1</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22770" data-lb-caption-desc="Alisa · 8 Мар 2021 в 19:03">
+
+							
+								
+
+	
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div style="text-align: center"><div class="bbMediaWrapper">
+	<blockquote class="imgur-embed-pub" lang="en" data-id="uvnnuOa">
+		<a href="http://imgur.com/uvnnuOa" rel="external" target="_blank">http://imgur.com/uvnnuOa</a>
+	</blockquote>
+</div></div><br>
+Некоторые из вас уже сделали себе фильтр фильмов на JS, но если еще нет, то в пару строк кода, который Вам нужно будет только копировать и вставлять, Вы сможете реализовать такую функцию.<br>
+<br>
+Пример готового фильтра Вы можете увидеть в шаблоне «snow» - <a href="../novyj-shablon-dlja-cinemapress-snow-skript-filtra-beskonechnaja-prokrutka.2965/index.html" class="link link--internal">https://enota.club/threads/novyj-sh...w-skript-filtra-beskonechnaja-prokrutka.2965/</a><br>
+<br>
+Фильтр будет располагаться на главной странице (шаблон <code class="bbCodeInline">index.ejs</code>) и на странице категорий (шаблон <code class="bbCodeInline">category.ejs</code>). Скрипт практически идентичный, отличия будет только в одной функции, которая ставит заранее предопределенные значения, например если человек зашел на «<b>Фильмы + 2021 + комедия</b>», чтобы это уже стояло в фильтре.<br>
+<br>
+Стили и цвета фильтра, Вам придется подбирать под Ваш сайт, и редактировать CSS. Весь код будет прокомментирован, поэтому Вы легко разбересь.<br>
+<br>
+<div style="text-align: center"><span style="font-size: 18px"><b>Код для вставки в index.ejs</b></span>​</div><br>
+<b>HTML-код фильтра фильмов:</b><br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		HTML:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="html"><code>&lt;div&gt;
+
+    &lt;!-- Слайдер годов --&gt;
+    &lt;div&gt;
+        &lt;div id="cinemapress-slider"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Параметры фильтра --&gt;
+    &lt;div id="cinemapress-filter"&gt;
+
+        &lt;!-- Тип: Фильмы/Сериалы --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?type=фильмы) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #type=фильмы) --&gt;
+            &lt;select data-url="&lt;%- page.urls.type %&gt;" data-url_name="type"&gt;
+                &lt;option value=""&gt;&lt;/option&gt;
+                &lt;option value="&lt;%- page.urls.types.movie %&gt;" selected="selected"&gt;&lt;%- page.l.movies %&gt;&lt;/option&gt;
+                &lt;option value="&lt;%- page.urls.types.serial %&gt;"&gt;&lt;%- page.l.series %&gt;&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Жанры: комедия,драма,ужасы --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?genre=комедия) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #genre=комедия) --&gt;
+            &lt;select data-url="&lt;%- page.urls.genre %&gt;" data-url_name="genre"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.genre %&gt;:&lt;/option&gt;
+                &lt;% /* Жанры (список в настройках отображения) */ %&gt;
+                &lt;% page.urls.genres.forEach(function(genre) { %&gt;
+                    &lt;option value="&lt;%- genre.title %&gt;"&gt;&lt;%- genre.title %&gt;&lt;/option&gt;
+                &lt;% }); %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Страны: США,Россия,Япония --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?country=США) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #country=США) --&gt;
+            &lt;select data-url="&lt;%- page.urls.country %&gt;" data-url_name="country"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.country %&gt;:&lt;/option&gt;
+                &lt;% /* Жанры (список в настройках отображения) */ %&gt;
+                &lt;% page.urls.countries.forEach(function(country) { %&gt;
+                    &lt;option value="&lt;%- country.title %&gt;"&gt;&lt;%- country.title %&gt;&lt;/option&gt;
+                &lt;% }); %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Сортировка: По числу голосов КП, По рейтингу IMDb --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?sorting=По рейтингу IMDb) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #sorting=По рейтингу IMDb) --&gt;
+            &lt;select data-url="sorting" data-url_name="sorting"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.sorting %&gt;:&lt;/option&gt;
+                &lt;% if (page.l['kinopoisk-rating-up']) { %&gt;
+                    &lt;option value="kinopoisk-rating-up"&gt;&lt;%- page.l['kinopoisk-rating-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['imdb-rating-up']) { %&gt;
+                    &lt;option value="imdb-rating-up"&gt;&lt;%- page.l['imdb-rating-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['kinopoisk-vote-up']) { %&gt;
+                    &lt;option value="kinopoisk-vote-up"&gt;&lt;%- page.l['kinopoisk-vote-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['imdb-vote-up']) { %&gt;
+                    &lt;option value="imdb-vote-up"&gt;&lt;%- page.l['imdb-vote-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['year-up']) { %&gt;
+                    &lt;option value="year-up"&gt;&lt;%- page.l['year-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['premiere-up']) { %&gt;
+                    &lt;option value="premiere-up"&gt;&lt;%- page.l['premiere-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Сбросить значения --&gt;
+        &lt;button id="reset-filter"&gt;
+            &lt;span&gt;&lt;%- page.l.reset %&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- Начать поиск --&gt;
+        &lt;button id="submit-filter"&gt;
+            &lt;span&gt;&lt;%- page.l.search %&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Кнопка поиска случайного фильма на основе значений фильтра --&gt;
+&lt;a href="javascript:void(0)" id="random-filter"&gt;
+    &lt;span&gt;&lt;%- page.l.lucky %&gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+	</div>
+</div>Как Вы видите, в HTML нет ничего сложного, проставляйте CSS классы и формируйте стили под цвета Вашего шаблона.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+								
+
+	
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-22771" id="js-post-22771">
+
+		<span class="u-anchorTarget" id="post-22771"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:06:08+0300" data-time="1615219568" data-date-string="8 Мар 2021" data-time-string="19:06" title="8 Мар 2021 в 19:06">8 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#2</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:06:08+0300" data-time="1615219568" data-date-string="8 Мар 2021" data-time-string="19:06" title="8 Мар 2021 в 19:06">8 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#2</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22771" data-lb-caption-desc="Alisa · 8 Мар 2021 в 19:06">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">JavaScript код Вам скорее всего редактировать не придется, но если Вы разбираетесь, то можете что-то улучшить.<br>
+<br>
+Вставлять его лучше всего в самый низ шаблона <code class="bbCodeInline">index.ejs</code><br>
+<br>
+<a href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js" target="_blank" class="link link--external" rel="nofollow noopener">https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.3/nouislider.min.js</a><br>
+<br>
+Скрипт слайдера, должен быть загружен в <code class="bbCodeInline">/themes/ШАБЛОН/public/js/nouislider.min.js</code><br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Скрипт</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		HTML:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="html"><code>&lt;script src="/themes/&lt;%- page.theme %&gt;/public/js/nouislider.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    var cinemapress_filter = document.getElementById('cinemapress-filter').innerHTML;
+    var cinemapress_slider = document.getElementById('cinemapress-slider');
+    var year_min = parseInt('&lt;%- page.urls.years[page.urls.years.length-1].title %&gt;');
+    var year_max = parseInt('&lt;%- page.urls.years[0].title %&gt;');
+    var page_urls_search = '&lt;%- page.urls.search %&gt;';
+    var page_urls_year = '&lt;%- page.urls.year %&gt;';
+
+    function customSlider() {
+        var win = window,
+            doc = document,
+            docElem = doc.documentElement,
+            body = doc.getElementsByTagName('body')[0],
+            x = win.innerWidth || docElem.clientWidth || body.clientWidth;
+        cinemapress_slider = document.getElementById('cinemapress-slider');
+        noUiSlider.create(cinemapress_slider, {
+            start: [year_min, year_max],
+            connect: true,
+            step: 1,
+            range: {
+                'min': [year_min],
+                'max': [year_max]
+            },
+            tooltips: [true, true],
+            pips: {
+                mode: 'count',
+                values: x &amp;&amp; x &lt; 400 ? 5 : 11,
+                density: 1,
+                stepped: true
+            },
+            format: {
+                to: (v) =&gt; parseFloat(v).toFixed(0),
+                from: (v) =&gt; parseFloat(v).toFixed(0)
+            }
+        });
+    }
+    function customSelect() {
+        var x, i, j, l, ll, selElement, a, b, c;
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i &lt; l; i++) {
+            selElement = x[i].getElementsByTagName("select")[0];
+            ll = selElement.length;
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElement.options[selElement.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j &lt; ll; j++) {
+                c = document.createElement("DIV");
+                c.innerHTML = selElement.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i &lt; sl; i++) {
+                        if (s.options[i].innerHTML === this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k &lt; yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+    }
+
+    function closeAllSelect(e) {
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i &lt; yl; i++) {
+            if (e === y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i &lt; xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    function submitData() {
+        var years = cinemapress_slider.noUiSlider.get();
+        var year = years[0] === years[1] ? years[0] : years[0] + '-' + years[1];
+        var url = '/' + page_urls_search + '?' + page_urls_year + '=' + year;
+        var hash = '#year=' + year;
+        document.querySelectorAll('[data-url]').forEach(function(e) {
+            var v = encodeURIComponent( e.value || (typeof e.selectedIndex !== 'undefined' &amp;&amp; typeof e.options !== 'undefined' &amp;&amp; typeof e.options[e.selectedIndex] !== 'undefined' &amp;&amp; e.options[e.selectedIndex].value) || '');
+            if (v) {
+                hash += '|' + e.dataset.url_name + '=' + v;
+                url += '&amp;' + e.dataset.url + '=' + v;
+            }
+        });
+        window.location.href = url + hash;
+    }
+
+    function resetData() {
+        cinemapress_slider.noUiSlider.set([year_min, year_max]);
+        document.querySelectorAll('[data-url]').forEach(function(s) {
+            s.selectedIndex = null;
+        });
+        document.getElementById('cinemapress-filter').innerHTML = cinemapress_filter;
+        document.getElementById('random-filter').addEventListener('click', randomData);
+        document.getElementById('reset-filter').addEventListener('click', resetData);
+        document.getElementById('submit-filter').addEventListener('click', submitData);
+        customSelect();
+    }
+
+    function randomData() {
+        var years = cinemapress_slider.noUiSlider.get();
+        var year = years[0] === years[1] ? years[0] : years[0] + '-' + years[1];
+        var url = '/' + page_urls_search + '?' + page_urls_year + '=' + year;
+        document.querySelectorAll('[data-url]').forEach(function(e) {
+            var v = encodeURIComponent(e.value || e.options[e.selectedIndex].value);
+            if (v) {
+                url += '&amp;' + e.dataset.url + '=' + v;
+            }
+        });
+        window.location.href = url + '&amp;random=' + Math.random();
+    }
+
+    function setHashData() {
+        customSlider();
+        if(window.location.hash) {
+            var hash = decodeURIComponent(window.location.hash.substring(1));
+            hash.split('|').forEach(function (key_val) {
+                if (key_val.indexOf('=') + 1) {
+                    var key = key_val.split('=')[0];
+                    var val = key_val.split('=')[1];
+                    if (key === 'year') {
+                        var year = val.split('-');
+                        var year_min_new = parseInt(year[0]);
+                        var year_max_new = parseInt(year[1] || year[0]);
+                        cinemapress_slider.noUiSlider.set([year_min_new, year_max_new]);
+                    }
+                    var el_opt = document.querySelectorAll('[data-url]');
+                    el_opt.forEach(function(e) {
+                        if (e.dataset.url_name === key) {
+                            for (var i = 0; i &lt; e.options.length; i++) {
+                                if (e.options[i].value === val) {
+                                    e.options[i].selected = true;
+                                    e.selectedIndex = i;
+                                    break;
+                                }
+                            }
+                        }
+                    });
+                }
+            })
+        }
+        customSelect();
+    }
+
+    document.getElementById('random-filter').addEventListener('click', randomData);
+    document.getElementById('reset-filter').addEventListener('click', resetData);
+    document.getElementById('submit-filter').addEventListener('click', submitData);
+    document.addEventListener('click', closeAllSelect);
+    setHashData();
+&lt;/script&gt;</code></pre>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-22772" id="js-post-22772">
+
+		<span class="u-anchorTarget" id="post-22772"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:06:46+0300" data-time="1615219606" data-date-string="8 Мар 2021" data-time-string="19:06" title="8 Мар 2021 в 19:06">8 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#3</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:06:46+0300" data-time="1615219606" data-date-string="8 Мар 2021" data-time-string="19:06" title="8 Мар 2021 в 19:06">8 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#3</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22772" data-lb-caption-desc="Alisa · 8 Мар 2021 в 19:06">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Так же, есть небольшой кусок CSS-стилей, который уже раскрасит Ваш фильтр в цвета (вставить после скрипта):<br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Стили</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		HTML:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="html"><code>&lt;style&gt;
+    .custom-select {
+        position: relative;
+        background: 0 0;
+        border: 1px #72436f solid;
+        border-radius: 8px;
+        color: #e79899
+    }
+
+    .custom-select select {
+        display: none
+    }
+
+    .select-selected {
+        background: 0 0
+    }
+
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 18px;
+        right: 10px;
+        width: 0;
+        height: 0;
+        border: 6px solid transparent;
+        border-color: #f07d7f transparent transparent transparent
+    }
+
+    .select-selected.select-arrow-active:after {
+        border-color: transparent transparent #964c8c transparent;
+        top: 10px
+    }
+
+    .select-items div,
+    .select-selected {
+        color: #e79899;
+        padding: 8px 16px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        user-select: none
+    }
+
+    .select-items {
+        position: absolute;
+        background: 0 0;
+        color: #e79899;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99
+    }
+
+    .select-hide {
+        display: none
+    }
+
+    .select-items {
+        border: 1px #563550 solid;
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, .7)
+    }
+
+    .select-items div {
+        color: #fff;
+        font-size: 12px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+
+    .same-as-selected,
+    .select-items div:hover {
+        border-radius: 8px;
+        background-color: rgba(0, 0, 0, .3)
+    }
+
+    .select-selected {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden
+    }
+
+    .filter-slider {
+        margin: 60px auto;
+        padding: 10px 25px 10px 10px
+    }
+
+    .noUi-connect {
+        background-image: -webkit-gradient(linear, left top, right top, from(#f37f7f), to(#944b8c));
+        background-image: -o-linear-gradient(left, #f37f7f, #944b8c);
+        background-image: linear-gradient(to right, #f37f7f, #944b8c);
+        border: 0
+    }
+
+    .noUi-horizontal .noUi-handle,
+    .noUi-vertical .noUi-handle {
+        background-image: -webkit-gradient(linear, left top, right top, from(#944b8c), to(#f37f7f));
+        background-image: -o-linear-gradient(left, #944b8c, #f37f7f);
+        background-image: linear-gradient(to right, #944b8c, #f37f7f)
+    }
+
+    .noUi-value {
+        color: #72436f!important
+    }
+
+    .noUi-marker {
+        color: #302f3f!important;
+        background: #302f3f!important
+    }
+
+    .noUi-horizontal {
+        background-image: -webkit-gradient(linear, left top, right top, from(#f37f7f), to(#944b8c));
+        background-image: -o-linear-gradient(left, #f37f7f, #944b8c);
+        background-image: linear-gradient(to right, #f37f7f, #944b8c);
+        border: 0;
+        color: #fff
+    }
+
+    .noUi-target.noUi-horizontal {
+        background-image: -webkit-gradient(linear, left top, right top, from(#f37f7f), to(#944b8c));
+        background-image: -o-linear-gradient(left, #f37f7f, #944b8c);
+        background-image: linear-gradient(to right, #f37f7f, #944b8c);
+        border: 0;
+        color: #fff
+    }
+
+    .noUi-tooltip {
+        background-image: -webkit-gradient(linear, left top, right top, from(#944b8c), to(#f37f7f));
+        background-image: -o-linear-gradient(left, #944b8c, #f37f7f);
+        background-image: linear-gradient(to right, #944b8c, #f37f7f);
+        border: 0;
+        color: #fff
+    }
+
+    .noUi-horizontal {
+        height: 10px!important;
+        border: 0!important;
+        background: #302f3f!important;
+        box-shadow: none!important
+    }
+
+    .noUi-handle {
+        box-shadow: none!important;
+        border-radius: 100%!important;
+        border: 0!important;
+        width: 20px!important;
+        height: 20px!important
+    }
+
+    .noUi-handle::after,
+    .noUi-handle::before {
+        background: 0 0!important
+    }
+&lt;/style&gt;</code></pre>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-22773" id="js-post-22773">
+
+		<span class="u-anchorTarget" id="post-22773"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:07:59+0300" data-time="1615219679" data-date-string="8 Мар 2021" data-time-string="19:07" title="8 Мар 2021 в 19:07">8 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#4</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:07:59+0300" data-time="1615219679" data-date-string="8 Мар 2021" data-time-string="19:07" title="8 Мар 2021 в 19:07">8 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#4</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22773" data-lb-caption-desc="Alisa · 8 Мар 2021 в 19:07">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Фильтр в категории шаблона <code class="bbCodeInline">categore.ejs</code> по умолчанию закрыт, и только если в URL-хеше есть предустановленные значения (например <code class="bbCodeInline">#genre=комедия</code>), тогда фильтр открывается.<br>
+<br>
+
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		HTML:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="html"><code>&lt;!-- Скрываем фильтр по умолчанию --&gt;
+&lt;div style="display: none"&gt;
+
+    &lt;!-- Слайдер годов --&gt;
+    &lt;div&gt;
+        &lt;div id="cinemapress-slider"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Параметры фильтра --&gt;
+    &lt;div id="cinemapress-filter"&gt;
+
+        &lt;!-- Тип: Фильмы/Сериалы --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?type=фильмы) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #type=фильмы) --&gt;
+            &lt;select data-url="&lt;%- page.urls.type %&gt;" data-url_name="type"&gt;
+                &lt;option value=""&gt;&lt;/option&gt;
+                &lt;option value="&lt;%- page.urls.types.movie %&gt;" selected="selected"&gt;&lt;%- page.l.movies %&gt;&lt;/option&gt;
+                &lt;option value="&lt;%- page.urls.types.serial %&gt;"&gt;&lt;%- page.l.series %&gt;&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Жанры: комедия,драма,ужасы --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?genre=комедия) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #genre=комедия) --&gt;
+            &lt;select data-url="&lt;%- page.urls.genre %&gt;" data-url_name="genre"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.genre %&gt;:&lt;/option&gt;
+                &lt;% /* Жанры (список в настройках отображения) */ %&gt;
+                &lt;% page.urls.genres.forEach(function(genre) { %&gt;
+                    &lt;option value="&lt;%- genre.title %&gt;"&gt;&lt;%- genre.title %&gt;&lt;/option&gt;
+                &lt;% }); %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Страны: США,Россия,Япония --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?country=США) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #country=США) --&gt;
+            &lt;select data-url="&lt;%- page.urls.country %&gt;" data-url_name="country"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.country %&gt;:&lt;/option&gt;
+                &lt;% /* Жанры (список в настройках отображения) */ %&gt;
+                &lt;% page.urls.countries.forEach(function(country) { %&gt;
+                    &lt;option value="&lt;%- country.title %&gt;"&gt;&lt;%- country.title %&gt;&lt;/option&gt;
+                &lt;% }); %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Сортировка: По числу голосов КП, По рейтингу IMDb --&gt;
+        &lt;div class="custom-select"&gt;
+            &lt;!-- data-url - URL типа из админ-панели (для подставления в запрос ?sorting=По рейтингу IMDb) --&gt;
+            &lt;!-- data-url_name - URL типа (для подставления в хеш #sorting=По рейтингу IMDb) --&gt;
+            &lt;select data-url="sorting" data-url_name="sorting"&gt;
+                &lt;option value="" selected="selected"&gt;&lt;%- page.l.sorting %&gt;:&lt;/option&gt;
+                &lt;% if (page.l['kinopoisk-rating-up']) { %&gt;
+                    &lt;option value="kinopoisk-rating-up"&gt;&lt;%- page.l['kinopoisk-rating-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['imdb-rating-up']) { %&gt;
+                    &lt;option value="imdb-rating-up"&gt;&lt;%- page.l['imdb-rating-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['kinopoisk-vote-up']) { %&gt;
+                    &lt;option value="kinopoisk-vote-up"&gt;&lt;%- page.l['kinopoisk-vote-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['imdb-vote-up']) { %&gt;
+                    &lt;option value="imdb-vote-up"&gt;&lt;%- page.l['imdb-vote-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['year-up']) { %&gt;
+                    &lt;option value="year-up"&gt;&lt;%- page.l['year-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+                &lt;% if (page.l['premiere-up']) { %&gt;
+                    &lt;option value="premiere-up"&gt;&lt;%- page.l['premiere-up'] %&gt;&lt;/option&gt;
+                &lt;% } %&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Сбросить значения --&gt;
+        &lt;button id="reset-filter"&gt;
+            &lt;span&gt;&lt;%- page.l.reset %&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+        &lt;!-- Начать поиск --&gt;
+        &lt;button id="submit-filter"&gt;
+            &lt;span&gt;&lt;%- page.l.search %&gt;&lt;/span&gt;
+        &lt;/button&gt;
+
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;!-- Кнопка поиска случайного фильма на основе значений фильтра --&gt;
+&lt;a href="javascript:void(0)" id="random-filter"&gt;
+    &lt;span&gt;&lt;%- page.l.lucky %&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Кнопка ручного открытия фильтра --&gt;
+&lt;a href="javascript:void(0)" id="show-filter"&gt;
+    &lt;span&gt;&lt;%- page.l.filter %&gt;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+	</div>
+</div></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-22774" id="js-post-22774">
+
+		<span class="u-anchorTarget" id="post-22774"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:10:30+0300" data-time="1615219830" data-date-string="8 Мар 2021" data-time-string="19:10" title="8 Мар 2021 в 19:10">8 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#5</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-08T19:10:30+0300" data-time="1615219830" data-date-string="8 Мар 2021" data-time-string="19:10" title="8 Мар 2021 в 19:10">8 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#5</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22774" data-lb-caption-desc="Alisa · 8 Мар 2021 в 19:10">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Вставлять его лучше всего в самый низ шаблона <code class="bbCodeInline">category.ejs</code><br>
+<br>
+
+
+<div class="bbCodeSpoiler">
+	<button type="button" class="bbCodeSpoiler-button button--longText button" data-xf-click="toggle" data-xf-init="tooltip" title="Нажмите для открытия или скрытия спойлера"><span class="button-text">
+
+		<span>Спойлер: <span class="bbCodeSpoiler-button-title">Скрипт</span></span>
+	</span></button>
+	<div class="bbCodeSpoiler-content">
+		<div class="bbCodeBlock bbCodeBlock--spoiler">
+			<div class="bbCodeBlock-content">
+	
+	
+
+
+<div class="bbCodeBlock bbCodeBlock--screenLimited bbCodeBlock--code">
+	<div class="bbCodeBlock-title">
+		HTML:
+	</div>
+	<div class="bbCodeBlock-content">
+		<pre class="bbCodeCode" dir="ltr" data-xf-init="code-block" data-lang="html"><code>&lt;!-- Скрипт слайдера, должен быть загружен в /themes/ШАБЛОН/public/js/nouislider.min.js --&gt;
+&lt;script src="/themes/&lt;%- page.theme %&gt;/public/js/nouislider.min.js"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    var cinemapress_filter = document.getElementById('cinemapress-filter').innerHTML;
+    var cinemapress_slider = document.getElementById('cinemapress-slider');
+    var filter_container = document.querySelector('.filter-container');
+    var year_min = parseInt('&lt;%- page.urls.years[page.urls.years.length-1].title %&gt;');
+    var year_max = parseInt('&lt;%- page.urls.years[0].title %&gt;');
+    var page_urls_search = '&lt;%- page.urls.search %&gt;';
+    var page_urls_year = '&lt;%- page.urls.year %&gt;';
+
+    function customSlider() {
+        cinemapress_slider = document.getElementById('cinemapress-slider');
+        var win = window,
+            doc = document,
+            docElem = doc.documentElement,
+            body = doc.getElementsByTagName('body')[0],
+            x = win.innerWidth || docElem.clientWidth || body.clientWidth;
+        noUiSlider.create(cinemapress_slider, {
+            start: [year_min, year_max],
+            connect: true,
+            step: 1,
+            range: {
+                'min': [year_min],
+                'max': [year_max]
+            },
+            tooltips: [true, true],
+            pips: {
+                mode: 'count',
+                values: x &amp;&amp; x &lt; 400 ? 5 : 11,
+                density: 1,
+                stepped: true
+            },
+            format: {
+                to: (v) =&gt; parseFloat(v).toFixed(0),
+                from: (v) =&gt; parseFloat(v).toFixed(0)
+            }
+        });
+    }
+    function customSelect() {
+        var x, i, j, l, ll, selElement, a, b, c;
+        x = document.getElementsByClassName("custom-select");
+        l = x.length;
+        for (i = 0; i &lt; l; i++) {
+            selElement = x[i].getElementsByTagName("select")[0];
+            ll = selElement.length;
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElement.options[selElement.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j &lt; ll; j++) {
+                c = document.createElement("DIV");
+                c.innerHTML = selElement.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i &lt; sl; i++) {
+                        if (s.options[i].innerHTML === this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            yl = y.length;
+                            for (k = 0; k &lt; yl; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+    }
+
+    function closeAllSelect(e) {
+        var x, y, i, xl, yl, arrNo = [];
+        x = document.getElementsByClassName("select-items");
+        y = document.getElementsByClassName("select-selected");
+        xl = x.length;
+        yl = y.length;
+        for (i = 0; i &lt; yl; i++) {
+            if (e === y[i]) {
+                arrNo.push(i)
+            } else {
+                y[i].classList.remove("select-arrow-active");
+            }
+        }
+        for (i = 0; i &lt; xl; i++) {
+            if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+            }
+        }
+    }
+
+    function submitData() {
+        var years = cinemapress_slider.noUiSlider.get();
+        var year = years[0] === years[1] ? years[0] : years[0] + '-' + years[1];
+        var url = '/' + page_urls_search + '?' + page_urls_year + '=' + year;
+        var hash = '#year=' + year;
+        document.querySelectorAll('[data-url]').forEach(function(e) {
+            var v = encodeURIComponent( e.value || (typeof e.selectedIndex !== 'undefined' &amp;&amp; typeof e.options !== 'undefined' &amp;&amp; typeof e.options[e.selectedIndex] !== 'undefined' &amp;&amp; e.options[e.selectedIndex].value) || '');
+            if (v) {
+                hash += '|' + e.dataset.url_name + '=' + v;
+                url += '&amp;' + e.dataset.url + '=' + v;
+            }
+        });
+        window.location.href = url + hash;
+    }
+
+    function resetData() {
+        cinemapress_slider.noUiSlider.set([year_min, year_max]);
+        document.querySelectorAll('[data-url]').forEach(function(s) {
+            s.selectedIndex = null;
+        });
+        document.getElementById('cinemapress-filter').innerHTML = cinemapress_filter;
+        document.getElementById('random-filter').addEventListener('click', randomData);
+        document.getElementById('reset-filter').addEventListener('click', resetData);
+        document.getElementById('submit-filter').addEventListener('click', submitData);
+        customSelect();
+    }
+
+    function randomData() {
+        var years = cinemapress_slider.noUiSlider.get();
+        var year = years[0] === years[1] ? years[0] : years[0] + '-' + years[1];
+        var url = '/' + page_urls_search + '?' + page_urls_year + '=' + year;
+        document.querySelectorAll('[data-url]').forEach(function(e) {
+            var v = encodeURIComponent(e.value || e.options[e.selectedIndex].value);
+            if (v) {
+                url += '&amp;' + e.dataset.url + '=' + v;
+            }
+        });
+        window.location.href = filter_container.style.display === 'block'
+            ? url + '&amp;random=' + Math.random()
+            : '&lt;%- page.url %&gt;&lt;%- (page.url.indexOf('?') + 1 ? '&amp;' : '?') %&gt;random=&lt;%- Math.random() %&gt;';
+    }
+
+    function setHashData() {
+        customSlider();
+        if(window.location.hash) {
+            var hash = decodeURIComponent(window.location.hash.substring(1));
+            hash.split('|').forEach(function (key_val) {
+                if (key_val.indexOf('=') + 1) {
+                    var key = key_val.split('=')[0];
+                    var val = key_val.split('=')[1];
+                    if (key === 'year') {
+                        var year = val.split('-');
+                        var year_min_new = parseInt(year[0]);
+                        var year_max_new = parseInt(year[1] || year[0]);
+                        cinemapress_slider.noUiSlider.set([year_min_new, year_max_new]);
+                    }
+                    var el_opt = document.querySelectorAll('[data-url]');
+                    el_opt.forEach(function(e) {
+                        if (key &amp;&amp; e.dataset.url_name === key) {
+                            for (var i = 0; i &lt; e.options.length; i++) {
+                                if (val &amp;&amp; e.options[i].value === val) {
+                                    e.options[i].selected = true;
+                                    e.selectedIndex = i;
+                                    break;
+                                }
+                            }
+                        }
+                    });
+                }
+            })
+            if (filter_container &amp;&amp; hash.indexOf('=') + 1) {
+                filter_container.style.display = 'block'; // Если в URL #hash есть знак равенства, открываем фильтр
+            }
+        }
+        customSelect();
+    }
+
+    function showData() {
+        if (filter_container &amp;&amp; filter_container.style.display === 'none') {
+            filter_container.style.display = 'block'; // Если фильтр скрыт - открываем
+        } else {
+            filter_container.style.display = 'none'; // Если фильтр открыт - скрываем
+        }
+    }
+
+    document.getElementById('random-filter').addEventListener('click', randomData);
+    document.getElementById('reset-filter').addEventListener('click', resetData);
+    document.getElementById('submit-filter').addEventListener('click', submitData);
+    document.getElementById('show-filter').addEventListener('click', showData);
+    document.addEventListener('click', closeAllSelect);
+    setHashData();
+&lt;/script&gt;</code></pre>
+	</div>
+</div></div>
+		</div>
+	</div>
+</div><br>
+Стили такие же, как и для фильтра на главной странице.<br>
+<br>
+На этом всё, фильтр должен начать работать.<br>
+<br>
+Далее, рассмотрим <a href="../kak-sdelat-beskonechnuju-prokrutku-filmov-na-kinosajte-skript-lenty-filmov.2968/index.html" class="link link--internal">как сделать бесконечную прокрутку в категориях</a>, чтобы пользователм не приходилось нажимать на страницы 1,2,3,...</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Kazik" data-content="post-22931" id="js-post-22931">
+
+		<span class="u-anchorTarget" id="post-22931"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/kazik.13/index.html" class="username " dir="auto" data-user-id="13" data-xf-init="member-tooltip" itemprop="name">Kazik</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/kazik.13/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="13" data-xf-init="member-tooltip" style="background-color: #8585e0; color: #24248f">
+			<span class="avatar-u13-l">K</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-12T13:49:15+0300" data-time="1615546155" data-date-string="12 Мар 2021" data-time-string="13:49" title="12 Мар 2021 в 13:49">12 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#6</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>13 Янв 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>536</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 58" style="background-color: #4CAF50; width: 93.548387096774%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 4" style="background-color: #F44336; width: 6.4516129032258%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-12T13:49:15+0300" data-time="1615546155" data-date-string="12 Мар 2021" data-time-string="13:49" title="12 Мар 2021 в 13:49">12 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#6</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22931" data-lb-caption-desc="Kazik · 12 Мар 2021 в 13:49">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><a href="../../attachments/89105fd152830d0dee9b820ca240a8ae-png-5616.png" target="_blank" class="js-lbImage"><img src="../../data/attachments/5/5616-7c6dfc37e6b0d43821d6be0cf2979b2b.jpg" class="bbImage" alt="89105fd152830d0dee9b820ca240a8ae.png"></a>
+<br>
+<br>
+что то не хочет вставать данный фильтр, может в шаблоне нужно что то изменить?</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+								
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Forgotten" data-content="post-22932" id="js-post-22932">
+
+		<span class="u-anchorTarget" id="post-22932"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/forgotten.946/index.html" class="username " dir="auto" data-user-id="946" data-xf-init="member-tooltip" itemprop="name">Forgotten</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/forgotten.946/index.html" class="avatar avatar--l" data-user-id="946" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/946.jpg" alt="Forgotten" class="avatar-u946-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Заблокирован</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-12T13:58:28+0300" data-time="1615546708" data-date-string="12 Мар 2021" data-time-string="13:58" title="12 Мар 2021 в 13:58">12 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#7</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Янв 2020</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>110</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 37" style="background-color: #4CAF50; width: 74%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 1" style="background-color: #B0BEC5; width: 2%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 12" style="background-color: #F44336; width: 24%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-12T13:58:28+0300" data-time="1615546708" data-date-string="12 Мар 2021" data-time-string="13:58" title="12 Мар 2021 в 13:58">12 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#7</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-22932" data-lb-caption-desc="Forgotten · 12 Мар 2021 в 13:58">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-22931">Kazik написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			что то не хочет вставать данный фильтр, может в шаблоне нужно что то изменить?
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Фильтр стал нормально. Нужно задать стили - открывайте css шаблона snow и делайте по аналогии.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Speedycom" data-content="post-23674" id="js-post-23674">
+
+		<span class="u-anchorTarget" id="post-23674"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/speedycom.122/index.html" class="username " dir="auto" data-user-id="122" data-xf-init="member-tooltip" itemprop="name">Speedycom</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/speedycom.122/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="122" data-xf-init="member-tooltip" style="background-color: #3d0f3d; color: #cc33cc">
+			<span class="avatar-u122-l">S</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-31T21:31:12+0300" data-time="1617215472" data-date-string="31 Мар 2021" data-time-string="21:31" title="31 Мар 2021 в 21:31">31 Мар 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#8</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>8 Сен 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>204</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 7" style="background-color: #4CAF50; width: 100%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 0" style="background-color: #F44336; width: 0%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-03-31T21:31:12+0300" data-time="1617215472" data-date-string="31 Мар 2021" data-time-string="21:31" title="31 Мар 2021 в 21:31">31 Мар 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#8</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23674" data-lb-caption-desc="Speedycom · 31 Мар 2021 в 21:31">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Возможен RATING (kp или imdb) как параметр для фильтра? Был бы очень и очень кстати..</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-23790" id="js-post-23790">
+
+		<span class="u-anchorTarget" id="post-23790"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-07T16:52:57+0300" data-time="1617803577" data-date-string="7 Апр 2021" data-time-string="16:52" title="7 Апр 2021 в 16:52">7 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#9</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-07T16:52:57+0300" data-time="1617803577" data-date-string="7 Апр 2021" data-time-string="16:52" title="7 Апр 2021 в 16:52">7 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#9</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23790" data-lb-caption-desc="Alisa · 7 Апр 2021 в 16:52">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23674">Speedycom написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Возможен RATING (kp или imdb) как параметр для фильтра? Был бы очень и очень кстати..
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Хорошая идея, завтра будет работать URL фильтр по рейтингу (1-10 или 10-100 рейтинг, не важно):<br>
+<ul>
+<li><code class="bbCodeInline">?kp_rating=70-90</code></li>
+<li><code class="bbCodeInline">?imdb_rating=6.8-8.5</code></li>
+</ul></div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+		<div class="reactions-bar reactions-bar--up content" id="reactions-bar-23790">
+			
+				
+	
+		<div class="reactions-left">
+			
+				<ul>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Мне нравится" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/like.svg" class="reaction--normal reaction--normal2" alt="Мне нравится" title="Мне нравится" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">2</span>
+		</li>
+	
+
+	
+		<li>
+			<a class="list-reacts" href="../../reactions/list/post/23790/index.html" title="Показать все" data-xf-click="overlay" data-nocache="true">Показать все</a>
+		</li>
+	
+</ul>
+
+			
+		</div>
+	
+
+
+
+
+
+			
+		</div>
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Speedycom" data-content="post-23797" id="js-post-23797">
+
+		<span class="u-anchorTarget" id="post-23797"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/speedycom.122/index.html" class="username " dir="auto" data-user-id="122" data-xf-init="member-tooltip" itemprop="name">Speedycom</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/speedycom.122/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="122" data-xf-init="member-tooltip" style="background-color: #3d0f3d; color: #cc33cc">
+			<span class="avatar-u122-l">S</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-07T17:39:11+0300" data-time="1617806351" data-date-string="7 Апр 2021" data-time-string="17:39" title="7 Апр 2021 в 17:39">7 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#10</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>8 Сен 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>204</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 7" style="background-color: #4CAF50; width: 100%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 0" style="background-color: #F44336; width: 0%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-07T17:39:11+0300" data-time="1617806351" data-date-string="7 Апр 2021" data-time-string="17:39" title="7 Апр 2021 в 17:39">7 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#10</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23797" data-lb-caption-desc="Speedycom · 7 Апр 2021 в 17:39">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Может тоже как ui-slider сделать... было бы легко в использовании</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="денчик" data-content="post-23843" id="js-post-23843">
+
+		<span class="u-anchorTarget" id="post-23843"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/denchik.2880/index.html" class="username " dir="auto" data-user-id="2880" data-xf-init="member-tooltip" itemprop="name">денчик</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/denchik.2880/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="2880" data-xf-init="member-tooltip" style="background-color: #669933; color: #0d1306">
+			<span class="avatar-u2880-l">Д</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T16:30:17+0300" data-time="1618147817" data-date-string="11 Апр 2021" data-time-string="16:30" title="11 Апр 2021 в 16:30">11 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#11</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>11 Мар 2021</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>140</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T16:30:17+0300" data-time="1618147817" data-date-string="11 Апр 2021" data-time-string="16:30" title="11 Апр 2021 в 16:30">11 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#11</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23843" data-lb-caption-desc="денчик · 11 Апр 2021 в 16:30">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">подскажите пожалуйста как можна сделать фильтр что бы определённая страна или жанр фильма или сериала на добавлялся ко мне на сайт?</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Johnicinema" data-content="post-23844" id="js-post-23844">
+
+		<span class="u-anchorTarget" id="post-23844"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/johnicinema.1309/index.html" class="username " dir="auto" data-user-id="1309" data-xf-init="member-tooltip" itemprop="name">Johnicinema</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/johnicinema.1309/index.html" class="avatar avatar--l" data-user-id="1309" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/1/1309.jpg" alt="Johnicinema" class="avatar-u1309-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T19:38:57+0300" data-time="1618159137" data-date-string="11 Апр 2021" data-time-string="19:38" title="11 Апр 2021 в 19:38">11 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#12</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>9 Май 2020</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>691</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 33" style="background-color: #4CAF50; width: 82.5%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 1" style="background-color: #B0BEC5; width: 2.5%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 6" style="background-color: #F44336; width: 15%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T19:38:57+0300" data-time="1618159137" data-date-string="11 Апр 2021" data-time-string="19:38" title="11 Апр 2021 в 19:38">11 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#12</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23844" data-lb-caption-desc="Johnicinema · 11 Апр 2021 в 19:38">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23674">Speedycom написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Возможен RATING (kp или imdb) как параметр для фильтра? Был бы очень и очень кстати..
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Это как???</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Kazik" data-content="post-23845" id="js-post-23845">
+
+		<span class="u-anchorTarget" id="post-23845"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/kazik.13/index.html" class="username " dir="auto" data-user-id="13" data-xf-init="member-tooltip" itemprop="name">Kazik</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/kazik.13/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="13" data-xf-init="member-tooltip" style="background-color: #8585e0; color: #24248f">
+			<span class="avatar-u13-l">K</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T19:59:15+0300" data-time="1618160355" data-date-string="11 Апр 2021" data-time-string="19:59" title="11 Апр 2021 в 19:59">11 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#13</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>13 Янв 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>536</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 58" style="background-color: #4CAF50; width: 93.548387096774%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 4" style="background-color: #F44336; width: 6.4516129032258%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T19:59:15+0300" data-time="1618160355" data-date-string="11 Апр 2021" data-time-string="19:59" title="11 Апр 2021 в 19:59">11 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#13</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23845" data-lb-caption-desc="Kazik · 11 Апр 2021 в 19:59">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23843">денчик написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			подскажите пожалуйста как можна сделать фильтр что бы определённая страна или жанр фильма или сериала на добавлялся ко мне на сайт?
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>В разделе публикации настрой фильтр если не нужны допустим фильмы или сериалы из сша пропиши !"США" так же и с жанрами</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Kazik" data-content="post-23846" id="js-post-23846">
+
+		<span class="u-anchorTarget" id="post-23846"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/kazik.13/index.html" class="username " dir="auto" data-user-id="13" data-xf-init="member-tooltip" itemprop="name">Kazik</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/kazik.13/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="13" data-xf-init="member-tooltip" style="background-color: #8585e0; color: #24248f">
+			<span class="avatar-u13-l">K</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T20:03:11+0300" data-time="1618160591" data-date-string="11 Апр 2021" data-time-string="20:03" title="11 Апр 2021 в 20:03">11 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#14</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>13 Янв 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>536</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 58" style="background-color: #4CAF50; width: 93.548387096774%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 4" style="background-color: #F44336; width: 6.4516129032258%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T20:03:11+0300" data-time="1618160591" data-date-string="11 Апр 2021" data-time-string="20:03" title="11 Апр 2021 в 20:03">11 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#14</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23846" data-lb-caption-desc="Kazik · 11 Апр 2021 в 20:03">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23844">Johnicinema написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Это как???
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Наверное чтобы фильтровать фильмы по рейтингу, по 10 бальной шкале</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+		<div class="reactions-bar reactions-bar--up content" id="reactions-bar-23846">
+			
+				
+	
+		<div class="reactions-left">
+			
+				<ul>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Мне нравится" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/like.svg" class="reaction--normal reaction--normal2" alt="Мне нравится" title="Мне нравится" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">1</span>
+		</li>
+	
+
+	
+		<li>
+			<a class="list-reacts" href="../../reactions/list/post/23846/index.html" title="Показать все" data-xf-click="overlay" data-nocache="true">Показать все</a>
+		</li>
+	
+</ul>
+
+			
+		</div>
+	
+
+
+
+
+
+			
+		</div>
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Johnicinema" data-content="post-23847" id="js-post-23847">
+
+		<span class="u-anchorTarget" id="post-23847"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/johnicinema.1309/index.html" class="username " dir="auto" data-user-id="1309" data-xf-init="member-tooltip" itemprop="name">Johnicinema</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/johnicinema.1309/index.html" class="avatar avatar--l" data-user-id="1309" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/1/1309.jpg" alt="Johnicinema" class="avatar-u1309-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T23:18:13+0300" data-time="1618172293" data-date-string="11 Апр 2021" data-time-string="23:18" title="11 Апр 2021 в 23:18">11 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#15</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>9 Май 2020</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>691</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 33" style="background-color: #4CAF50; width: 82.5%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 1" style="background-color: #B0BEC5; width: 2.5%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 6" style="background-color: #F44336; width: 15%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-11T23:18:13+0300" data-time="1618172293" data-date-string="11 Апр 2021" data-time-string="23:18" title="11 Апр 2021 в 23:18">11 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#15</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23847" data-lb-caption-desc="Johnicinema · 11 Апр 2021 в 23:18">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23845">Kazik написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			В разделе публикации настрой фильтр если не нужны допустим фильмы или сериалы из сша пропиши !"США" так же и с жанрами
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>а низкорейтинговые фильмы  скажем 1   1.5 так жэ фильтровать можно???</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="денчик" data-content="post-23851" id="js-post-23851">
+
+		<span class="u-anchorTarget" id="post-23851"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/denchik.2880/index.html" class="username " dir="auto" data-user-id="2880" data-xf-init="member-tooltip" itemprop="name">денчик</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/denchik.2880/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="2880" data-xf-init="member-tooltip" style="background-color: #669933; color: #0d1306">
+			<span class="avatar-u2880-l">Д</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-12T20:47:40+0300" data-time="1618249660" data-date-string="12 Апр 2021" data-time-string="20:47" title="12 Апр 2021 в 20:47">12 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#16</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>11 Мар 2021</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>140</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-12T20:47:40+0300" data-time="1618249660" data-date-string="12 Апр 2021" data-time-string="20:47" title="12 Апр 2021 в 20:47">12 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#16</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23851" data-lb-caption-desc="денчик · 12 Апр 2021 в 20:47">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">подскажите что это за плеер?</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+								
+	
+		
+		<section class="message-attachments">
+			<h4 class="block-textHeader">Вложения</h4>
+			<ul class="attachmentList">
+				
+					
+						
+	<li class="attachment">
+		
+			
+	
+		
+		
+	
+
+
+			<div class="attachment-icon attachment-icon--img">
+				<a href="../../attachments/izobrazhenie_2021-04-12_204711-png-5904.png" target="_blank" class="js-lbImage">
+					<img src="../../data/attachments/5/5904-41681afd31d80fab7ebf0b9da75dcb72.jpg" alt="изображение_2021-04-12_204711.png">
+				</a>
+			</div>
+		
+		<div class="attachment-name">
+			<a href="../../attachments/izobrazhenie_2021-04-12_204711-png-5904.png" target="_blank" title="изображение_2021-04-12_204711.png">изображение_2021-04-12_204711.png</a>
+		</div>
+		<div class="attachment-details">
+			<span class="attachment-details-size">8.8 KB</span>
+			<span class="attachment-details-views">Просмотры: 31</span>
+		</div>
+	</li>
+
+					
+				
+			</ul>
+		</section>
+	
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Dudarev.Vlad" data-content="post-23968" id="js-post-23968">
+
+		<span class="u-anchorTarget" id="post-23968"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/dudarev-vlad.1163/index.html" class="username " dir="auto" data-user-id="1163" data-xf-init="member-tooltip" itemprop="name">Dudarev.Vlad</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/dudarev-vlad.1163/index.html" class="avatar avatar--l" data-user-id="1163" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/1/1163.jpg" alt="Dudarev.Vlad" class="avatar-u1163-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-20T10:17:48+0300" data-time="1618903068" data-date-string="20 Апр 2021" data-time-string="10:17" title="20 Апр 2021 в 10:17">20 Апр 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#17</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>3 Апр 2020</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>404</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 36" style="background-color: #4CAF50; width: 97.297297297297%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 1" style="background-color: #F44336; width: 2.7027027027027%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-04-20T10:17:48+0300" data-time="1618903068" data-date-string="20 Апр 2021" data-time-string="10:17" title="20 Апр 2021 в 10:17">20 Апр 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#17</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-23968" data-lb-caption-desc="Dudarev.Vlad · 20 Апр 2021 в 10:17">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper">Эту тему неплохо бы закрепить в ветке.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Speedycom" data-content="post-24251" id="js-post-24251">
+
+		<span class="u-anchorTarget" id="post-24251"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/speedycom.122/index.html" class="username " dir="auto" data-user-id="122" data-xf-init="member-tooltip" itemprop="name">Speedycom</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/speedycom.122/index.html" class="avatar avatar--l avatar--default avatar--default--dynamic" data-user-id="122" data-xf-init="member-tooltip" style="background-color: #3d0f3d; color: #cc33cc">
+			<span class="avatar-u122-l">S</span> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--gray message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Енот</strong><span class="userBanner-after"></span></div>
+<div class="userBanner userBanner userBanner--silver message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Новичо́к, через «о́»</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-05-10T08:36:45+0300" data-time="1620625005" data-date-string="10 Май 2021" data-time-string="08:36" title="10 Май 2021 в 08:36">10 Май 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#18</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>8 Сен 2018</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>204</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 7" style="background-color: #4CAF50; width: 100%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 0" style="background-color: #B0BEC5; width: 0%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 0" style="background-color: #F44336; width: 0%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-05-10T08:36:45+0300" data-time="1620625005" data-date-string="10 Май 2021" data-time-string="08:36" title="10 Май 2021 в 08:36">10 Май 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#18</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-24251" data-lb-caption-desc="Speedycom · 10 Май 2021 в 08:36">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-23790">Alisa написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			Хорошая идея, завтра будет работать URL фильтр по рейтингу (1-10 или 10-100 рейтинг, не важно):<br>
+<ul>
+<li><code class="bbCodeInline">?kp_rating=70-90</code></li>
+<li><code class="bbCodeInline">?imdb_rating=6.8-8.5</code></li>
+</ul>
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>что слышно с параметром «рейтинг» в фильтре?</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+		<div class="reactions-bar reactions-bar--up content" id="reactions-bar-24251">
+			
+				
+	
+		<div class="reactions-left">
+			
+				<ul>
+	
+		<li class="th_reactions__listItem">
+			
+				<span class="reaction reaction1" title="Мне нравится" data-xf-init="tooltip"><img src="../../styles/themehouse/reactions/like.svg" class="reaction--normal reaction--normal2" alt="Мне нравится" title="Мне нравится" width="22px" height="22px"></span>
+			
+
+			
+			
+			<span class="reaction-count">1</span>
+		</li>
+	
+
+	
+		<li>
+			<a class="list-reacts" href="../../reactions/list/post/24251/index.html" title="Показать все" data-xf-click="overlay" data-nocache="true">Показать все</a>
+		</li>
+	
+</ul>
+
+			
+		</div>
+	
+
+
+
+
+
+			
+		</div>
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+				
+					
+	
+	
+	<article class="message message--post js-post js-inlineModContainer  " data-author="Alisa" data-content="post-24382" id="js-post-24382">
+
+		<span class="u-anchorTarget" id="post-24382"></span>
+
+		<div class="message-inner">
+			<div class="message-cell message-cell--user">
+				
+				
+				
+
+	<section itemscope="" itemtype="https://schema.org/Person" class="message-user">
+		<div class="message-userDetails">
+			<h4 class="message-name"><a href="../../members/alisa.2/index.html" class="username " dir="auto" data-user-id="2" data-xf-init="member-tooltip" itemprop="name">Alisa</a></h4>
+		</div>
+		<div class="message-avatar ">
+			<div class="message-avatar-wrapper">
+				<a href="../../members/alisa.2/index.html" class="avatar avatar--l" data-user-id="2" data-xf-init="member-tooltip">
+			<img src="../../data/avatars/l/0/2.jpg" srcset="../../data/avatars/h/0/2.jpg 2x" alt="Alisa" class="avatar-u2-l" itemprop="image"> 
+		</a>
+				
+			</div>
+		</div>
+		<div class="message-userDetails">
+			
+			<div class="userBanner userBanner userBanner--red message-userBanner" itemprop="jobTitle"><span class="userBanner-before"></span><strong>Off</strong><span class="userBanner-after"></span></div>
+			<div class="message-date"><a href="index.html" class="u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-05-24T18:23:38+0300" data-time="1621869818" data-date-string="24 Май 2021" data-time-string="18:23" title="24 Май 2021 в 18:23">24 Май 2021</time></a></div>
+		</div>
+		<div class="message-permalink"><a href="index.html" class="u-concealed" rel="nofollow">#19</a></div>
+		
+			
+			
+				<div class="message-userExtras">
+				
+
+
+					
+						<dl class="pairs pairs--justified">
+							<dt>Регистрация</dt>
+							<dd>15 Дек 2017</dd>
+						</dl>
+					
+					
+						<dl class="pairs pairs--justified">
+							<dt>Сообщения</dt>
+							<dd>5,067</dd>
+						</dl>
+					
+					<!--
+					
+					-->
+					
+					
+					
+					
+					
+						
+
+	
+
+						
+					
+				
+
+	
+	
+		
+	
+		
+			<div class="react_total_bar ">
+				
+					
+					
+						
+						
+						<div class="react_bar_segment react_bar_positive Tooltip" title="Позитивные реакции: 934" style="background-color: #4CAF50; width: 98.212407991588%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_neutral Tooltip" title="Нейтральные реакции: 8" style="background-color: #B0BEC5; width: 0.84121976866456%" data-xf-init="tooltip"></div>
+					
+						
+						
+						<div class="react_bar_segment react_bar_negative Tooltip" title="Негативные реакции: 9" style="background-color: #F44336; width: 0.94637223974763%" data-xf-init="tooltip"></div>
+					
+				
+			</div>
+		
+	
+
+		
+
+
+
+				</div>
+			
+		
+		<span class="message-userArrow"></span>
+	</section>
+
+			</div>
+			<div class="message-cell message-cell--main">
+				<div class="message-main js-quickEditTarget">
+
+					<header class="message-attribution">
+						<a href="index.html" class="message-attribution-main u-concealed" rel="nofollow"><time class="u-dt" dir="auto" datetime="2021-05-24T18:23:38+0300" data-time="1621869818" data-date-string="24 Май 2021" data-time-string="18:23" title="24 Май 2021 в 18:23">24 Май 2021</time></a>
+						<div class="message-attribution-opposite">
+							
+							<a href="index.html" class="u-concealed" rel="nofollow">#19</a>
+						</div>
+					</header>
+
+					<div class="message-content js-messageContent">
+
+						
+						
+						
+
+						<div class="message-userContent lbContainer js-lbContainer " data-lb-id="post-24382" data-lb-caption-desc="Alisa · 24 Май 2021 в 18:23">
+
+							
+
+							<article class="message-body js-selectToQuote">
+								
+								<div class="bbWrapper"><div class="bbCodeBlock bbCodeBlock--expandable bbCodeBlock--quote">
+	
+		<div class="bbCodeBlock-title">
+			
+				<a href="index.html" class="bbCodeBlock-sourceJump" data-xf-click="attribution" data-content-selector="#post-24251">Speedycom написал(а):</a>
+			
+		</div>
+	
+	<div class="bbCodeBlock-content">
+		<div class="bbCodeBlock-expandContent">
+			что слышно с параметром «рейтинг» в фильтре?
+		</div>
+		<div class="bbCodeBlock-expandLink"><a>Нажмите для раскрытия...</a></div>
+	</div>
+</div>Это нужно запрограммировать каждому самостоятельно, при надобности, так как в шаблонах по умолчанию его нет.</div>
+								<div class="js-selectToQuoteEnd">&nbsp;</div>
+								
+							</article>
+
+							
+
+							
+						</div>
+
+						
+
+						
+	
+
+					</div>
+
+					<footer class="message-footer">
+						
+						
+	
+	
+
+	
+
+						
+						
+
+						<div class="js-historyTarget message-historyTarget toggleTarget" data-href="trigger-href"></div>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		
+	</article>
+
+				
+			
+		</div>
+	</div>
+
+	
+		<div class="block-outer block-outer--after">
+			
+				
+				
+				
+					<div class="block-outer-opposite">
+						
+							<a href="../../login/index.html" class="button--link button" data-xf-click="overlay"><span class="button-text">
+								Для ответа, нужно войти или зарегистрироваться.
+							</span></a>
+						
+					</div>
+				
+			
+		</div>
+	
+
+	
+	
+
+</div>
+
+
+
+
+
+<div class="blockMessage blockMessage--none">
+	
+	
+
+</div>
+
+
+	
+
+
+
+<div class="block similarthreads-wide">
+	<div class="block-container">
+		<div class="block-body">
+			
+			<div class="dataList " data-xf-init="responsive-data-list">
+			<table class="dataList-table">
+				
+				
+			<tbody><tr class="dataList-row dataList-row--header dataList-row--noHover">
+				<th class="dataList-cell">Похожие темы</th>
+<th class="dataList-cell">Раздел</th>
+<th class="dataList-cell">Ответов</th>
+<th class="dataList-cell">Дата</th>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/index.html"> Как публиковать только Коллекции на главной странице?</a></td>
+<td class="dataList-cell"><a href="../../forums/content/index.html">Контент</a></td>
+<td class="dataList-cell">4</td>
+<td class="dataList-cell"><time class="u-dt" dir="auto" datetime="2022-09-16T12:12:19+0300" data-time="1663319539" data-date-string="16 Сен 2022" data-time-string="12:12" title="16 Сен 2022 в 12:12">16 Сен 2022</time></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-sdelat-rasshirennyj-poisk-na-sajte.3170/index.html"> Как сделать расширенный поиск на сайте?</a></td>
+<td class="dataList-cell"><a href="../../forums/content/index.html">Контент</a></td>
+<td class="dataList-cell">13</td>
+<td class="dataList-cell"><time class="u-dt" dir="auto" datetime="2022-09-15T23:02:37+0300" data-time="1663272157" data-date-string="15 Сен 2022" data-time-string="23:02" title="15 Сен 2022 в 23:02">15 Сен 2022</time></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/index.html"> Как публиковать только Коллекции на главной  странице?</a></td>
+<td class="dataList-cell"><a href="../../forums/cinemapress/index.html">CinemaPress</a></td>
+<td class="dataList-cell">0</td>
+<td class="dataList-cell"><time class="u-dt" dir="auto" datetime="2022-09-14T12:18:43+0300" data-time="1663147123" data-date-string="14 Сен 2022" data-time-string="12:18" title="14 Сен 2022 в 12:18">14 Сен 2022</time></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-zamenit-vse-postery-serialov.3167/index.html"> Как заменить все постеры сериалов?</a></td>
+<td class="dataList-cell"><a href="../../forums/seo/index.html">SEO</a></td>
+<td class="dataList-cell">1</td>
+<td class="dataList-cell"><time class="u-dt" dir="auto" datetime="2022-09-12T21:50:29+0300" data-time="1663008629" data-date-string="12 Сен 2022" data-time-string="21:50" title="12 Сен 2022 в 21:50">12 Сен 2022</time></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../avtoposting-v-instagram-kak-sdelat.3112/index.html"> Автопостинг в instagram как сделать?</a></td>
+<td class="dataList-cell"><a href="../../forums/social/index.html">Соц. сети</a></td>
+<td class="dataList-cell">2</td>
+<td class="dataList-cell"><time class="u-dt" dir="auto" datetime="2021-10-01T16:22:33+0300" data-time="1633094553" data-date-string="1 Окт 2021" data-time-string="16:22" title="1 Окт 2021 в 16:22">1 Окт 2021</time></td>
+			</tr>
+		
+				
+			
+			</tbody></table>
+			</div>
+		
+		</div>
+	</div>
+</div>
+	
+<div class="block similarthreads-narrow">
+	<div class="block-container">
+		<div class="block-body">
+			
+			<div class="dataList " data-xf-init="responsive-data-list">
+			<table class="dataList-table">
+				
+				
+			<tbody><tr class="dataList-row dataList-row--header dataList-row--noHover">
+				<th class="dataList-cell">Похожие темы</th>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/index.html"> Как публиковать только Коллекции на главной странице?</a></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-sdelat-rasshirennyj-poisk-na-sajte.3170/index.html"> Как сделать расширенный поиск на сайте?</a></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/index.html"> Как публиковать только Коллекции на главной  странице?</a></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../kak-zamenit-vse-postery-serialov.3167/index.html"> Как заменить все постеры сериалов?</a></td>
+			</tr>
+		
+				
+					
+			<tr class="dataList-row dataList-row--noHover">
+				<td class="dataList-cell dataList-cell--link"><a href="../avtoposting-v-instagram-kak-sdelat.3112/index.html"> Автопостинг в instagram как сделать?</a></td>
+			</tr>
+		
+				
+			
+			</tbody></table>
+			</div>
+		
+		</div>
+	</div>
+</div>
+	
+<br>
+	
+
+
+
+
+</div>
+				
+			</div>
+
+			
+		</div>
+
+		
+		
+	
+		<ul class="p-breadcrumbs p-breadcrumbs--bottom" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+		
+
+			
+			
+
+			
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../index.html#forum-vebmasterov-i-razrabotchikov.11" itemprop="item">
+			<span itemprop="name">Форум вебмастеров и разработчиков</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../categories/cinemapress.19/index.html" itemprop="item">
+			<span itemprop="name">CinemaPress</span>
+		</a>
+	</li>
+
+			
+				
+	<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+		<a href="../../forums/help/index.html" itemprop="item">
+			<span itemprop="name">Помощь (Архив)</span>
+		</a>
+	</li>
+
+			
+
+		
+		</ul>
+	
+
+		
+	</div>
+</div>
+
+<footer class="p-footer" id="footer">
+	<div class="p-footer-inner">
+
+		<div class="p-footer-row">
+			
+				<div class="p-footer-row-main">
+					<ul class="p-footer-linkList">
+					
+						
+						
+							<li><a href="../../misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
+								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
+						
+					
+					</ul>
+				</div>
+			
+			<div class="p-footer-row-opposite">
+				<ul class="p-footer-linkList">
+					
+
+					
+						<li><a href="../../help/terms/index.html">Условия и правила</a></li>
+					
+
+					
+
+					
+						<li><a href="../../help/index.html">Помощь</a></li>
+					
+
+					
+						<li><a href="../../index.html">Главная</a></li>
+					
+
+					<li><a href="../../forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+			<div class="p-footer-copyright">
+			
+				
+				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="../../link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
+			
+			</div>
+		
+
+		
+	</div>
+</footer>
+
+</div> <!-- closing p-pageWrapper -->
+
+<div class="u-bottomFixer js-bottomFixTarget">
+	
+</div>
+
+
+	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
+		
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
+	<script src="../../js/vendor/vendor-compiled.js"></script>
+	<script src="../../js/xf/core-compiled.js"></script>
+	<script src="../../js/xf/lightbox-compiled.js"></script>
+<script src="../../js/xf/code_block-compiled.js"></script>
+<script src="../../js/themehouse/reactions/react.js"></script>
+
+	<script>
+		jQuery.extend(true, XF.config, {
+			userId: 0,
+			url: {
+				fullBase: 'https://enota.club/',
+				basePath: '/',
+				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
+				keepAlive: '/login/keep-alive'
+			},
+			cookie: {
+				path: '/',
+				domain: '',
+				prefix: 'xf_'
+			},
+			csrf: '1664150958,cde74204af3ffb934b19b5ec5fe8f0f4',
+			js: {"\/js\/xf\/lightbox-compiled.js?_v=1bd6f38b":true,"\/js\/xf\/code_block-compiled.js?_v=1bd6f38b":true,"\/js\/themehouse\/reactions\/react.js?_v=1bd6f38b":true},
+			css: {"public:andy_similarthreads.less":true,"public:attachments.less":true,"public:bb_code.less":true,"public:lightbox.less":true,"public:message.less":true,"public:th_reactions.less":true,"public:extra.less":true},
+			time: {
+				now: 1664150958,
+				today: 1664139600,
+				todayDow: 1
+			},
+			borderSizeFeature: '3px',
+			enableRtnProtect: true,
+			enableFormSubmitSticky: true,
+			uploadMaxFilesize: 2097152,
+			visitorCounts: {
+				conversations_unread: '0',
+				alerts_unread: '0',
+				total_unread: '0',
+				title_count: true,
+				icon_indicator: true
+			},
+			jsState: {"imgur":true}
+		});
+
+		jQuery.extend(XF.phrases, {
+			date_x_at_time_y: "{date} в {time}",
+			day_x_at_time_y:  "{day} в {time}",
+			yesterday_at_x:   "Вчера в {time}",
+			x_minutes_ago:    "{minutes} мин. назад",
+			one_minute_ago:   "1 минуту назад",
+			a_moment_ago:     "Только что",
+			today_at_x:       "Сегодня в {time}",
+			in_a_moment:      "In a moment",
+			in_a_minute:      "Менее минуты назад",
+			in_x_minutes:     "In {minutes} minutes",
+			later_today_at_x: "Сегодня позже в {time}",
+			tomorrow_at_x:    "Завтра в {time}",
+
+			day0: "Воскресенье",
+			day1: "Понедельник",
+			day2: "Вторник",
+			day3: "Среда",
+			day4: "Четверг",
+			day5: "Пятница",
+			day6: "Суббота",
+
+			dayShort0: "Вос",
+			dayShort1: "Пон",
+			dayShort2: "Вто",
+			dayShort3: "Сре",
+			dayShort4: "Чет",
+			dayShort5: "Пят",
+			dayShort6: "Суб",
+
+			month0: "Январь",
+			month1: "Февраль",
+			month2: "Март",
+			month3: "Апрель",
+			month4: "Май",
+			month5: "Июнь",
+			month6: "Июль",
+			month7: "Август",
+			month8: "Сентябрь",
+			month9: "Октябрь",
+			month10: "Ноябрь",
+			month11: "Декабрь",
+
+			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
+			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
+			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+			file_too_large_to_upload: "Файл слишком большой для загрузки.",
+			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+			close: "Закрыть",
+
+			showing_x_of_y_items: "Показано {count} из {total} элементов",
+			showing_all_items: "Показаны все элементы",
+			no_items_to_display: "Нет элементов для отображения"
+		});
+	</script>
+
+	<form style="display:none" hidden="hidden">
+		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
+	</form>
+
+	
+
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "DiscussionForumPosting",
+		"@id": "https:\/\/enota.club\/threads\/kak-sdelat-filtr-filmov-na-kinosajte-skript-filtra-po-neskolkim-kategorijam.2967\/",
+		"headline": "Как сделать фильтр фильмов на киносайте? (скрипт фильтра по нескольким категориям)",
+		"articleBody": "Некоторые из вас уже сделали себе фильтр фильмов на JS, но если еще нет, то в пару строк кода, который Вам нужно будет только копировать и вставлять, Вы сможете реализовать такую функцию.\n\nПример готового фильтра Вы можете увидеть в шаблоне «snow» - https:\/\/enota.club\/threads\/novyj-shablon-dlja-cinemapress-snow-skript-filtra-beskonechnaja-prokrutka.2965\/\n\nФильтр будет располагаться на главной странице (шаблон index.ejs) и на странице категорий (шаблон category.ejs). Скрипт практически идентичный, отличия будет только в одной функции, которая ставит заранее предопределенные значения, например если человек зашел на «Фильмы + 2021 + комедия», чтобы это уже стояло в фильтре.\n\nСтили и цвета фильтра, Вам придется подбирать под Ваш сайт, и редактировать CSS. Весь код будет прокомментирован, поэтому Вы легко разбересь.\n\nКод для вставки в index.ejs\n\nHTML-код фильтра фильмов:\n\n<div>\n\n    <!-- Слайдер годов -->\n    <div>\n        <div id=\"cinemapress-slider\"><\/div>\n    <\/div>\n\n    <!-- Параметры фильтра -->\n    <div id=\"cinemapress-filter\">\n\n        <!-- Тип: Фильмы\/Сериалы -->\n        <div class=\"custom-select\">\n            <!-- data-url - URL типа из админ-панели (для подставления в запрос ?type=фильмы) -->\n            <!-- data-url_name - URL типа (для подставления в хеш #type=фильмы) -->\n            <select data-url=\"<%- page.urls.type %>\" data-url_name=\"type\">\n                <option value=\"\"><\/option>\n                <option value=\"<%- page.urls.types.movie %>\" selected=\"selected\"><%- page.l.movies %><\/option>\n                <option value=\"<%- page.urls.types.serial %>\"><%- page.l.series %><\/option>\n            <\/select>\n        <\/div>\n\n        <!-- Жанры: комедия,драма,ужасы -->\n        <div class=\"custom-select\">\n            <!-- data-url - URL типа из админ-панели (для подставления в запрос ?genre=комедия) -->\n            <!-- data-url_name - URL типа (для подставления в хеш #genre=комедия) -->\n            <select data-url=\"<%- page.urls.genre %>\" data-url_name=\"genre\">\n                <option value=\"\" selected=\"selected\"><%- page.l.genre %>:<\/option>\n                <% \/* Жанры (список в настройках отображения) *\/ %>\n                <% page.urls.genres.forEach(function(genre) { %>\n                    <option value=\"<%- genre.title %>\"><%- genre.title %><\/option>\n                <% }); %>\n            <\/select>\n        <\/div>\n\n        <!-- Страны: США,Россия,Япония -->\n        <div class=\"custom-select\">\n            <!-- data-url - URL типа из админ-панели (для подставления в запрос ?country=США) -->\n            <!-- data-url_name - URL типа (для подставления в хеш #country=США) -->\n            <select data-url=\"<%- page.urls.country %>\" data-url_name=\"country\">\n                <option value=\"\" selected=\"selected\"><%- page.l.country %>:<\/option>\n                <% \/* Жанры (список в настройках отображения) *\/ %>\n                <% page.urls.countries.forEach(function(country) { %>\n                    <option value=\"<%- country.title %>\"><%- country.title %><\/option>\n                <% }); %>\n            <\/select>\n        <\/div>\n\n        <!-- Сортировка: По числу голосов КП, По рейтингу IMDb -->\n        <div class=\"custom-select\">\n            <!-- data-url - URL типа из админ-панели (для подставления в запрос ?sorting=По рейтингу IMDb) -->\n            <!-- data-url_name - URL типа (для подставления в хеш #sorting=По рейтингу IMDb) -->\n            <select data-url=\"sorting\" data-url_name=\"sorting\">\n                <option value=\"\" selected=\"selected\"><%- page.l.sorting %>:<\/option>\n                <% if (page.l['kinopoisk-rating-up']) { %>\n                    <option value=\"kinopoisk-rating-up\"><%- page.l['kinopoisk-rating-up'] %><\/option>\n                <% } %>\n                <% if (page.l['imdb-rating-up']) { %>\n                    <option value=\"imdb-rating-up\"><%- page.l['imdb-rating-up'] %><\/option>\n                <% } %>\n                <% if (page.l['kinopoisk-vote-up']) { %>\n                    <option value=\"kinopoisk-vote-up\"><%- page.l['kinopoisk-vote-up'] %><\/option>\n                <% } %>\n                <% if (page.l['imdb-vote-up']) { %>\n                    <option value=\"imdb-vote-up\"><%- page.l['imdb-vote-up'] %><\/option>\n                <% } %>\n                <% if (page.l['year-up']) { %>\n                    <option value=\"year-up\"><%- page.l['year-up'] %><\/option>\n                <% } %>\n                <% if (page.l['premiere-up']) { %>\n                    <option value=\"premiere-up\"><%- page.l['premiere-up'] %><\/option>\n                <% } %>\n            <\/select>\n        <\/div>\n\n        <!-- Сбросить значения -->\n        <button id=\"reset-filter\">\n            <span><%- page.l.reset %><\/span>\n        <\/button>\n\n        <!-- Начать поиск -->\n        <button id=\"submit-filter\">\n            <span><%- page.l.search %><\/span>\n        <\/button>\n\n    <\/div>\n\n<\/div>\n\n<!-- Кнопка поиска случайного фильма на основе значений фильтра -->\n<a href=\"javascript:void(0)\" id=\"random-filter\">\n    <span><%- page.l.lucky %><\/span>\n<\/a>\n\n\nКак Вы видите, в HTML нет ничего сложного, проставляйте CSS классы и формируйте стили под цвета Вашего шаблона.",
+		"articleSection": "Помощь (Архив)",
+		"author": {
+			"@type": "Person",
+			"name": "Alisa"
+		},
+		"datePublished": "2021-03-08",
+		"dateModified": "2021-05-24",
+		
+		"image": "https:\/\/enota.club\/data\/avatars\/h\/0\/2.jpg?1528229091",
+		
+		"interactionStatistic": {
+			"@type": "InteractionCounter",
+			"interactionType": "https://schema.org/ReplyAction",
+			"userInteractionCount": 18
+		}
+	}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
