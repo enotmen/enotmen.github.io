@@ -1,2638 +1,1809 @@
-<!DOCTYPE html><html id="XF" lang="ru-RU" dir="LTR" data-app="public" data-template="forum_list" data-container-key="" data-content-key="" data-logged-in="false" data-cookie-prefix="xf_" class="has-no-js template-forum_list" data-run-jobs=""><head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	
-	
-	
-
-	<title>Как создать автоматические сайты, приложения/игры, ботов, расширения?</title>
-
-	
-		
-		<meta name="description" content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook...">
-		<meta property="og:description" content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook, расширений Chrome/Firefox/Opera">
-		<meta property="twitter:description" content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook, расширений Chrome/Firefox/Opera">
-	
-	
-		<link rel="canonical" href="https://enota.club/">
-	
-		<link rel="alternate" type="application/rss+xml" title="RSS лента для Как создать автоматические сайты, приложения/игры, ботов, расширения?" href="/forums/-/index.rss">
-	
-
-	
-		
-	
-	
-	<meta property="og:site_name" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
-
-
-	
-	
-		
-	
-	
-	
-		<meta property="og:title" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
-		<meta property="twitter:title" content="Как создать автоматические сайты, приложения/игры, ботов, расширения?">
-	
-
-
-	
-	
-	
-
-	
-		<meta name="theme-color" content="#272F38">
-	
-
-	
-	
-	
-
-	
-
-	<link rel="stylesheet" href="styles/2.css">
-
-	
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
-	<link rel="stylesheet" href="styles/1.css">
-
-	
-		<script src="js/xf/preamble-compiled.js"></script>
-	
-
-
-	
-		<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-	
-	
-	
-</head>
-<body data-template="forum_list">
-
-<div class="p-pageWrapper" id="top">
-
-
-
-<header class="p-header" id="header">
-	<div class="p-header-inner">
-		<div class="p-header-content">
-
-			<div class="p-header-logo p-header-logo--image">
-				<a href="index.html">
-					<img src="styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="styles/default/img/logo.png 2x">
-				</a>
-			</div>
-
-			
-		</div>
-	</div>
-</header>
-
-
-
-
-
-	
-	<nav class="p-nav">
-		<div class="p-nav-inner">
-			<a class="p-nav-menuTrigger" data-xf-click="off-canvas" data-menu=".js-headerOffCanvasMenu" role="button" tabindex="0">
-				<i aria-hidden="true"></i>
-				<span class="p-nav-menuText">Меню</span>
-			</a>
-
-			<div class="p-nav-smallLogo">
-				<a href="index.html">
-					<img src="styles/default/img/logo.png" alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?" srcset="styles/default/img/logo.png 2x">
-				</a>
-			</div>
-
-			<div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
-				<div class="hScroller-scroll">
-					<ul class="p-nav-list js-offCanvasNavSource">
-					
-					</ul>
-				</div>
-			</div>
-
-			<div class="p-nav-opposite">
-				<div class="p-navgroup p-account p-navgroup--guest">
-					
-						<a href="login/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn" rel="nofollow" data-xf-click="overlay">
-							<span class="p-navgroup-linkText">Вход</span>
-						</a>
-						
-							<a href="register/index.html" class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register" rel="nofollow" data-xf-click="overlay">
-								<span class="p-navgroup-linkText">Регистрация</span>
-							</a>
-						
-					
-				</div>
-
-				<div class="p-navgroup p-discovery">
-					<a href="whats-new/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew" title="Что нового?">
-						<i aria-hidden="true"></i>
-						<span class="p-navgroup-linkText">Что нового?</span>
-					</a>
-
-					
-						<a href="search/index.html" class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search" data-xf-click="menu" data-xf-key="/" aria-label="Поиск" aria-expanded="false" aria-haspopup="true" title="Поиск">
-							<i aria-hidden="true"></i>
-							<span class="p-navgroup-linkText">Поиск</span>
-						</a>
-						<div class="menu menu--structural menu--wide" data-menu="menu" aria-hidden="true">
-							<form action="/search/search" method="post" class="menu-content" data-xf-init="quick-search">
-
-								<h3 class="menu-header">Поиск</h3>
-								
-								<div class="menu-row">
-									
-										<input type="text" class="input" name="keywords" placeholder="Поиск..." aria-label="Поиск" data-menu-autofocus="true">
-									
-								</div>
-
-								
-								<div class="menu-row">
-									<label class="iconic iconic--checkbox iconic--labelled"><input type="checkbox" name="c[title_only]" value="1"><i aria-hidden="true"></i>Искать только в заголовках</label>
-
-								</div>
-								
-								<div class="menu-row">
-									<div class="inputGroup">
-										<span class="inputGroup-text">От:</span>
-										<input class="input" name="c[users]" data-xf-init="auto-complete" placeholder="Пользователь">
-									</div>
-								</div>
-								<div class="menu-footer">
-									<span class="menu-footer-controls">
-										<button type="submit" class="button--primary button button--icon button--icon--search"><span class="button-text">Поиск</span></button>
-										<a href="search/index.html" class="button" rel="nofollow"><span class="button-text">Расширенный поиск...</span></a>
-									</span>
-								</div>
-
-								<input type="hidden" name="_xfToken" value="1664150212,1434bb68be49f3aa601c4ba787301628">
-							</form>
-						</div>
-					
-				</div>
-			</div>
-		</div>
-	</nav>
-
-	
-	
-		<div class="p-sectionLinks p-sectionLinks--empty"></div>
-	
-
-
-
-<div class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu" data-menu="menu" aria-hidden="true" data-ocm-builder="navigation">
-	<div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
-	<div class="offCanvasMenu-content">
-		<div class="offCanvasMenu-header">
-			Меню
-			<a class="offCanvasMenu-closer" data-menu-close="true" role="button" tabindex="0" aria-label="Закрыть"></a>
-		</div>
-		
-			<div class="p-offCanvasRegisterLink">
-				<div class="offCanvasMenu-linkHolder">
-					<a href="login/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
-						Вход
-					</a>
-				</div>
-				<hr class="offCanvasMenu-separator">
-				
-					<div class="offCanvasMenu-linkHolder">
-						<a href="register/index.html" class="offCanvasMenu-link" rel="nofollow" data-xf-click="overlay" data-menu-close="true">
-							Регистрация
-						</a>
-					</div>
-					<hr class="offCanvasMenu-separator">
-				
-			</div>
-		
-		<div class="js-offCanvasNavTarget"></div>
-	</div>
-</div>
-
-<div class="p-body">
-	<div class="p-body-inner">
-		<!--XF:EXTRA_OUTPUT-->
-
-		
-
-		
-
-		
-		
-	
-
-		
-
-		
-	<noscript><div class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly">JavaScript отключён. Чтобы полноценно использовать наш сайт, включите JavaScript в своём браузере.</div></noscript>
-
-		
-	<!--[if lt IE 9]><div class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic">Вы используете устаревший браузер. Этот и другие сайты могут отображаться в нём некорректно.<br />Вам необходимо обновить браузер или попробовать использовать <a href="https://www.google.com/chrome/browser/" target="_blank">другой</a>.</div><![endif]-->
-
-
-		
-			<div class="p-body-header">
-			
-				
-					<div class="p-title ">
-					
-						
-							<h1 class="p-title-value">Как создать автоматические сайты, приложения/игры, ботов, расширения?</h1>
-						
-						
-							<div class="p-title-pageAction">
-	
-		<a href="whats-new/posts/1203523/index.html" class="button button--icon button--icon--bolt"><span class="button-text">
-			Новые сообщения
-		</span></a>
-	
-	
-</div>
-						
-					
-					</div>
-				
-
-				
-			
-			</div>
-		
-
-		<div class="p-body-main  ">
-			
-
-			<div class="p-body-content">
-				
-				<div class="p-body-pageContent">
-
-
-
-
-
-
-
-
-
-	
-	
-	
-		
-	
-	
-	
-
-
-	
-	
-	
-	
-		
-	
-	
-	
-
-
-	
-	
-
-
-
-
-
-
-
-
-	<div class="block" data-widget-id="12" data-widget-key="new_messages" data-widget-definition="new_posts">
-		<div class="block-container">
-			
-				<h3 class="block-header">
-					<a href="whats-new/posts/1203523/index.html" rel="nofollow">Последние сообщения</a>
-				</h3>
-				<div class="block-body">
-					<div class="structItemContainer">
-						
-							
-								
-
-	
-
-	<div class="structItem structItem--thread js-inlineModContainer js-threadListItem-3172" data-author="Антонио Деспасилите">
-		<div class="structItem-cell structItem-cell--icon">
-			<div class="structItem-iconContainer">
-				<a href="members/antonio-despasilite.608/index.html" class="avatar avatar--s" data-user-id="608" data-xf-init="member-tooltip">
-			<img src="data/avatars/s/0/608.jpg" srcset="data/avatars/m/0/608.jpg 2x" alt="Антонио Деспасилите" class="avatar-u608-s"> 
-		</a>
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
-			
-
-	
-
-	
-
-
-			<div class="structItem-title">
-				
-				
-				<a href="threads/propadajut-filmy-i-serialy-iz-sajta.3172/index.html" class="" data-tp-primary="on" data-xf-init="" data-preview-url="">Пропадают фильмы и сериалы из сайта</a>
-			</div>
-
-			<div class="structItem-minor">
-				
-
-				
-					<ul class="structItem-parts">
-						<li><a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a></li>
-						<li class="structItem-startDate"><a href="threads/propadajut-filmy-i-serialy-iz-sajta.3172/index.html" rel="nofollow"><time class="u-dt" dir="auto" datetime="2022-09-20T20:36:48+0300" data-time="1663695408" data-date-string="20 Сен 2022" data-time-string="20:36" title="20 Сен 2022 в 20:36">Вторник в 20:36</time></a></li>
-						
-							<li><a href="forums/content/index.html">Контент</a></li>
-						
-					</ul>
-
-					
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--meta" title="Количество симпатий к первому сообщению: 0">
-			<dl class="pairs pairs--justified">
-				<dt>Ответы</dt>
-				<dd>16</dd>
-			</dl>
-			<dl class="pairs pairs--justified structItem-minor">
-				<dt>Просмотры</dt>
-				<dd>709</dd>
-			</dl>
-		</div>
-		<div class="structItem-cell structItem-cell--latest">
-			
-				<a href="threads/propadajut-filmy-i-serialy-iz-sajta.3172/index.html" rel="nofollow"><time class="structItem-latestDate u-dt" dir="auto" datetime="2022-09-24T17:21:07+0300" data-time="1664029267" data-date-string="24 Сен 2022" data-time-string="17:21" title="24 Сен 2022 в 17:21">Суббота в 17:21</time></a>
-				<div class="structItem-minor">
-					
-						<a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a>
-					
-				</div>
-			
-		</div>
-	</div>
-
-							
-								
-
-	
-
-	<div class="structItem structItem--thread js-inlineModContainer js-threadListItem-3170" data-author="Антонио Деспасилите">
-		<div class="structItem-cell structItem-cell--icon">
-			<div class="structItem-iconContainer">
-				<a href="members/antonio-despasilite.608/index.html" class="avatar avatar--s" data-user-id="608" data-xf-init="member-tooltip">
-			<img src="data/avatars/s/0/608.jpg" srcset="data/avatars/m/0/608.jpg 2x" alt="Антонио Деспасилите" class="avatar-u608-s"> 
-		</a>
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
-			
-
-	
-
-	
-
-
-			<div class="structItem-title">
-				
-				
-				<a href="threads/kak-sdelat-rasshirennyj-poisk-na-sajte.3170/index.html" class="" data-tp-primary="on" data-xf-init="" data-preview-url="">Как сделать расширенный поиск на сайте?</a>
-			</div>
-
-			<div class="structItem-minor">
-				
-
-				
-					<ul class="structItem-parts">
-						<li><a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a></li>
-						<li class="structItem-startDate"><a href="threads/kak-sdelat-rasshirennyj-poisk-na-sajte.3170/index.html" rel="nofollow"><time class="u-dt" dir="auto" datetime="2022-09-15T23:02:37+0300" data-time="1663272157" data-date-string="15 Сен 2022" data-time-string="23:02" title="15 Сен 2022 в 23:02">15 Сен 2022</time></a></li>
-						
-							<li><a href="forums/content/index.html">Контент</a></li>
-						
-					</ul>
-
-					
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--meta" title="Количество симпатий к первому сообщению: 0">
-			<dl class="pairs pairs--justified">
-				<dt>Ответы</dt>
-				<dd>13</dd>
-			</dl>
-			<dl class="pairs pairs--justified structItem-minor">
-				<dt>Просмотры</dt>
-				<dd>665</dd>
-			</dl>
-		</div>
-		<div class="structItem-cell structItem-cell--latest">
-			
-				<a href="threads/kak-sdelat-rasshirennyj-poisk-na-sajte.3170/index.html" rel="nofollow"><time class="structItem-latestDate u-dt" dir="auto" datetime="2022-09-20T07:36:17+0300" data-time="1663648577" data-date-string="20 Сен 2022" data-time-string="07:36" title="20 Сен 2022 в 07:36">Вторник в 07:36</time></a>
-				<div class="structItem-minor">
-					
-						<a href="members/kazik.13/index.html" class="username " dir="auto" data-user-id="13" data-xf-init="member-tooltip">Kazik</a>
-					
-				</div>
-			
-		</div>
-	</div>
-
-							
-								
-
-	
-
-	<div class="structItem structItem--thread js-inlineModContainer js-threadListItem-3171" data-author="Dudarev.Vlad">
-		<div class="structItem-cell structItem-cell--icon">
-			<div class="structItem-iconContainer">
-				<a href="members/dudarev-vlad.1163/index.html" class="avatar avatar--s" data-user-id="1163" data-xf-init="member-tooltip">
-			<img src="data/avatars/s/1/1163.jpg" srcset="data/avatars/m/1/1163.jpg 2x" alt="Dudarev.Vlad" class="avatar-u1163-s"> 
-		</a>
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
-			
-
-	
-
-	
-		<div class="reactions-bar bit-list" id="reactions-bar-27710">
-			
-				
-	
-		<div class="reactions-left">
-			
-				<ul>
-	
-		<li class="th_reactions__listItem">
-			
-				<span class="reaction reaction1" title="Мне нравится" data-xf-init="tooltip"><img src="styles/themehouse/reactions/like.svg" class="reaction--normal reaction--normal2" alt="Мне нравится" title="Мне нравится" width="22px" height="22px"></span>
-			
-
-			
-			
-			<span class="reaction-count">1</span>
-		</li>
-	
-
-	
-</ul>
-
-			
-		</div>
-	
-
-
-
-
-
-			
-		</div>
-	
-
-
-			<div class="structItem-title">
-				
-				
-				<a href="threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/index.html" class="" data-tp-primary="on" data-xf-init="" data-preview-url="">Как публиковать только Коллекции на главной странице?</a>
-			</div>
-
-			<div class="structItem-minor">
-				
-
-				
-					<ul class="structItem-parts">
-						<li><a href="members/dudarev-vlad.1163/index.html" class="username " dir="auto" data-user-id="1163" data-xf-init="member-tooltip">Dudarev.Vlad</a></li>
-						<li class="structItem-startDate"><a href="threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/index.html" rel="nofollow"><time class="u-dt" dir="auto" datetime="2022-09-16T12:12:19+0300" data-time="1663319539" data-date-string="16 Сен 2022" data-time-string="12:12" title="16 Сен 2022 в 12:12">16 Сен 2022</time></a></li>
-						
-							<li><a href="forums/content/index.html">Контент</a></li>
-						
-					</ul>
-
-					
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--meta" title="Количество симпатий к первому сообщению: 1">
-			<dl class="pairs pairs--justified">
-				<dt>Ответы</dt>
-				<dd>4</dd>
-			</dl>
-			<dl class="pairs pairs--justified structItem-minor">
-				<dt>Просмотры</dt>
-				<dd>326</dd>
-			</dl>
-		</div>
-		<div class="structItem-cell structItem-cell--latest">
-			
-				<a href="threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3171/index.html" rel="nofollow"><time class="structItem-latestDate u-dt" dir="auto" datetime="2022-09-16T14:45:40+0300" data-time="1663328740" data-date-string="16 Сен 2022" data-time-string="14:45" title="16 Сен 2022 в 14:45">16 Сен 2022</time></a>
-				<div class="structItem-minor">
-					
-						<a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a>
-					
-				</div>
-			
-		</div>
-	</div>
-
-							
-								
-
-	
-
-	<div class="structItem structItem--thread js-inlineModContainer js-threadListItem-3169" data-author="Антонио Деспасилите">
-		<div class="structItem-cell structItem-cell--icon">
-			<div class="structItem-iconContainer">
-				<a href="members/antonio-despasilite.608/index.html" class="avatar avatar--s" data-user-id="608" data-xf-init="member-tooltip">
-			<img src="data/avatars/s/0/608.jpg" srcset="data/avatars/m/0/608.jpg 2x" alt="Антонио Деспасилите" class="avatar-u608-s"> 
-		</a>
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
-			
-
-	
-
-	
-
-
-			<div class="structItem-title">
-				
-				
-				<a href="threads/videobalanser-dlja-sajta.3169/index.html" class="" data-tp-primary="on" data-xf-init="" data-preview-url="">Видеобалансер для сайта</a>
-			</div>
-
-			<div class="structItem-minor">
-				
-
-				
-					<ul class="structItem-parts">
-						<li><a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a></li>
-						<li class="structItem-startDate"><a href="threads/videobalanser-dlja-sajta.3169/index.html" rel="nofollow"><time class="u-dt" dir="auto" datetime="2022-09-14T20:10:23+0300" data-time="1663175423" data-date-string="14 Сен 2022" data-time-string="20:10" title="14 Сен 2022 в 20:10">14 Сен 2022</time></a></li>
-						
-							<li><a href="forums/content/index.html">Контент</a></li>
-						
-					</ul>
-
-					
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--meta" title="Количество симпатий к первому сообщению: 0">
-			<dl class="pairs pairs--justified">
-				<dt>Ответы</dt>
-				<dd>2</dd>
-			</dl>
-			<dl class="pairs pairs--justified structItem-minor">
-				<dt>Просмотры</dt>
-				<dd>260</dd>
-			</dl>
-		</div>
-		<div class="structItem-cell structItem-cell--latest">
-			
-				<a href="threads/videobalanser-dlja-sajta.3169/index.html" rel="nofollow"><time class="structItem-latestDate u-dt" dir="auto" datetime="2022-09-15T00:15:33+0300" data-time="1663190133" data-date-string="15 Сен 2022" data-time-string="00:15" title="15 Сен 2022 в 00:15">15 Сен 2022</time></a>
-				<div class="structItem-minor">
-					
-						<a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a>
-					
-				</div>
-			
-		</div>
-	</div>
-
-							
-								
-
-	
-
-	<div class="structItem structItem--thread js-inlineModContainer js-threadListItem-3167" data-author="Антонио Деспасилите">
-		<div class="structItem-cell structItem-cell--icon">
-			<div class="structItem-iconContainer">
-				<a href="members/antonio-despasilite.608/index.html" class="avatar avatar--s" data-user-id="608" data-xf-init="member-tooltip">
-			<img src="data/avatars/s/0/608.jpg" srcset="data/avatars/m/0/608.jpg 2x" alt="Антонио Деспасилите" class="avatar-u608-s"> 
-		</a>
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--main" data-xf-init="touch-proxy">
-			
-
-	
-
-	
-
-
-			<div class="structItem-title">
-				
-				
-				<a href="threads/kak-zamenit-vse-postery-serialov.3167/index.html" class="" data-tp-primary="on" data-xf-init="" data-preview-url="">Как заменить все постеры сериалов?</a>
-			</div>
-
-			<div class="structItem-minor">
-				
-
-				
-					<ul class="structItem-parts">
-						<li><a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a></li>
-						<li class="structItem-startDate"><a href="threads/kak-zamenit-vse-postery-serialov.3167/index.html" rel="nofollow"><time class="u-dt" dir="auto" datetime="2022-09-12T21:50:29+0300" data-time="1663008629" data-date-string="12 Сен 2022" data-time-string="21:50" title="12 Сен 2022 в 21:50">12 Сен 2022</time></a></li>
-						
-							<li><a href="forums/seo/index.html">SEO</a></li>
-						
-					</ul>
-
-					
-				
-			</div>
-		</div>
-		<div class="structItem-cell structItem-cell--meta" title="Количество симпатий к первому сообщению: 0">
-			<dl class="pairs pairs--justified">
-				<dt>Ответы</dt>
-				<dd>1</dd>
-			</dl>
-			<dl class="pairs pairs--justified structItem-minor">
-				<dt>Просмотры</dt>
-				<dd>275</dd>
-			</dl>
-		</div>
-		<div class="structItem-cell structItem-cell--latest">
-			
-				<a href="threads/kak-zamenit-vse-postery-serialov.3167/index.html" rel="nofollow"><time class="structItem-latestDate u-dt" dir="auto" datetime="2022-09-13T09:02:01+0300" data-time="1663048921" data-date-string="13 Сен 2022" data-time-string="09:02" title="13 Сен 2022 в 09:02">13 Сен 2022</time></a>
-				<div class="structItem-minor">
-					
-						<a href="members/dudarev-vlad.1163/index.html" class="username " dir="auto" data-user-id="1163" data-xf-init="member-tooltip">Dudarev.Vlad</a>
-					
-				</div>
-			
-		</div>
-	</div>
-
-							
-						
-					</div>
-				</div>
-				
-					<div class="block-footer">
-						<span class="block-footer-controls">
-							<a href="whats-new/posts/1203523/index.html" class="button" rel="nofollow"><span class="button-text">Посмотреть ещё...</span></a>
-						</span>
-					</div>
-				
-			
-		</div>
-	</div>
-
-
-
-	
-
-
-
-
-
-	<div class="thNodes__nodeList">
-
-
-	
-	
-		
-	
-	
-	
-		
-	<div class="block block--category block--category11">
-		<span class="u-anchorTarget" id="forum-vebmasterov-i-razrabotchikov.11"></span>
-		<div class="block-container ">
-			<h2 class="block-header">
-				<a href="index.html#forum-vebmasterov-i-razrabotchikov.11">Форум вебмастеров и разработчиков</a>
-				<div class="block-desc"><span style="display:none">Создание сайтов, которые будут автоматически наполняться контентом и публиковаться на сайте. Такие сайты не отнимают времени у вебмастера, так как вся работа автоматизирована. Одним из решений автоматического сайта, есть система CinemaPress. Таким образом все новые пользователи, которые будут заходить на сайт, увидят появление на главной странице новые серии своих любимых сериалов и обновления фильмов. Другим решением данной автоматизации может быть создание сайта на любой другой системе, к примеру WordPress, DLE и прочих. Наполнить их контентом и выставить публикацию в определенное время. Помимо создания, нужно еще заполучить любовь к сайту от поисковых систем Google и Yandex. Это делается путем оптимизации внешнего вида, производительности и тектовой наполняемости. Очень важно иметь на сайте уникальный контент, по которому ПС смогут определить ценность сайта. Однако сейчас уже не только ПС могут давать хороший траффик. С появлением большого числа разнонаправленыых социальных сетей, пользователей можно приводить на сайт с помощью ВК, Facebook, Twitter, Instagram и т.п. Конечной целью любого вебмастера, создавшего автоматический сайт, будет его монетизация. Сервера, домены, копирайтеры, программисты - всё требует оплату, потому и получать деньги с рекламы на сайте, это лучшее решение не уйти в минус.</span></div>
-			</h2>
-			<div class="block-body">
-				
-	
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id25 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--unread">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/cms/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">CMS</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>31</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>167</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-		<div class="node-subNodesFlat">
-			<span class="node-subNodesLabel">Подфорумы:</span>
-			<ol class="node-subNodeFlatList">
-			
-				
-	
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/wordpress/index.html" class="subNodeLink subNodeLink--forum ">WordPress</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/joomla/index.html" class="subNodeLink subNodeLink--forum ">Joomla</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/drupal/index.html" class="subNodeLink subNodeLink--forum ">Drupal</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/dle/index.html" class="subNodeLink subNodeLink--forum ">DLE</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/cinemapress/index.html" class="subNodeLink subNodeLink--forum subNodeLink--unread">CinemaPress</a>
-		
-	
-
-	</li>
-
-	
-
-	
-
-			
-			</ol>
-		</div>
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/cms/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>31</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>167</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/index.html" class="node-extra-title" title="Как публиковать только Коллекции на главной  странице?">Как публиковать только Коллекции на главной  странице?</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2022-09-14T12:18:43+0300" data-time="1663147123" data-date-string="14 Сен 2022" data-time-string="12:18" title="14 Сен 2022 в 12:18">14 Сен 2022</time>
-							
-								</li><li class="node-extra-user"><a href="members/dudarev-vlad.1163/index.html" class="username " dir="auto" data-user-id="1163" data-xf-init="member-tooltip">Dudarev.Vlad</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	<div class="node node--id38 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--category node--unread">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-				<h3 class="node-title">
-					<a href="categories/dlja-sajta.38/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Для сайта</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>69</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>1,086</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-		<div class="node-subNodesFlat">
-			<span class="node-subNodesLabel">Подфорумы:</span>
-			<ol class="node-subNodeFlatList">
-			
-				
-	
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/social/index.html" class="subNodeLink subNodeLink--forum subNodeLink--unread">Соц. сети</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/links/index.html" class="subNodeLink subNodeLink--forum ">Ссылки</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/money/index.html" class="subNodeLink subNodeLink--forum ">Монетизация</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/content/index.html" class="subNodeLink subNodeLink--forum subNodeLink--unread">Контент</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/seo/index.html" class="subNodeLink subNodeLink--forum subNodeLink--unread">SEO</a>
-		
-	
-
-	</li>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/services/index.html" class="subNodeLink subNodeLink--forum ">Услуги</a>
-		
-	
-
-	</li>
-
-	
-
-	
-
-			
-			</ol>
-		</div>
-	
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="categories/dlja-sajta.38/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>69</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>1,086</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/propadajut-filmy-i-serialy-iz-sajta.3172/index.html" class="node-extra-title" title="Пропадают фильмы и сериалы из сайта">Пропадают фильмы и сериалы из сайта</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li class="node-extra-date"><time class="u-dt" dir="auto" datetime="2022-09-24T17:21:07+0300" data-time="1664029267" data-date-string="24 Сен 2022" data-time-string="17:21" title="24 Сен 2022 в 17:21">Суббота в 17:21</time></li>
-							
-								<li class="node-extra-user"><a href="members/antonio-despasilite.608/index.html" class="username " dir="auto" data-user-id="608" data-xf-init="member-tooltip">Антонио Деспасилите</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<div class="block block--category block--category12">
-		<span class="u-anchorTarget" id="sozdanie-i-raskrutka-prilozhenij-igr.12"></span>
-		<div class="block-container ">
-			<h2 class="block-header">
-				<a href="index.html#sozdanie-i-raskrutka-prilozhenij-igr.12">Создание и раскрутка приложений/игр</a>
-				
-			</h2>
-			<div class="block-body">
-				
-	
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id15 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/android/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Android</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>1</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>3</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/android/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>1</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>3</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/android-prilozhenie-obratnyj-otschjot-xorror.3072/index.html" class="node-extra-title" title="Android Приложение «Обратный отсчёт» (Хоррор)">Android Приложение «Обратный отсчёт» (Хоррор)</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2021-06-04T16:46:04+0300" data-time="1622814364" data-date-string="4 Июн 2021" data-time-string="16:46" title="4 Июн 2021 в 16:46">4 Июн 2021</time>
-							
-								</li><li class="node-extra-user"><a href="members/dudarev-vlad.1163/index.html" class="username " dir="auto" data-user-id="1163" data-xf-init="member-tooltip">Dudarev.Vlad</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id16 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/ios/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">iOS</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>0</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>0</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/ios/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>0</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>0</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<span class="node-extra-placeholder">Нет</span>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<div class="block block--category block--category13">
-		<span class="u-anchorTarget" id="sozdanie-i-raskrutka-botov.13"></span>
-		<div class="block-container ">
-			<h2 class="block-header">
-				<a href="index.html#sozdanie-i-raskrutka-botov.13">Создание и раскрутка ботов</a>
-				
-			</h2>
-			<div class="block-body">
-				
-	
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id26 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/telegram/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Чат-бот для Telegram</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>4</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>100</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/telegram/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>4</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>100</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/telegram-bot-obratnoj-svjazi-dlja-cinemapress-zhaloba-ne-tot-film-kontakty-i-t-p.1911/index.html" class="node-extra-title" title="Телеграм-бот обратной связи для CinemaPress (Жалоба, Не тот фильм, Контакты, и т.п.)">Телеграм-бот обратной связи для CinemaPress (Жалоба, Не тот фильм, Контакты, и т.п.)</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2021-11-27T20:49:48+0300" data-time="1638035388" data-date-string="27 Ноя 2021" data-time-string="20:49" title="27 Ноя 2021 в 20:49">27 Ноя 2021</time>
-							
-								</li><li class="node-extra-user"><a href="members/end.4644/index.html" class="username " dir="auto" data-user-id="4644" data-xf-init="member-tooltip">end</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id27 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/fcbok/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Чат-бот для FB</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>0</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>0</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/fcbok/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>0</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>0</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<span class="node-extra-placeholder">Нет</span>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id28 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/vk/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Чат-бот для ВК</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>1</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>1</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/vk/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>1</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>1</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/sozdaem-chat-bot-dlja-vk.401/index.html" class="node-extra-title" title="Создаем Чат-бот для ВК">Создаем Чат-бот для ВК</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2018-10-12T09:31:13+0300" data-time="1539325873" data-date-string="12 Окт 2018" data-time-string="09:31" title="12 Окт 2018 в 09:31">12 Окт 2018</time>
-							
-								</li><li class="node-extra-user"><a href="members/bestrepetnij.98/index.html" class="username " dir="auto" data-user-id="98" data-xf-init="member-tooltip">bestrepetnij</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id29 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/messenger/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Чат-бот для других мессенджеров</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>1</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>30</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/messenger/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>1</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>30</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/delaem-golosovoj-poisk-po-sajtu-s-pomoschju-bota-navyka-jandeks-alisa.242/index.html" class="node-extra-title" title="Делаем голосовой поиск по сайту с помощью бота/навыка Яндекс Алиса">Делаем голосовой поиск по сайту с помощью бота/навыка Яндекс Алиса</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2020-09-12T14:36:24+0300" data-time="1599910584" data-date-string="12 Сен 2020" data-time-string="14:36" title="12 Сен 2020 в 14:36">12 Сен 2020</time>
-							
-								</li><li class="node-extra-user"><a href="members/tailerus.1582/index.html" class="username " dir="auto" data-user-id="1582" data-xf-init="member-tooltip">Tailerus</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<div class="block block--category block--category30">
-		<span class="u-anchorTarget" id="sozdanie-i-raskrutka-rasshirenij-dlja-brauzera.30"></span>
-		<div class="block-container ">
-			<h2 class="block-header">
-				<a href="index.html#sozdanie-i-raskrutka-rasshirenij-dlja-brauzera.30">Создание и раскрутка расширений для браузера</a>
-				
-			</h2>
-			<div class="block-body">
-				
-	
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id31 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/chrome/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Расширения для Chrome</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>1</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>357</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/chrome/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>1</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>357</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/knopka-avtozapolnenija-informacii-o-filme-v-cinemapress-4.292/page-4/index.html" class="node-extra-title" title="Кнопка автозаполнения информации о фильме в CinemaPress 4">Кнопка автозаполнения информации о фильме в CinemaPress 4</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2022-04-05T19:08:22+0300" data-time="1649174902" data-date-string="5 Апр 2022" data-time-string="19:08" title="5 Апр 2022 в 19:08">5 Апр 2022</time>
-							
-								</li><li class="node-extra-user"><a href="members/aleksey.113/index.html" class="username " dir="auto" data-user-id="113" data-xf-init="member-tooltip">Aleksey</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id32 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/firefox/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Расширения для Firefox</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>0</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>0</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/firefox/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>0</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>0</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<span class="node-extra-placeholder">Нет</span>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id33 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/opera/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Расширения для Opera</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>0</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>0</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/opera/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>0</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>0</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<span class="node-extra-placeholder">Нет</span>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id34 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/extensions/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Расширения для других браузеров</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>0</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>0</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/extensions/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>0</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>0</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<span class="node-extra-placeholder">Нет</span>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-		
-	
-	
-	
-		
-	<div class="block block--category block--category35">
-		<span class="u-anchorTarget" id="obschie-temy-dlja-obsuzhdenij.35"></span>
-		<div class="block-container ">
-			<h2 class="block-header">
-				<a href="index.html#obschie-temy-dlja-obsuzhdenij.35">Общие темы для обсуждений</a>
-				<div class="block-desc"><span style="display:none">Форум клуб Енота посвящен созданию и раскрутке автоматический сайтов, не требующих человеческого участия, создание и продвижение игр и приложение в Android Market и AppStrore, напичание чат-ботов для Телеграм, Фейсбук, ВКонтакте и других мессенджеров, упаковка и отправка в магазин расширений Chrome, Firefox, Opera.</span></div>
-			</h2>
-			<div class="block-body">
-				
-	
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id36 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/forum/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Работа форума</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>5</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>12</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-		<div class="node-subNodesFlat">
-			<span class="node-subNodesLabel">Подфорумы:</span>
-			<ol class="node-subNodeFlatList">
-			
-				
-	
-	
-		
-	
-	
-	
-		
-	<li>
-		<a href="forums/trash/index.html" class="subNodeLink subNodeLink--forum ">Мусорка</a>
-		
-	
-
-	</li>
-
-	
-
-	
-
-			
-			</ol>
-		</div>
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/forum/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>5</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>12</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/cinemapress-esche-rabotaet-ne-poluchaetsja-zajti.3165/index.html" class="node-extra-title" title="Cinemapress еще работает? Не получается зайти">Cinemapress еще работает? Не получается зайти</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2022-08-08T22:00:07+0300" data-time="1659985207" data-date-string="8 Авг 2022" data-time-string="22:00" title="8 Авг 2022 в 22:00">8 Авг 2022</time>
-							
-								</li><li class="node-extra-user"><a href="members/cosmos.58/index.html" class="username " dir="auto" data-user-id="58" data-xf-init="member-tooltip">cosmos</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-		
-	
-	
-	
-		
-	
-
-	<div class="node node--id37 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read">
-		<div class="node-body">
-			
-	<div class="thNodes__nodeHeader">
-
-<span class="node-icon" aria-hidden="true"><i> </i></span>
-			<div class="node-main js-nodeMain">
-				
-
-				
-				<h3 class="node-title">
-					<a href="forums/hunt/index.html" data-xf-init="element-tooltip" data-shortcut="node-description">Разное интересное</a>
-				</h3>
-				
-
-				<div class="node-meta">
-					
-						<div class="node-statsMeta">
-							<dl class="pairs pairs--inline">
-								<dt>Темы</dt>
-								<dd>21</dd>
-							</dl>
-							<dl class="pairs pairs--inline">
-								<dt>Сообщения</dt>
-								<dd>347</dd>
-							</dl>
-						</div>
-					
-
-					
-				</div>
-
-				
-					
-	
-	
-
-				
-
-				
-			</div>
-
-	</div>
-	
-	
-		<div class="block-footer has-flexbox">
-			<div class="node-footer--more">
-				<a href="forums/hunt/index.html">Подробнее</a>
-			</div>
-			<div class="node-footer--actions">
-				
-			</div>
-		</div>
-	
-
-
-
-			
-				<div class="node-stats">
-					<dl class="pairs pairs--rows">
-						<dt>Темы</dt>
-						<dd>21</dd>
-					</dl>
-					<dl class="pairs pairs--rows">
-						<dt>Сообщения</dt>
-						<dd>347</dd>
-					</dl>
-				</div>
-			
-
-			<div class="node-extra">
-				
-					<div class="node-extra-row"><a href="threads/piratskij-kontent-nachal-udaljat-ssylki-na-poiskovik-jandeks.509/index.html" class="node-extra-title" title="Пиратский контент начал удалять ссылки на поисковик «Яндекс»">Пиратский контент начал удалять ссылки на поисковик «Яндекс»</a></div>
-					<div class="node-extra-row">
-						<ul class="listInline listInline--bullet">
-							<li><time class="node-extra-date u-dt" dir="auto" datetime="2022-07-25T18:44:39+0300" data-time="1658763879" data-date-string="25 Июл 2022" data-time-string="18:44" title="25 Июл 2022 в 18:44">25 Июл 2022</time>
-							
-								</li><li class="node-extra-user"><a href="members/amney.144/index.html" class="username " dir="auto" data-user-id="144" data-xf-init="member-tooltip">Amney</a></li>
-							
-						</ul>
-					</div>
-				
-			</div>
-		</div>
-	</div>
-
-	
-
-
-	
-
-	
-
-			</div>
-		</div>
-	</div>
-
-	
-
-	
-
-
-	</div>
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-				
-			</div>
-
-			
-		</div>
-
-		
-		
-	
-
-		
-	</div>
-</div>
-
-<footer class="p-footer" id="footer">
-	<div class="p-footer-inner">
-
-		<div class="p-footer-row">
-			
-				<div class="p-footer-row-main">
-					<ul class="p-footer-linkList">
-					
-						
-						
-							<li><a href="misc/language/index.html" data-xf-click="overlay" data-xf-init="tooltip" title="Выбор языка" rel="nofollow">
-								<i class="fa fa-globe" aria-hidden="true"></i> Russian (RU)</a></li>
-						
-					
-					</ul>
-				</div>
-			
-			<div class="p-footer-row-opposite">
-				<ul class="p-footer-linkList">
-					
-
-					
-						<li><a href="help/terms/index.html">Условия и правила</a></li>
-					
-
-					
-
-					
-						<li><a href="help/index.html">Помощь</a></li>
-					
-
-					
-						<li><a href="index.html">Главная</a></li>
-					
-
-					<li><a href="forums/-/index.rss" target="_blank" class="p-footer-rssLink" title="RSS"><span aria-hidden="true"><i class="fa fa-rss"></i></span></a></li>
-				</ul>
-			</div>
-		</div>
-
-		
-			<div class="p-footer-copyright">
-			
-				
-				<div align="left" style="color:#ccc">Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация от <a href="link.html#https://XenForo.Info" target="_blank">XenForo.Info</a></div>
-			
-			</div>
-		
-
-		
-	</div>
-</footer>
-
-</div> <!-- closing p-pageWrapper -->
-
-<div class="u-bottomFixer js-bottomFixTarget">
-	
-</div>
-
-
-	<div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
-		<a href="#top" class="button--scroll button" data-xf-click="scroll-to"><span class="button-text"><i class="fa fa-arrow-up"></i></span></a>
-		
-	</div>
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>')</script>
-	<script src="js/vendor/vendor-compiled.js"></script>
-	<script src="js/xf/core-compiled.js"></script>
-	<script src="js/themehouse/global/20171204.min.js"></script>
-<script src="js/themehouse/nodes/index.min.js"></script>
-<script>
-
-	window.themehouse.nodes.grid_options = {"0":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}},"11":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}},"12":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}},"13":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}},"30":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}},"35":{"max_columns":{"enable":1,"value":"2"},"min_column_width":{"enable":0},"fill_last_row":{"enable":1,"value":"0"}}};
-
-	window.themehouse.nodes.ele = new window.themehouse.nodes.grid({
-		layout: window.themehouse.nodes.grid_options,
-		settings: {
-
-		},
-	});
-
-	window.themehouse.nodes.ele.register();
-
-</script>
-
-	<script>
-		jQuery.extend(true, XF.config, {
-			userId: 0,
-			url: {
-				fullBase: 'https://enota.club/',
-				basePath: '/',
-				css: '/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341',
-				keepAlive: '/login/keep-alive'
-			},
-			cookie: {
-				path: '/',
-				domain: '',
-				prefix: 'xf_'
-			},
-			csrf: '1664150212,1434bb68be49f3aa601c4ba787301628',
-			js: {"\/js\/themehouse\/global\/20171204.min.js?_v=1bd6f38b":true,"\/js\/themehouse\/nodes\/index.min.js?_v=1bd6f38b":true},
-			css: {"public:node_list.less":true,"public:structured_list.less":true,"public:th_nodeStyling_nodes.css":true,"public:th_reactions.less":true,"public:extra.less":true},
-			time: {
-				now: 1664150212,
-				today: 1664139600,
-				todayDow: 1
-			},
-			borderSizeFeature: '3px',
-			enableRtnProtect: true,
-			enableFormSubmitSticky: true,
-			uploadMaxFilesize: 2097152,
-			visitorCounts: {
-				conversations_unread: '0',
-				alerts_unread: '0',
-				total_unread: '0',
-				title_count: true,
-				icon_indicator: true
-			},
-			jsState: {}
-		});
-
-		jQuery.extend(XF.phrases, {
-			date_x_at_time_y: "{date} в {time}",
-			day_x_at_time_y:  "{day} в {time}",
-			yesterday_at_x:   "Вчера в {time}",
-			x_minutes_ago:    "{minutes} мин. назад",
-			one_minute_ago:   "1 минуту назад",
-			a_moment_ago:     "Только что",
-			today_at_x:       "Сегодня в {time}",
-			in_a_moment:      "In a moment",
-			in_a_minute:      "Менее минуты назад",
-			in_x_minutes:     "In {minutes} minutes",
-			later_today_at_x: "Сегодня позже в {time}",
-			tomorrow_at_x:    "Завтра в {time}",
-
-			day0: "Воскресенье",
-			day1: "Понедельник",
-			day2: "Вторник",
-			day3: "Среда",
-			day4: "Четверг",
-			day5: "Пятница",
-			day6: "Суббота",
-
-			dayShort0: "Вос",
-			dayShort1: "Пон",
-			dayShort2: "Вто",
-			dayShort3: "Сре",
-			dayShort4: "Чет",
-			dayShort5: "Пят",
-			dayShort6: "Суб",
-
-			month0: "Январь",
-			month1: "Февраль",
-			month2: "Март",
-			month3: "Апрель",
-			month4: "Май",
-			month5: "Июнь",
-			month6: "Июль",
-			month7: "Август",
-			month8: "Сентябрь",
-			month9: "Октябрь",
-			month10: "Ноябрь",
-			month11: "Декабрь",
-
-			active_user_changed_reload_page: "Ваша сессия истекла. Перезагрузите страницу.",
-			server_did_not_respond_in_time_try_again: "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
-			oops_we_ran_into_some_problems: "Упс! Мы столкнулись с некоторыми проблемами.",
-			oops_we_ran_into_some_problems_more_details_console: "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
-			file_too_large_to_upload: "Файл слишком большой для загрузки.",
-			files_being_uploaded_are_you_sure: "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
-			close: "Закрыть",
-
-			showing_x_of_y_items: "Показано {count} из {total} элементов",
-			showing_all_items: "Показаны все элементы",
-			no_items_to_display: "Нет элементов для отображения"
-		});
-	</script>
-
-	<form style="display:none" hidden="hidden">
-		<input type="text" name="_xfClientLoadTime" value="" id="_xfClientLoadTime" tabindex="-1">
-	</form>
-
-	
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "WebSite",
-			"url": "https://enota.club/",
-			"potentialAction": {
-				"@type": "SearchAction",
-				"target": "https://enota.club/search/search?keywords={search_keywords}",
-				"query-input": "required name=search_keywords"
-			}
-		}
-		</script>
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body></html>
+<!DOCTYPE html>
+<html
+  id="XF"
+  lang="ru-RU"
+  dir="LTR"
+  data-app="public"
+  data-template="forum_list"
+  data-container-key=""
+  data-content-key=""
+  data-logged-in="false"
+  data-cookie-prefix="xf_"
+  class="has-no-js template-forum_list"
+  data-run-jobs=""
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Как создать автоматические сайты, приложения/игры, ботов, расширения?
+    </title>
+    <meta
+      name="description"
+      content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook..."
+    />
+    <meta
+      property="og:description"
+      content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook, расширений Chrome/Firefox/Opera"
+    />
+    <meta
+      property="twitter:description"
+      content="Форум вебмастеров, создателей автоматических/автонаполняемых сайтов, приложений и игр для Android/iPhone, ботов для мессенджеров Телеграм/Facebook, расширений Chrome/Firefox/Opera"
+    />
+    <link rel="canonical" href="https://enotmen.github.io/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS лента для Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+      href="/forums/-/index.rss"
+    />
+    <meta
+      property="og:site_name"
+      content="Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+    />
+    <meta
+      property="og:title"
+      content="Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+    />
+    <meta
+      property="twitter:title"
+      content="Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+    />
+    <meta name="theme-color" content="#272F38" />
+    <link rel="stylesheet" href="styles/2.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/1.css" />
+    <script src="js/xf/preamble-compiled.js"></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  </head>
+  <body data-template="forum_list">
+    <div class="p-pageWrapper" id="top">
+      <header class="p-header" id="header">
+        <div class="p-header-inner">
+          <div class="p-header-content">
+            <div class="p-header-logo p-header-logo--image">
+              <a href="index.html">
+                <img
+                  src="styles/default/img/logo.png"
+                  alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+                  srcset="styles/default/img/logo.png 2x"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <nav class="p-nav">
+        <div class="p-nav-inner">
+          <a
+            class="p-nav-menuTrigger"
+            data-xf-click="off-canvas"
+            data-menu=".js-headerOffCanvasMenu"
+            role="button"
+            tabindex="0"
+          >
+            <i aria-hidden="true"></i>
+            <span class="p-nav-menuText">Меню</span>
+          </a>
+          <div class="p-nav-smallLogo">
+            <a href="index.html">
+              <img
+                src="styles/default/img/logo.png"
+                alt="Как создать автоматические сайты, приложения/игры, ботов, расширения?"
+                srcset="styles/default/img/logo.png 2x"
+              />
+            </a>
+          </div>
+          <div class="p-nav-scroller hScroller" data-xf-init="h-scroller">
+            <div class="hScroller-scroll">
+              <ul class="p-nav-list js-offCanvasNavSource"></ul>
+            </div>
+          </div>
+          <div class="p-nav-opposite">
+            <div class="p-navgroup p-account p-navgroup--guest">
+              <a
+                href="login/index.html"
+                class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--logIn"
+                rel="nofollow"
+                data-xf-click="overlay"
+              >
+                <span class="p-navgroup-linkText">Вход</span>
+              </a>
+              <a
+                href="register/index.html"
+                class="p-navgroup-link p-navgroup-link--textual p-navgroup-link--register"
+                rel="nofollow"
+                data-xf-click="overlay"
+              >
+                <span class="p-navgroup-linkText">Регистрация</span>
+              </a>
+            </div>
+            <div class="p-navgroup p-discovery">
+              <a
+                href="whats-new/index.html"
+                class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--whatsnew"
+                title="Что нового?"
+              >
+                <i aria-hidden="true"></i>
+                <span class="p-navgroup-linkText">Что нового?</span>
+              </a>
+              <a
+                href="search/index.html"
+                class="p-navgroup-link p-navgroup-link--iconic p-navgroup-link--search"
+                data-xf-click="menu"
+                data-xf-key="/"
+                aria-label="Поиск"
+                aria-expanded="false"
+                aria-haspopup="true"
+                title="Поиск"
+              >
+                <i aria-hidden="true"></i>
+                <span class="p-navgroup-linkText">Поиск</span>
+              </a>
+              <div
+                class="menu menu--structural menu--wide"
+                data-menu="menu"
+                aria-hidden="true"
+              >
+                <form
+                  action="/search/search"
+                  method="post"
+                  class="menu-content"
+                  data-xf-init="quick-search"
+                >
+                  <h3 class="menu-header">Поиск</h3>
+                  <div class="menu-row">
+                    <input
+                      type="text"
+                      class="input"
+                      name="keywords"
+                      placeholder="Поиск..."
+                      aria-label="Поиск"
+                      data-menu-autofocus="true"
+                    />
+                  </div>
+                  <div class="menu-row">
+                    <label class="iconic iconic--checkbox iconic--labelled"
+                      ><input
+                        type="checkbox"
+                        name="c[title_only]"
+                        value="1"
+                      /><i aria-hidden="true"></i>Искать только в
+                      заголовках</label
+                    >
+                  </div>
+                  <div class="menu-row">
+                    <div class="inputGroup">
+                      <span class="inputGroup-text">От:</span>
+                      <input
+                        class="input"
+                        name="c[users]"
+                        data-xf-init="auto-complete"
+                        placeholder="Пользователь"
+                      />
+                    </div>
+                  </div>
+                  <div class="menu-footer">
+                    <span class="menu-footer-controls">
+                      <button
+                        type="submit"
+                        class="button--primary button button--icon button--icon--search"
+                      >
+                        <span class="button-text">Поиск</span>
+                      </button>
+                      <a href="search/index.html" class="button" rel="nofollow"
+                        ><span class="button-text"
+                          >Расширенный поиск...</span
+                        ></a
+                      >
+                    </span>
+                  </div>
+                  <input
+                    type="hidden"
+                    name="_xfToken"
+                    value="1664150212,1434bb68be49f3aa601c4ba787301628"
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="p-sectionLinks p-sectionLinks--empty"></div>
+      <div
+        class="offCanvasMenu offCanvasMenu--nav js-headerOffCanvasMenu"
+        data-menu="menu"
+        aria-hidden="true"
+        data-ocm-builder="navigation"
+      >
+        <div class="offCanvasMenu-backdrop" data-menu-close="true"></div>
+        <div class="offCanvasMenu-content">
+          <div class="offCanvasMenu-header">
+            Меню
+            <a
+              class="offCanvasMenu-closer"
+              data-menu-close="true"
+              role="button"
+              tabindex="0"
+              aria-label="Закрыть"
+            ></a>
+          </div>
+          <div class="p-offCanvasRegisterLink">
+            <div class="offCanvasMenu-linkHolder">
+              <a
+                href="login/index.html"
+                class="offCanvasMenu-link"
+                rel="nofollow"
+                data-xf-click="overlay"
+                data-menu-close="true"
+              >
+                Вход
+              </a>
+            </div>
+            <hr class="offCanvasMenu-separator" />
+            <div class="offCanvasMenu-linkHolder">
+              <a
+                href="register/index.html"
+                class="offCanvasMenu-link"
+                rel="nofollow"
+                data-xf-click="overlay"
+                data-menu-close="true"
+              >
+                Регистрация
+              </a>
+            </div>
+            <hr class="offCanvasMenu-separator" />
+          </div>
+          <div class="js-offCanvasNavTarget"></div>
+        </div>
+      </div>
+      <div class="p-body">
+        <div class="p-body-inner">
+          <!--XF:EXTRA_OUTPUT-->
+          <noscript>
+            <div
+              class="blockMessage blockMessage--important blockMessage--iconic u-noJsOnly"
+            >
+              JavaScript отключён. Чтобы полноценно использовать наш сайт,
+              включите JavaScript в своём браузере.
+            </div>
+          </noscript>
+          <!--[if lt IE 9]>
+            <div
+              class="blockMessage blockMessage&#45;&#45;important blockMessage&#45;&#45;iconic"
+            >
+              Вы используете устаревший браузер. Этот и другие сайты могут
+              отображаться в нём некорректно.<br />Вам необходимо обновить
+              браузер или попробовать использовать
+              <a href="https://www.google.com/chrome/browser/" target="_blank"
+                >другой</a
+              >.
+            </div>
+          <![endif]-->
+          <div class="p-body-header">
+            <div class="p-title">
+              <div class="p-title-value">
+                Форум архивирован, добавление новых сообщений закрыто.
+              </в>
+            </div>
+          </div>
+          <div class="p-body-main">
+            <div class="p-body-content">
+              <div class="p-body-pageContent">
+                <div class="thNodes__nodeList">
+                  <div class="block block--category block--category11">
+                    <span
+                      class="u-anchorTarget"
+                      id="forum-vebmasterov-i-razrabotchikov.11"
+                    ></span>
+                    <div class="block-container">
+                      <h2 class="block-header">
+                        <a
+                          href="index.html#forum-vebmasterov-i-razrabotchikov.11"
+                          >Форум вебмастеров и разработчиков</a
+                        >
+                        <div class="block-desc">
+                          <span style="display: none"
+                            >Создание сайтов, которые будут автоматически
+                            наполняться контентом и публиковаться на сайте.
+                            Такие сайты не отнимают времени у вебмастера, так
+                            как вся работа автоматизирована. Одним из решений
+                            автоматического сайта, есть система CinemaPress.
+                            Таким образом все новые пользователи, которые будут
+                            заходить на сайт, увидят появление на главной
+                            странице новые серии своих любимых сериалов и
+                            обновления фильмов. Другим решением данной
+                            автоматизации может быть создание сайта на любой
+                            другой системе, к примеру WordPress, DLE и прочих.
+                            Наполнить их контентом и выставить публикацию в
+                            определенное время. Помимо создания, нужно еще
+                            заполучить любовь к сайту от поисковых систем Google
+                            и Yandex. Это делается путем оптимизации внешнего
+                            вида, производительности и тектовой наполняемости.
+                            Очень важно иметь на сайте уникальный контент, по
+                            которому ПС смогут определить ценность сайта. Однако
+                            сейчас уже не только ПС могут давать хороший
+                            траффик. С появлением большого числа
+                            разнонаправленыых социальных сетей, пользователей
+                            можно приводить на сайт с помощью ВК, Facebook,
+                            Twitter, Instagram и т.п. Конечной целью любого
+                            вебмастера, создавшего автоматический сайт, будет
+                            его монетизация. Сервера, домены, копирайтеры,
+                            программисты - всё требует оплату, потому и получать
+                            деньги с рекламы на сайте, это лучшее решение не
+                            уйти в минус.</span
+                          >
+                        </div>
+                      </h2>
+                      <div class="block-body">
+                        <div
+                          class="node node--id25 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--unread"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/cms/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >CMS</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>31</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>167</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <div class="node-subNodesFlat">
+                                  <span class="node-subNodesLabel"
+                                    >Подфорумы:</span
+                                  >
+                                  <ol class="node-subNodeFlatList">
+                                    <li>
+                                      <a
+                                        href="forums/wordpress/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >WordPress</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/joomla/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Joomla</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/drupal/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Drupal</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/dle/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >DLE</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/cinemapress/index.html"
+                                        class="subNodeLink subNodeLink--forum subNodeLink--unread"
+                                        >CinemaPress</a
+                                      >
+                                    </li>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/cms/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>31</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>167</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/kak-publikovat-tolko-kollekcii-na-glavnoj-stranice.3168/index.html"
+                                  class="node-extra-title"
+                                  title="Как публиковать только Коллекции на главной  странице?"
+                                  >Как публиковать только Коллекции на главной
+                                  странице?</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2022-09-14T12:18:43+0300"
+                                      data-time="1663147123"
+                                      data-date-string="14 Сен 2022"
+                                      data-time-string="12:18"
+                                      title="14 Сен 2022 в 12:18"
+                                      >14 Сен 2022</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/dudarev-vlad.1163/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="1163"
+                                      data-xf-init="member-tooltip"
+                                      >Dudarev.Vlad</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id38 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--category node--unread"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="categories/dlja-sajta.38/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Для сайта</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>69</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>1,086</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <div class="node-subNodesFlat">
+                                  <span class="node-subNodesLabel"
+                                    >Подфорумы:</span
+                                  >
+                                  <ol class="node-subNodeFlatList">
+                                    <li>
+                                      <a
+                                        href="forums/social/index.html"
+                                        class="subNodeLink subNodeLink--forum subNodeLink--unread"
+                                        >Соц. сети</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/links/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Ссылки</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/money/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Монетизация</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/content/index.html"
+                                        class="subNodeLink subNodeLink--forum subNodeLink--unread"
+                                        >Контент</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/seo/index.html"
+                                        class="subNodeLink subNodeLink--forum subNodeLink--unread"
+                                        >SEO</a
+                                      >
+                                    </li>
+                                    <li>
+                                      <a
+                                        href="forums/services/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Услуги</a
+                                      >
+                                    </li>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="categories/dlja-sajta.38/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>69</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>1,086</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/propadajut-filmy-i-serialy-iz-sajta.3172/index.html"
+                                  class="node-extra-title"
+                                  title="Пропадают фильмы и сериалы из сайта"
+                                  >Пропадают фильмы и сериалы из сайта</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li class="node-extra-date">
+                                    <time
+                                      class="u-dt"
+                                      dir="auto"
+                                      datetime="2022-09-24T17:21:07+0300"
+                                      data-time="1664029267"
+                                      data-date-string="24 Сен 2022"
+                                      data-time-string="17:21"
+                                      title="24 Сен 2022 в 17:21"
+                                      >Суббота в 17:21</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/antonio-despasilite.608/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="608"
+                                      data-xf-init="member-tooltip"
+                                      >Антонио Деспасилите</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block block--category block--category12">
+                    <span
+                      class="u-anchorTarget"
+                      id="sozdanie-i-raskrutka-prilozhenij-igr.12"
+                    ></span>
+                    <div class="block-container">
+                      <h2 class="block-header">
+                        <a
+                          href="index.html#sozdanie-i-raskrutka-prilozhenij-igr.12"
+                          >Создание и раскрутка приложений/игр</a
+                        >
+                      </h2>
+                      <div class="block-body">
+                        <div
+                          class="node node--id15 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/android/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Android</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>1</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>3</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/android/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>1</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>3</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/android-prilozhenie-obratnyj-otschjot-xorror.3072/index.html"
+                                  class="node-extra-title"
+                                  title="Android Приложение «Обратный отсчёт» (Хоррор)"
+                                  >Android Приложение «Обратный отсчёт»
+                                  (Хоррор)</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2021-06-04T16:46:04+0300"
+                                      data-time="1622814364"
+                                      data-date-string="4 Июн 2021"
+                                      data-time-string="16:46"
+                                      title="4 Июн 2021 в 16:46"
+                                      >4 Июн 2021</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/dudarev-vlad.1163/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="1163"
+                                      data-xf-init="member-tooltip"
+                                      >Dudarev.Vlad</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id16 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/ios/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >iOS</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/ios/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>0</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>0</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <span class="node-extra-placeholder">Нет</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block block--category block--category13">
+                    <span
+                      class="u-anchorTarget"
+                      id="sozdanie-i-raskrutka-botov.13"
+                    ></span>
+                    <div class="block-container">
+                      <h2 class="block-header">
+                        <a href="index.html#sozdanie-i-raskrutka-botov.13"
+                          >Создание и раскрутка ботов</a
+                        >
+                      </h2>
+                      <div class="block-body">
+                        <div
+                          class="node node--id26 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/telegram/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Чат-бот для Telegram</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>4</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>100</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/telegram/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>4</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>100</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/telegram-bot-obratnoj-svjazi-dlja-cinemapress-zhaloba-ne-tot-film-kontakty-i-t-p.1911/index.html"
+                                  class="node-extra-title"
+                                  title="Телеграм-бот обратной связи для CinemaPress (Жалоба, Не тот фильм, Контакты, и т.п.)"
+                                  >Телеграм-бот обратной связи для CinemaPress
+                                  (Жалоба, Не тот фильм, Контакты, и т.п.)</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2021-11-27T20:49:48+0300"
+                                      data-time="1638035388"
+                                      data-date-string="27 Ноя 2021"
+                                      data-time-string="20:49"
+                                      title="27 Ноя 2021 в 20:49"
+                                      >27 Ноя 2021</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/end.4644/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="4644"
+                                      data-xf-init="member-tooltip"
+                                      >end</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id27 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/fcbok/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Чат-бот для FB</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/fcbok/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>0</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>0</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <span class="node-extra-placeholder">Нет</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id28 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/vk/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Чат-бот для ВК</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>1</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>1</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/vk/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>1</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>1</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/sozdaem-chat-bot-dlja-vk.401/index.html"
+                                  class="node-extra-title"
+                                  title="Создаем Чат-бот для ВК"
+                                  >Создаем Чат-бот для ВК</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2018-10-12T09:31:13+0300"
+                                      data-time="1539325873"
+                                      data-date-string="12 Окт 2018"
+                                      data-time-string="09:31"
+                                      title="12 Окт 2018 в 09:31"
+                                      >12 Окт 2018</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/bestrepetnij.98/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="98"
+                                      data-xf-init="member-tooltip"
+                                      >bestrepetnij</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id29 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/messenger/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Чат-бот для других мессенджеров</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>1</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>30</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/messenger/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>1</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>30</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/delaem-golosovoj-poisk-po-sajtu-s-pomoschju-bota-navyka-jandeks-alisa.242/index.html"
+                                  class="node-extra-title"
+                                  title="Делаем голосовой поиск по сайту с помощью бота/навыка Яндекс Алиса"
+                                  >Делаем голосовой поиск по сайту с помощью
+                                  бота/навыка Яндекс Алиса</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2020-09-12T14:36:24+0300"
+                                      data-time="1599910584"
+                                      data-date-string="12 Сен 2020"
+                                      data-time-string="14:36"
+                                      title="12 Сен 2020 в 14:36"
+                                      >12 Сен 2020</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/tailerus.1582/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="1582"
+                                      data-xf-init="member-tooltip"
+                                      >Tailerus</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block block--category block--category30">
+                    <span
+                      class="u-anchorTarget"
+                      id="sozdanie-i-raskrutka-rasshirenij-dlja-brauzera.30"
+                    ></span>
+                    <div class="block-container">
+                      <h2 class="block-header">
+                        <a
+                          href="index.html#sozdanie-i-raskrutka-rasshirenij-dlja-brauzera.30"
+                          >Создание и раскрутка расширений для браузера</a
+                        >
+                      </h2>
+                      <div class="block-body">
+                        <div
+                          class="node node--id31 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/chrome/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Расширения для Chrome</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>1</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>357</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/chrome/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>1</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>357</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/knopka-avtozapolnenija-informacii-o-filme-v-cinemapress-4.292/page-4/index.html"
+                                  class="node-extra-title"
+                                  title="Кнопка автозаполнения информации о фильме в CinemaPress 4"
+                                  >Кнопка автозаполнения информации о фильме в
+                                  CinemaPress 4</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2022-04-05T19:08:22+0300"
+                                      data-time="1649174902"
+                                      data-date-string="5 Апр 2022"
+                                      data-time-string="19:08"
+                                      title="5 Апр 2022 в 19:08"
+                                      >5 Апр 2022</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/aleksey.113/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="113"
+                                      data-xf-init="member-tooltip"
+                                      >Aleksey</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id32 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/firefox/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Расширения для Firefox</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/firefox/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>0</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>0</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <span class="node-extra-placeholder">Нет</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id33 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/opera/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Расширения для Opera</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/opera/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>0</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>0</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <span class="node-extra-placeholder">Нет</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id34 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/extensions/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Расширения для других браузеров</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>0</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/extensions/index.html"
+                                  >Подробнее</a
+                                >
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>0</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>0</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <span class="node-extra-placeholder">Нет</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block block--category block--category35">
+                    <span
+                      class="u-anchorTarget"
+                      id="obschie-temy-dlja-obsuzhdenij.35"
+                    ></span>
+                    <div class="block-container">
+                      <h2 class="block-header">
+                        <a href="index.html#obschie-temy-dlja-obsuzhdenij.35"
+                          >Общие темы для обсуждений</a
+                        >
+                        <div class="block-desc">
+                          <span style="display: none"
+                            >Форум клуб Енота посвящен созданию и раскрутке
+                            автоматический сайтов, не требующих человеческого
+                            участия, создание и продвижение игр и приложение в
+                            Android Market и AppStrore, напичание чат-ботов для
+                            Телеграм, Фейсбук, ВКонтакте и других мессенджеров,
+                            упаковка и отправка в магазин расширений Chrome,
+                            Firefox, Opera.</span
+                          >
+                        </div>
+                      </h2>
+                      <div class="block-body">
+                        <div
+                          class="node node--id36 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/forum/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Работа форума</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>5</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>12</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                                <div class="node-subNodesFlat">
+                                  <span class="node-subNodesLabel"
+                                    >Подфорумы:</span
+                                  >
+                                  <ol class="node-subNodeFlatList">
+                                    <li>
+                                      <a
+                                        href="forums/trash/index.html"
+                                        class="subNodeLink subNodeLink--forum"
+                                        >Мусорка</a
+                                      >
+                                    </li>
+                                  </ol>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/forum/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>5</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>12</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/cinemapress-esche-rabotaet-ne-poluchaetsja-zajti.3165/index.html"
+                                  class="node-extra-title"
+                                  title="Cinemapress еще работает? Не получается зайти"
+                                  >Cinemapress еще работает? Не получается
+                                  зайти</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2022-08-08T22:00:07+0300"
+                                      data-time="1659985207"
+                                      data-date-string="8 Авг 2022"
+                                      data-time-string="22:00"
+                                      title="8 Авг 2022 в 22:00"
+                                      >8 Авг 2022</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/cosmos.58/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="58"
+                                      data-xf-init="member-tooltip"
+                                      >cosmos</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="node node--id37 node--depth2 th_node--hasBackground th_node--hasBackgroundImage node--forum node--read"
+                        >
+                          <div class="node-body">
+                            <div class="thNodes__nodeHeader">
+                              <span class="node-icon" aria-hidden="true"
+                                ><i> </i
+                              ></span>
+                              <div class="node-main js-nodeMain">
+                                <h3 class="node-title">
+                                  <a
+                                    href="forums/hunt/index.html"
+                                    data-xf-init="element-tooltip"
+                                    data-shortcut="node-description"
+                                    >Разное интересное</a
+                                  >
+                                </h3>
+                                <div class="node-meta">
+                                  <div class="node-statsMeta">
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Темы</dt>
+                                      <dd>21</dd>
+                                    </dl>
+                                    <dl class="pairs pairs--inline">
+                                      <dt>Сообщения</dt>
+                                      <dd>347</dd>
+                                    </dl>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="block-footer has-flexbox">
+                              <div class="node-footer--more">
+                                <a href="forums/hunt/index.html">Подробнее</a>
+                              </div>
+                              <div class="node-footer--actions"></div>
+                            </div>
+                            <div class="node-stats">
+                              <dl class="pairs pairs--rows">
+                                <dt>Темы</dt>
+                                <dd>21</dd>
+                              </dl>
+                              <dl class="pairs pairs--rows">
+                                <dt>Сообщения</dt>
+                                <dd>347</dd>
+                              </dl>
+                            </div>
+                            <div class="node-extra">
+                              <div class="node-extra-row">
+                                <a
+                                  href="threads/piratskij-kontent-nachal-udaljat-ssylki-na-poiskovik-jandeks.509/index.html"
+                                  class="node-extra-title"
+                                  title="Пиратский контент начал удалять ссылки на поисковик «Яндекс»"
+                                  >Пиратский контент начал удалять ссылки на
+                                  поисковик «Яндекс»</a
+                                >
+                              </div>
+                              <div class="node-extra-row">
+                                <ul class="listInline listInline--bullet">
+                                  <li>
+                                    <time
+                                      class="node-extra-date u-dt"
+                                      dir="auto"
+                                      datetime="2022-07-25T18:44:39+0300"
+                                      data-time="1658763879"
+                                      data-date-string="25 Июл 2022"
+                                      data-time-string="18:44"
+                                      title="25 Июл 2022 в 18:44"
+                                      >25 Июл 2022</time
+                                    >
+                                  </li>
+                                  <li class="node-extra-user">
+                                    <a
+                                      href="members/amney.144/index.html"
+                                      class="username"
+                                      dir="auto"
+                                      data-user-id="144"
+                                      data-xf-init="member-tooltip"
+                                      >Amney</a
+                                    >
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="p-footer" id="footer">
+        <div class="p-footer-inner">
+          <div class="p-footer-row">
+            <div class="p-footer-row-main">
+              <ul class="p-footer-linkList">
+                <li>
+                  <a
+                    href="misc/language/index.html"
+                    data-xf-click="overlay"
+                    data-xf-init="tooltip"
+                    title="Выбор языка"
+                    rel="nofollow"
+                  >
+                    <i class="fa fa-globe" aria-hidden="true"></i> Russian
+                    (RU)</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="p-footer-row-opposite">
+              <ul class="p-footer-linkList">
+                <li><a href="help/terms/index.html">Условия и правила</a></li>
+                <li><a href="help/index.html">Помощь</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li>
+                  <a
+                    href="forums/-/index.rss"
+                    target="_blank"
+                    class="p-footer-rssLink"
+                    title="RSS"
+                    ><span aria-hidden="true"><i class="fa fa-rss"></i></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-footer-copyright">
+            <div align="left" style="color: #ccc">
+              Forum software by XenForo™ ©2010-2021 XenForo Ltd. | Локализация
+              от
+              <a href="link.html#https://XenForo.Info" target="_blank"
+                >XenForo.Info</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- closing p-pageWrapper -->
+    <div class="u-bottomFixer js-bottomFixTarget"></div>
+    <div class="u-scrollButtons js-scrollButtons" data-trigger-type="up">
+      <a href="#top" class="button--scroll button" data-xf-click="scroll-to"
+        ><span class="button-text"><i class="fa fa-arrow-up"></i></span
+      ></a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="/js/vendor/jquery/jquery-3.2.1.min.js?_v=1bd6f38b"><\/script>'
+        );
+    </script>
+    <script src="js/vendor/vendor-compiled.js"></script>
+    <script src="js/xf/core-compiled.js"></script>
+    <script src="js/themehouse/global/20171204.min.js"></script>
+    <script src="js/themehouse/nodes/index.min.js"></script>
+    <script>
+      window.themehouse.nodes.grid_options = {
+        0: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+        11: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+        12: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+        13: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+        30: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+        35: {
+          max_columns: { enable: 1, value: "2" },
+          min_column_width: { enable: 0 },
+          fill_last_row: { enable: 1, value: "0" },
+        },
+      };
+
+      window.themehouse.nodes.ele = new window.themehouse.nodes.grid({
+        layout: window.themehouse.nodes.grid_options,
+        settings: {},
+      });
+
+      window.themehouse.nodes.ele.register();
+    </script>
+    <script>
+      jQuery.extend(true, XF.config, {
+        userId: 0,
+        url: {
+          fullBase: "https://enotmen.github.io/",
+          basePath: "/",
+          css: "/css.php?css=__SENTINEL__&s=4&l=2&d=1664071341",
+          keepAlive: "/login/keep-alive",
+        },
+        cookie: {
+          path: "/",
+          domain: "",
+          prefix: "xf_",
+        },
+        csrf: "1664150212,1434bb68be49f3aa601c4ba787301628",
+        js: {
+          "\/js\/themehouse\/global\/20171204.min.js?_v=1bd6f38b": true,
+          "\/js\/themehouse\/nodes\/index.min.js?_v=1bd6f38b": true,
+        },
+        css: {
+          "public:node_list.less": true,
+          "public:structured_list.less": true,
+          "public:th_nodeStyling_nodes.css": true,
+          "public:th_reactions.less": true,
+          "public:extra.less": true,
+        },
+        time: {
+          now: 1664150212,
+          today: 1664139600,
+          todayDow: 1,
+        },
+        borderSizeFeature: "3px",
+        enableRtnProtect: true,
+        enableFormSubmitSticky: true,
+        uploadMaxFilesize: 2097152,
+        visitorCounts: {
+          conversations_unread: "0",
+          alerts_unread: "0",
+          total_unread: "0",
+          title_count: true,
+          icon_indicator: true,
+        },
+        jsState: {},
+      });
+
+      jQuery.extend(XF.phrases, {
+        date_x_at_time_y: "{date} в {time}",
+        day_x_at_time_y: "{day} в {time}",
+        yesterday_at_x: "Вчера в {time}",
+        x_minutes_ago: "{minutes} мин. назад",
+        one_minute_ago: "1 минуту назад",
+        a_moment_ago: "Только что",
+        today_at_x: "Сегодня в {time}",
+        in_a_moment: "In a moment",
+        in_a_minute: "Менее минуты назад",
+        in_x_minutes: "In {minutes} minutes",
+        later_today_at_x: "Сегодня позже в {time}",
+        tomorrow_at_x: "Завтра в {time}",
+
+        day0: "Воскресенье",
+        day1: "Понедельник",
+        day2: "Вторник",
+        day3: "Среда",
+        day4: "Четверг",
+        day5: "Пятница",
+        day6: "Суббота",
+
+        dayShort0: "Вос",
+        dayShort1: "Пон",
+        dayShort2: "Вто",
+        dayShort3: "Сре",
+        dayShort4: "Чет",
+        dayShort5: "Пят",
+        dayShort6: "Суб",
+
+        month0: "Январь",
+        month1: "Февраль",
+        month2: "Март",
+        month3: "Апрель",
+        month4: "Май",
+        month5: "Июнь",
+        month6: "Июль",
+        month7: "Август",
+        month8: "Сентябрь",
+        month9: "Октябрь",
+        month10: "Ноябрь",
+        month11: "Декабрь",
+
+        active_user_changed_reload_page:
+          "Ваша сессия истекла. Перезагрузите страницу.",
+        server_did_not_respond_in_time_try_again:
+          "Сервер не ответил вовремя. Пожалуйста, попробуйте снова.",
+        oops_we_ran_into_some_problems:
+          "Упс! Мы столкнулись с некоторыми проблемами.",
+        oops_we_ran_into_some_problems_more_details_console:
+          "Упс! Мы столкнулись с некоторыми проблемами. Пожалуйста, попробуйте позже. Более детальную информацию об ошибке Вы можете посмотреть в консоли браузера.",
+        file_too_large_to_upload: "Файл слишком большой для загрузки.",
+        files_being_uploaded_are_you_sure:
+          "Файлы все ещё загружаются. Вы действительно хотите отправить эту форму?",
+        close: "Закрыть",
+
+        showing_x_of_y_items: "Показано {count} из {total} элементов",
+        showing_all_items: "Показаны все элементы",
+        no_items_to_display: "Нет элементов для отображения",
+      });
+    </script>
+    <form style="display: none" hidden="hidden">
+      <input
+        type="text"
+        name="_xfClientLoadTime"
+        value=""
+        id="_xfClientLoadTime"
+        tabindex="-1"
+      />
+    </form>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://enotmen.github.io/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://enotmen.github.io/search/search?keywords={search_keywords}",
+          "query-input": "required name=search_keywords"
+        }
+      }
+    </script>
+  </body>
+</html>
